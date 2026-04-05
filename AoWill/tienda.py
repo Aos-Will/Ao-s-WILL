@@ -30,8 +30,13 @@ def cargar_items():
 def guardar_items(items):
     with open(ARCHIVO_ITEMS, "w", encoding="utf-8") as f:
         json.dump(items, f, indent=4, ensure_ascii=False)
-
-
+def obtener_fecha_mundo():
+    try:
+        with open("calendario.json", "r", encoding="utf-8") as f:
+            return json.load(f)
+    except:
+        ## Por si aca
+        return {"dia": 1, "mes": 1, "año": 1}
 # ===================== MONEDAS =====================
 def formatear_monedas(cobre: int) -> str:
     po = cobre // 100
@@ -59,92 +64,93 @@ class TiendaView(discord.ui.View):
         self.items_por_pagina = 5
 
     def crear_embed(self):
-
         inicio = self.pagina * self.items_por_pagina
         fin = inicio + self.items_por_pagina
         items_pagina = self.items[inicio:fin]
 
         embed = discord.Embed(
-            title="🛒 Tienda",
+            title="🛒 Catálogo de la Tienda",
             color=discord.Color.gold()
         )
 
         for item in items_pagina:
+            categorias = item.get("categoria", [])
+            lista_rarezas = ["Común", "Poco Común", "Raro", "Muy Raro", "Legendario"]
+            rareza_detectada = "Común"  # Por defecto
+
+            for cat in categorias:
+                if cat in lista_rarezas:
+                    rareza_detectada = cat
+                    break
+
+            # 2. Formatear Stock
+            stock_val = item.get("stock")
+            stock_txt = f"**{stock_val}**" if stock_val is not None else "♾️"
+
+            precio_txt = formatear_monedas(item.get("precio", 0))
+
             embed.add_field(
-                name=f"{item['nombre']} ({item['id']})",
-                value=f"Precio: {formatear_monedas(item['precio'])}\n{item['descripcion']}",
+                name=f"{item['nombre']} (`{item['id']}`)",
+                value=(
+                    f"💰 **Precio:** {precio_txt} | 📦 **Stock:** {stock_txt}\n"
+                    f"✨ **Rareza:** {rareza_detectada}\n"
+                    f"📝 {item.get('descripcion', 'Sin descripción.')}"
+                ),
                 inline=False
             )
 
         total_paginas = (len(self.items) - 1) // self.items_por_pagina + 1
         embed.set_footer(text=f"Página {self.pagina + 1}/{total_paginas}")
-
         return embed
 
     @discord.ui.button(label="◀", style=discord.ButtonStyle.gray)
     async def anterior(self, interaction: discord.Interaction, button: discord.ui.Button):
-
-        if self.pagina > 0:
-            self.pagina -= 1
-
-        await interaction.response.edit_message(
-            embed=self.crear_embed(),
-            view=self
-        )
+        if self.pagina > 0: self.pagina -= 1
+        await interaction.response.edit_message(embed=self.crear_embed(), view=self)
 
     @discord.ui.button(label="▶", style=discord.ButtonStyle.gray)
     async def siguiente(self, interaction: discord.Interaction, button: discord.ui.Button):
-
         total_paginas = (len(self.items) - 1) // self.items_por_pagina
-
-        if self.pagina < total_paginas:
-            self.pagina += 1
-
-        await interaction.response.edit_message(
-            embed=self.crear_embed(),
-            view=self
-        )
-
+        if self.pagina < total_paginas: self.pagina += 1
+        await interaction.response.edit_message(embed=self.crear_embed(), view=self)
 
 # ===================== SETUP =====================
 def setup(bot: commands.Bot):
-
     # ---------- VER TIENDA ----------
     @bot.command()
-    async def tienda(ctx, categoria: str = None):
-        items = cargar_items()
-
-        if not items:
+    async def tienda(ctx, *, categoria: str = None):
+        items_raw = cargar_items()
+        if not items_raw:
             await ctx.send("La tienda está vacía.")
             return
 
+        items = [i for i in items_raw if i.get("stock") != 0]
+
+        if not items:
+            await ctx.send("❌ Actualmente todos los objetos están agotados.")
+            return
 
         if categoria:
-            categoria_buscada = categoria.lower()
+            categoria_buscada = categoria.lower().strip()
             items_filtrados = []
-
             for i in items:
                 cat_item = i.get("categoria", "")
                 if isinstance(cat_item, list):
                     if categoria_buscada in [c.lower() for c in cat_item]:
                         items_filtrados.append(i)
-                elif cat_item.lower() == categoria_buscada:
+                elif str(cat_item).lower() == categoria_buscada:
                     items_filtrados.append(i)
 
             if not items_filtrados:
-                await ctx.send(f"No encontré la categoría `{categoria}`. Mostrando toda la tienda:")
+                await ctx.send(f"No encontré la categoría `{categoria}` con stock. Mostrando todo:")
                 items_mostrar = items
             else:
                 items_mostrar = items_filtrados
         else:
-            # Exepción para mostrar TODO
             items_mostrar = items
 
         view = TiendaView(items_mostrar)
-        await ctx.send(
-            embed=view.crear_embed(),
-            view=view
-        )
+        await ctx.send(embed=view.crear_embed(), view=view)
 
     # ---------- Inventario -------------- #
     @bot.command(aliases=["inv", "Inventario"])
@@ -153,11 +159,8 @@ def setup(bot: commands.Bot):
         datos = cargar_datos()
         personaje_encontrado = None
 
-
         for uid, info in datos.items():
-            if uid == "_historial":
-                continue
-
+            if uid == "_historial": continue
             pj = info.get("personajes", {}).get(alias)
             if pj:
                 personaje_encontrado = pj
@@ -171,12 +174,7 @@ def setup(bot: commands.Bot):
         inv_ids = personaje_encontrado.get("inventario", [])
         oro = personaje_encontrado.get("oro", 0)
 
-
-        if not inv_ids:
-            lista_objetos = "*El inventario está vacío.*"
-        else:
-
-            lista_objetos = "\n".join([f"• {item_id}" for item_id in inv_ids])
+        lista_objetos = "\n".join([f"• {item_id}" for item_id in inv_ids]) if inv_ids else "*El inventario está vacío.*"
 
         embed = discord.Embed(
             title=f"🎒 Inventario de {nombre}",
@@ -184,11 +182,7 @@ def setup(bot: commands.Bot):
             description=f"**Riqueza:** {formatear_monedas(oro)}\n\n**Objetos:**\n{lista_objetos}"
         )
         embed.set_footer(text="Este mensaje se eliminará en 5 minutos.")
-
-
         await ctx.send(embed=embed, delete_after=300)
-
-
         try:
             await ctx.message.delete()
         except:
@@ -198,52 +192,42 @@ def setup(bot: commands.Bot):
     async def ver(ctx, item_id: str):
         item_id = item_id.lower()
         items = cargar_items()
-
-
         item = next((i for i in items if i["id"] == item_id), None)
 
         if not item:
-            await ctx.send(f"No encontre ningun objeto con el ID: {item_id}")
+            await ctx.send(f"No encontré ningún objeto con el ID: {item_id}")
             return
-
 
         embed = discord.Embed(
             title=item['nombre'],
-            description=item.get("descripcion", "Sin descripcion."),
+            description=item.get("descripcion", "Sin descripción."),
             color=discord.Color.blue()
         )
-
-
         embed.add_field(name="Precio", value=formatear_monedas(item['precio']), inline=True)
-
 
         cat = item.get("categoria", "General")
         cat_txt = ", ".join(cat) if isinstance(cat, list) else cat
-        embed.add_field(name="Categoria", value=cat_txt, inline=True)
-
+        embed.add_field(name="Categoría", value=cat_txt, inline=True)
 
         stock_val = item.get("stock", "Infinito")
-        embed.add_field(name="Stock", value=str(stock_val), inline=True)
+        embed.add_field(name="Stock", value=str(stock_val) if stock_val is not None else "Infinito", inline=True)
 
-        es_consumible = "Si" if item.get("consumible") else "No"
+        es_consumible = "Sí" if item.get("consumible") else "No"
         embed.add_field(name="Consumible", value=es_consumible, inline=True)
-
         embed.set_footer(text=f"ID: {item['id']}")
-
         await ctx.send(embed=embed)
 
     # ---------- COMPRAR y Usar ----------
     @bot.command()
     async def comprar(ctx, alias: str, item_id: str):
-
         alias = alias.lower()
         item_id = item_id.lower()
 
-        items = cargar_items()
-        item = next((i for i in items if i["id"] == item_id), None)
+        items_tienda = cargar_items()
+        item = next((i for i in items_tienda if i["id"] == item_id), None)
 
         if not item:
-            await ctx.send("Ese objeto no existe.")
+            await ctx.send("Ese objeto no existe en la tienda.")
             return
 
         datos = cargar_datos()
@@ -254,42 +238,53 @@ def setup(bot: commands.Bot):
             await ctx.send("No tienes ese personaje.")
             return
 
-        precio = item["precio"]
-        oro_actual = pj.get("oro", 0)
+        cal = obtener_fecha_mundo()
+        cd_compra = pj.get("cooldown_compra")
+        if cd_compra:
+            if (cal["año"], cal["mes"], cal["dia"]) < (cd_compra["año"], cd_compra["mes"], cd_compra["dia"]):
+                fecha_libre = f"{cd_compra['dia']}/{cd_compra['mes']}/{cd_compra['año']}"
+                await ctx.send(f"❌ **{pj['nombre']}** tiene un cooldown activo hasta el {fecha_libre}.")
+                return
+            else:
+                pj["cooldown_compra"] = None
 
-        if oro_actual < precio:
-            await ctx.send("No tienes suficiente oro.")
+        precio_item = item.get("precio", 0)
+        if pj.get("oro", 0) < precio_item:
+            await ctx.send(f"No tienes suficiente oro. Necesitas {formatear_monedas(precio_item)}.")
             return
 
-
+        # NUEVO: Lógica de Stock
         if item.get("stock") is not None:
             if item["stock"] <= 0:
                 await ctx.send("Este objeto está agotado.")
                 return
             item["stock"] -= 1
-            guardar_items(items)
+            guardar_items(items_tienda)
 
 
-        pj["oro"] = oro_actual - precio
+        pj["oro"] -= precio_item
+        if "inventario" not in pj: pj["inventario"] = []
+        pj["inventario"].append(item_id)
 
-        if "inventario" not in pj:
-            pj["inventario"] = []
+        categorias = [c.lower() for c in item.get("categoria", [])]
+        rarezas_esp = ["poco común", "raro", "muy raro", "legendario"]
+        es_especial = any(r in categorias for r in rarezas_esp)
 
-        pj["inventario"].append(item["id"])
+        if not item.get("consumible", False) and es_especial:
+            d, m, a = cal["dia"] + 14, cal["mes"], cal["año"]
+            if d >= 30: d -= 30; m += 1
+            if m > 12: m = 1; a += 1
+            pj["cooldown_compra"] = {"dia": d, "mes": m, "año": a}
+            msg_extra = f"\n⚠️ **Cooldown activado:** Hasta el {d}/{m}/{a}."
+        else:
+            msg_extra = ""
 
         guardar_datos(datos)
-
-        await ctx.send(
-            f"Compra realizada.\n"
-            f"{pj['nombre']} compró {item['nombre']}.\n"
-            f"Oro restante: {formatear_monedas(pj['oro'])}"
-        )
+        await ctx.send(f"✅ **{pj['nombre']}** ha comprado **{item['nombre']}**.{msg_extra}")
 
     @bot.command()
     async def usar(ctx, alias: str, item_id: str):
-        alias = alias.lower()
-        item_id = item_id.lower()
-
+        alias, item_id = alias.lower(), item_id.lower()
         datos = cargar_datos()
         items = cargar_items()
         uid = str(ctx.author.id)
@@ -300,51 +295,38 @@ def setup(bot: commands.Bot):
             return
 
         inventario = pj.get("inventario", [])
-
-
         item_en_inv = next((x for x in inventario if x == item_id or x.startswith(f"{item_id} (")), None)
 
         if not item_en_inv:
             await ctx.send("No tienes ese objeto en tu inventario.")
             return
 
-
         item_base = next((i for i in items if i["id"] == item_id), None)
         if not item_base:
-            await ctx.send("Ese objeto no existe en la base de datos de la tienda.")
+            await ctx.send("Ese objeto no existe en la base de datos.")
             return
 
-
+        # Lógica Kit Sanador (Mantenida intacta)
         if item_id == "kit_sanador_consumible":
-            usos_actuales = 10  # Por defecto
-
+            usos = 10
             if "(" in item_en_inv:
                 try:
-                    usos_actuales = int(item_en_inv.split("(")[1].split(")")[0])
+                    usos = int(item_en_inv.split("(")[1].split(")")[0])
                 except:
-                    usos_actuales = 10
-
-            nuevo_uso = usos_actuales - 1
-
-
+                    usos = 10
+            nuevo_uso = usos - 1
             inventario.remove(item_en_inv)
-
-            if nuevo_uso <= 0:
-                await ctx.send(f"**{pj['nombre']}** usó la última carga del **{item_base['nombre']}**. ¡Se ha agotado!")
+            if nuevo_uso > 0:
+                inventario.append(f"{item_id} ({nuevo_uso})")
+                await ctx.send(f"**{pj['nombre']}** usa el kit. Quedan {nuevo_uso} usos.")
             else:
-
-                nuevo_nombre_id = f"{item_id} ({nuevo_uso})"
-                inventario.append(nuevo_nombre_id)
-                await ctx.send(f"**{pj['nombre']}** usa el **{item_base['nombre']}**. Quedan **{nuevo_uso}** usos.")
-
+                await ctx.send(f"**{pj['nombre']}** agotó el kit.")
             guardar_datos(datos)
             return
 
-
-        await ctx.send(f"{pj['nombre']} usa **{item_base['nombre']}**.")
-
+        await ctx.send(f"**{pj['nombre']}** usa **{item_base['nombre']}**.")
         if item_base.get("consumible", False):
             inventario.remove(item_en_inv)
-            await ctx.send(f"El objeto **{item_base['nombre']}** se ha consumido.")
+            await ctx.send("El objeto se ha consumido.")
 
         guardar_datos(datos)

@@ -68,7 +68,11 @@
                 "nivel": 5,
                 "link": "https://nivel20.com/games/dnd-5/characters/1319102-katari-kagerou-zenin",
                 "estado": "Vivo",
-                "oro": 283260
+                "oro": 263260,
+                "inventario": [
+                    "varita_secretos",
+                    "baston_flores"
+                ]
             }
         }
     },

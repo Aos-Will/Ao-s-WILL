@@ -589,7 +589,6 @@ def setup(bot: commands.Bot):
             cal = obtener_fecha_mundo()
             uid_autor = str(message.author.id)
 
-            # Verificación de permisos de Staff
             es_staff = (message.author.id == ADMIN_ID or
                         any(rol.id == DRAGON_ROLE_ID for rol in message.author.roles))
 
@@ -597,7 +596,6 @@ def setup(bot: commands.Bot):
             personajes_usuario = info_usuario.get("personajes", {})
             pj = personajes_usuario.get(alias)
 
-            # Si no es suyo pero es staff, buscamos en el resto del JSON
             if not pj and es_staff:
                 for uid_busqueda, info in datos.items():
                     if uid_busqueda == "_historial": continue
@@ -616,6 +614,7 @@ def setup(bot: commands.Bot):
                     pj["ubicacion"] = llegada["destino"]
                     pj["llegada"] = None
                     guardar_datos(datos)
+
                     otros_viajando = any(p.get("llegada") is not None for p in personajes_usuario.values())
                     if not otros_viajando:
                         rol_v = message.guild.get_role(ROL_VIAJE_ID)
@@ -624,6 +623,18 @@ def setup(bot: commands.Bot):
                                 await message.author.remove_roles(rol_v)
                             except:
                                 pass
+
+            cd_compra = pj.get("cooldown_compra")
+            txt_compra = "Puedes comprar"
+
+            if cd_compra:
+
+                if (cal["año"], cal["mes"], cal["dia"]) >= (cd_compra["año"], cd_compra["mes"], cd_compra["dia"]):
+                    pj["cooldown_compra"] = None
+                    guardar_datos(datos)
+                    txt_compra = "✅ Disponible"
+                else:
+                    txt_compra = f"⏳ Bloqueado hasta el {cd_compra['dia']}/{cd_compra['mes']}/{cd_compra['año']}"
 
             estado_salud = pj.get("estado", "Vivo")
             nacimiento = pj.get("nacimiento")
@@ -635,10 +646,8 @@ def setup(bot: commands.Bot):
                     "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
                     "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
                 ]
-
                 idx_mes = max(0, min(abs(nacimiento["mes"]) - 1, 11))
                 nombre_mes = meses_nombres[idx_mes]
-
                 era = "ADC" if nacimiento["año"] < 0 else "DDC"
                 txt_nacimiento = f"{nacimiento['dia']} de {nombre_mes} del año {abs(nacimiento['año'])} {era}"
 
@@ -660,6 +669,7 @@ def setup(bot: commands.Bot):
                 f"Estado de salud: {estado_salud}\n"
                 f"Nivel: {pj['nivel']} | EXP: {pj['exp']}\n"
                 f"Oro: {oro_txt}\n"
+                f"Cooldown Compra: {txt_compra}\n"
                 f"Link: {pj['link']}"
             )
 

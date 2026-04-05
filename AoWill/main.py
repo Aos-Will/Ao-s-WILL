@@ -9,7 +9,7 @@ import tienda #módulo de tienda
 import personajes  # módulo de personajes
 
 
-TOKEN = 'MTQ2OTUyNjczNzA5MTE3MDMyNA.G0ioeu.W9pnc3LVHiVS3t_tFsv8tPpOtVy8ed-0H-3pEY'
+TOKEN =
 ID_CANAL_VOZ = 1469531271037194374
 ARCHIVO_DATOS = 'datos_lichsea.json'
 
