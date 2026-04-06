@@ -30,13 +30,23 @@ def cargar_items():
 def guardar_items(items):
     with open(ARCHIVO_ITEMS, "w", encoding="utf-8") as f:
         json.dump(items, f, indent=4, ensure_ascii=False)
+
 def obtener_fecha_mundo():
     try:
-        with open("calendario.json", "r", encoding="utf-8") as f:
-            return json.load(f)
+        with open("datos_lichsea.json", "r", encoding="utf-8") as f:
+            datos = json.load(f)
+            return {
+
+                "dia": datos.get("dia", 1),
+
+                "mes": datos.get("mes", 1),
+
+                "año": datos.get("año", 1)
+
+            }
     except:
-        ## Por si aca
         return {"dia": 1, "mes": 1, "año": 1}
+
 # ===================== MONEDAS =====================
 def formatear_monedas(cobre: int) -> str:
     po = cobre // 100
@@ -253,14 +263,12 @@ def setup(bot: commands.Bot):
             await ctx.send(f"No tienes suficiente oro. Necesitas {formatear_monedas(precio_item)}.")
             return
 
-        # NUEVO: Lógica de Stock
         if item.get("stock") is not None:
             if item["stock"] <= 0:
                 await ctx.send("Este objeto está agotado.")
                 return
             item["stock"] -= 1
             guardar_items(items_tienda)
-
 
         pj["oro"] -= precio_item
         if "inventario" not in pj: pj["inventario"] = []
@@ -272,8 +280,12 @@ def setup(bot: commands.Bot):
 
         if not item.get("consumible", False) and es_especial:
             d, m, a = cal["dia"] + 14, cal["mes"], cal["año"]
-            if d >= 30: d -= 30; m += 1
-            if m > 12: m = 1; a += 1
+            while d > 30:
+                d -= 30
+                m += 1
+            while m > 12:
+                m -= 12
+                a += 1
             pj["cooldown_compra"] = {"dia": d, "mes": m, "año": a}
             msg_extra = f"\n⚠️ **Cooldown activado:** Hasta el {d}/{m}/{a}."
         else:
@@ -306,7 +318,6 @@ def setup(bot: commands.Bot):
             await ctx.send("Ese objeto no existe en la base de datos.")
             return
 
-        # Lógica Kit Sanador (Mantenida intacta)
         if item_id == "kit_sanador_consumible":
             usos = 10
             if "(" in item_en_inv:

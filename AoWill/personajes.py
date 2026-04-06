@@ -61,8 +61,17 @@ def guardar_datos(datos):
 
 def obtener_fecha_mundo():
     try:
-        with open("calendario.json", "r", encoding="utf-8") as f:
-            return json.load(f)
+        with open("datos_lichsea.json", "r", encoding="utf-8") as f:
+            datos = json.load(f)
+            return {
+
+                "dia": datos.get("dia", 1),
+
+                "mes": datos.get("mes", 1),
+
+                "año": datos.get("año", 1)
+
+            }
     except:
         return {"dia": 1, "mes": 1, "año": 1}
 
@@ -249,21 +258,25 @@ def setup(bot: commands.Bot):
             await ctx.send(f"No tienes oro suficiente (5 PO).")
             return
 
-        # Cálculo de llegada (+14 dias, 7 dias en el mundo real)
         cal = obtener_fecha_mundo()
         d, m, a = cal["dia"] + 14, cal["mes"], cal["año"]
-        if d >= 30:
+
+        while d > 30:
             d -= 30
             m += 1
-        if m > 12:
-            m = 1
+        while m > 12:
+            m -= 12
             a += 1
 
-        # Ejecutar viaje
         pj["oro"] -= COSTO_VIAJE_COBRE
         pj["ubicacion"] = f"Viajando a {destino}"
         pj["llegada"] = {"dia": d, "mes": m, "año": a, "destino": destino}
         guardar_datos(datos)
+
+        rol = ctx.guild.get_role(ROL_VIAJE_ID)
+        if rol: await ctx.author.add_roles(rol)
+
+        await ctx.send(f"**{pj['nombre']}** ha partido hacia {destino}. Llegará el día {d}/{m}/{a}.")
 
         # Rol de Discord
         rol = ctx.guild.get_role(ROL_VIAJE_ID)

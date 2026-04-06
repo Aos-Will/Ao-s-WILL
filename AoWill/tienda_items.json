@@ -845,9 +845,9 @@
         "consumible": false
     },
     {
-        "id": "chamuscada_plus_1",
+        "id": "mejora_de_chamuscada_plus_1",
         "nombre": "Chamuscada +1",
-        "precio": 15000,
+        "precio": 35000,
         "stock": 1,
         "categoria": [
             "Armas",
@@ -858,9 +858,9 @@
         "consumible": false
     },
     {
-        "id": "chamuscada_plus_2",
+        "id": "mejora_de_chamuscada_plus_2",
         "nombre": "Chamuscada +2",
-        "precio": 150000,
+        "precio": 250000,
         "stock": 0,
         "categoria": [
             "Armas",
@@ -874,7 +874,7 @@
         "id": "revolver_maldito",
         "nombre": "Revolver maldita",
         "precio": 10000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Armas",
             "Fuego",
@@ -887,7 +887,7 @@
         "id": "revolver_maldito_plus_1",
         "nombre": "Revolver maldita +1",
         "precio": 150000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Armas",
             "Fuego",
@@ -2996,7 +2996,7 @@
         "id": "vendajes_potencial_desarmado",
         "nombre": "Vendajes de Potencial Desarmado +1",
         "precio": 25000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -3537,7 +3537,7 @@
         "id": "arma_alerta",
         "nombre": "Arma de Alerta",
         "precio": 40000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -3744,7 +3744,7 @@
         "id": "escoba_volador",
         "nombre": "Escoba del Volador",
         "precio": 50000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Otros",
             "Poco Común"
@@ -3756,7 +3756,7 @@
         "id": "bolsa_contencion",
         "nombre": "Bolsa de contención",
         "precio": 50000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Otros",
             "Poco Común"
@@ -5546,7 +5546,7 @@
         "id": "pocion_fuerza_gigante",
         "nombre": "Poción de fuerza de gigante",
         "precio": 30000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Pociones",
             "Consumible",

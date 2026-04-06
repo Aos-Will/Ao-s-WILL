@@ -26,7 +26,15 @@
                 "exp": 23422,
                 "nivel": 7,
                 "link": "https://nivel20.com/games/dnd-5/characters/1371240-reika-fujiwara",
-                "oro": 217210
+                "oro": 167210,
+                "inventario": [
+                    "escoba_volador"
+                ],
+                "cooldown_compra": {
+                    "dia": 26,
+                    "mes": 7,
+                    "año": 1
+                }
             },
             "victoria": {
                 "nombre": "Victoria Kurta",
@@ -68,11 +76,16 @@
                 "nivel": 5,
                 "link": "https://nivel20.com/games/dnd-5/characters/1319102-katari-kagerou-zenin",
                 "estado": "Vivo",
-                "oro": 263260,
+                "oro": 183260,
                 "inventario": [
-                    "varita_secretos",
-                    "baston_flores"
-                ]
+                    "pocion_fuerza_gigante",
+                    "bolsa_contencion"
+                ],
+                "cooldown_compra": {
+                    "dia": 29,
+                    "mes": 7,
+                    "año": 1
+                }
             }
         }
     },
@@ -571,7 +584,15 @@
                 "exp": 25923,
                 "nivel": 7,
                 "link": "https://nivel20.com/games/dnd-5/characters/1318291-hikari-zenin",
-                "oro": 311900
+                "oro": 271900,
+                "inventario": [
+                    "arma_alerta"
+                ],
+                "cooldown_compra": {
+                    "dia": 29,
+                    "mes": 7,
+                    "año": 1
+                }
             },
             "sung": {
                 "nombre": "Sung",
@@ -579,7 +600,7 @@
                 "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1714870-the-sung-jin-woo",
                 "estado": "Vivo",
-                "oro": 7611
+                "oro": 23711
             },
             "onibi": {
                 "nombre": "onibi",
@@ -587,7 +608,15 @@
                 "nivel": 5,
                 "link": "https://nivel20.com/games/dnd-5/characters/1978026-onibi-nerfeado",
                 "estado": "Vivo",
-                "oro": 147600
+                "oro": 122600,
+                "inventario": [
+                    "vendajes_potencial_desarmado"
+                ],
+                "cooldown_compra": {
+                    "dia": 15,
+                    "mes": 1,
+                    "año": 1
+                }
             }
         }
     },
@@ -674,7 +703,15 @@
                 "exp": 6981,
                 "nivel": 5,
                 "link": "https://nivel20.com/games/dnd-5/characters/1911225-viatrix",
-                "oro": 42500
+                "oro": 32500,
+                "inventario": [
+                    "revolver_maldito"
+                ],
+                "cooldown_compra": {
+                    "dia": 15,
+                    "mes": 1,
+                    "año": 1
+                }
             },
             "rakkī": {
                 "nombre": "Rakkī Ulrik",
