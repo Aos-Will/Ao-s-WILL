@@ -106,6 +106,26 @@ def tiene_permiso_exp(ctx):
 
 def setup(bot: commands.Bot):
 
+    # ---------- Espacio de personaje ----------#
+    @bot.command()
+    async def dar_espacio(ctx, usuario: discord.User, nueva_cantidad: int):
+        # Solo el Admin o el Rol Dragón pueden usarlo
+        if not (ctx.author.id == ADMIN_ID or any(rol.id == DRAGON_ROLE_ID for rol in ctx.author.roles)):
+            await ctx.send("No tienes permiso para esto.")
+            return
+
+        datos = cargar_datos()
+        uid = str(usuario.id)
+
+        if uid not in datos:
+            datos[uid] = {"personajes": {}}
+
+        datos[uid]["max_pj"] = nueva_cantidad
+        guardar_datos(datos)
+
+        await ctx.send(f"✅ Ahora {usuario.name} puede tener hasta **{nueva_cantidad}** personajes vivos.")
+
+
     # ---------- ADD PJ ----------
     @bot.command()
     async def addpj(ctx, exp: int, link: str, *, nombre: str):
@@ -133,17 +153,18 @@ def setup(bot: commands.Bot):
         datos = cargar_datos()
         uid = str(ctx.author.id)
 
+        limite_usuario = datos.get(uid, {}).get("max_pj", 3)
+
         datos.setdefault(uid, {"personajes": {}})
         personajes = datos[uid]["personajes"]
 
-        # Cambio solicitado: solo cuentan los que están "Vivo"
         personajes_vivos = [
             pj for pj in personajes.values()
             if pj.get("estado", "Vivo") == "Vivo"
         ]
 
-        if len(personajes_vivos) >= 4:
-            await ctx.send("Máximo de personajes alcanzado.")
+        if len(personajes_vivos) >= limite_usuario:
+            await ctx.send(f"Has alcanzado tu máximo de {limite_usuario} personajes vivos.")
             return
 
         if alias in personajes:
@@ -373,13 +394,15 @@ def setup(bot: commands.Bot):
 
     @bot.command(name="AyudaBot", aliases=["info", "comandos", "ayudame"])
     async def ayudabot(ctx):
+        # Verificamos si es Staff una sola vez para usarlo después
+        es_staff = ctx.author.id == ADMIN_ID or any(rol.id == DRAGON_ROLE_ID for rol in ctx.author.roles)
+
         embed = discord.Embed(
             title="Lista de Comandos",
             description="Usa el prefijo ! antes de cada comando. Este mensaje se borrara en 5 minutos.",
             color=discord.Color.blue()
         )
 
-        # --- Gestion de Personaje ---
         embed.add_field(
             name="Personajes",
             value=(
@@ -391,7 +414,6 @@ def setup(bot: commands.Bot):
             inline=False
         )
 
-        # --- Economia e Inventario ---
         embed.add_field(
             name="Economia e Inventario",
             value=(
@@ -405,24 +427,25 @@ def setup(bot: commands.Bot):
             inline=False
         )
 
-        # --- Administracion (Solo Staff) ---
-        embed.add_field(
-            name="Administracion",
-            value=(
-                "**addexp / removeexp [alias] [cantidad]**: Gestiona la experiencia.\n"
-                "**daroro / quitaroro [alias] [cantidad]**: Gestiona el dinero (en PC).\n"
-                "**setestado [alias] [Estado]**: Cambia a Vivo, Muerto o Retirado.\n"
-                "**reportexp**: (En threads) Procesa recompensas grupales.\n"
-                "**forcedelpj [alias]**: Elimina un personaje del sistema."
-            ),
-            inline=False
-        )
+        if es_staff:
+            embed.add_field(
+                name="🛡️ Administracion (Staff)",
+                value=(
+                    "**addexp / removeexp [alias] [cantidad]**: Gestiona la experiencia.\n"
+                    "**daroro / quitaroro [alias] [cantidad]**: Gestiona el dinero (en PC).\n"
+                    "**dar_espacio [usuario] [cantidad]**: Cambia el límite de PJs vivos.\n"
+                    "**setestado [alias] [Estado]**: Cambia a Vivo, Muerto o Retirado.\n"
+                    "**reportexp**: (En threads) Procesa recompensas grupales.\n"
+                    "**forcedelpj [alias]**: Elimina un personaje del sistema."
+                ),
+                inline=False
+            )
+            embed.color = discord.Color.gold()
+            embed.set_footer(text="Vista de Staff activada")
+        else:
+            embed.set_footer(text="ID de Staff: Admin o Rol Dragon")
 
-        embed.set_footer(text="ID de Staff: Admin o Rol Dragon")
-
-        # borrado automatico en 300 segundos
         await ctx.send(embed=embed, delete_after=300)
-
 
         try:
             await ctx.message.delete()
