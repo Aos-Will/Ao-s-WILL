@@ -5,11 +5,11 @@ import json
 from discord.ext import tasks, commands
 from datetime import datetime, timedelta
 
+import voz
 import tienda #módulo de tienda
 import personajes  # módulo de personajes
 
-
-TOKEN =
+TOKEN = "CENSORED"
 ID_CANAL_VOZ = 1469531271037194374
 ARCHIVO_DATOS = 'datos_lichsea.json'
 
@@ -19,7 +19,7 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-
+voz.setup(bot)
 personajes.setup(bot)
 tienda.setup(bot)
 

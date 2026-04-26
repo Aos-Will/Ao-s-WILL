@@ -289,7 +289,7 @@
         "id": "red_plus_1",
         "nombre": "Red +1",
         "precio": 1500,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Armas",
             "Distancia",
@@ -614,7 +614,7 @@
         "id": "abanico_viento",
         "nombre": "Abanico del Viento",
         "precio": 500,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Otros",
             "Poco Común",
@@ -848,7 +848,7 @@
         "id": "mejora_de_chamuscada_plus_1",
         "nombre": "Chamuscada +1",
         "precio": 35000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -979,7 +979,7 @@
         "id": "espada_larga_plus_1",
         "nombre": "Espada larga +1",
         "precio": 22500,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -2657,7 +2657,7 @@
         "id": "anillo_escudo_mental",
         "nombre": "Anillo de escudo mental",
         "precio": 13500,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Otros",
             "Poco Común",
@@ -2722,7 +2722,7 @@
         "id": "varita_deteccion_magica",
         "nombre": "Varita de Detección Mágica",
         "precio": 15000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Otros",
             "Varita",
@@ -2735,7 +2735,7 @@
         "id": "varita_secretos",
         "nombre": "Varita de Secretos",
         "precio": 15000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Otros",
             "Varita",
@@ -2762,7 +2762,7 @@
         "id": "kit_falsificacion",
         "nombre": "Kit de falsificación",
         "precio": 1500,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Herramientas",
             "Especial",
@@ -2842,7 +2842,7 @@
         "id": "anillo_caminar_aguas",
         "nombre": "Anillo de caminar sobre las aguas",
         "precio": 20000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Otros",
             "Poco Común"
@@ -2944,7 +2944,7 @@
         "id": "jabalina_trueno",
         "nombre": "Jabalina de Trueno",
         "precio": 25000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -3035,7 +3035,7 @@
         "id": "escudo_plus_1",
         "nombre": "Escudo +1",
         "precio": 25000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Armaduras",
             "Escudo",
@@ -3155,7 +3155,7 @@
         "id": "hoz_lunar",
         "nombre": "Hoz Lunar +1",
         "precio": 30000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -3233,7 +3233,7 @@
         "id": "herramienta_proposito",
         "nombre": "Herramienta Todo Propósito +1",
         "precio": 30000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Otros",
             "Especial",
@@ -3259,7 +3259,7 @@
         "id": "vial_pozo_sangriento",
         "nombre": "Vial de Pozo Sangriento +1",
         "precio": 30000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Otros",
             "Especial",
@@ -3272,7 +3272,7 @@
         "id": "bolsa_alquimica",
         "nombre": "Bolsa alquímica",
         "precio": 3000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Otros",
             "Poco Común",
@@ -3431,7 +3431,7 @@
         "id": "escudo_centinela",
         "nombre": "Escudo de Centinela",
         "precio": 35000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Armaduras",
             "Escudo",
@@ -3576,7 +3576,7 @@
         "id": "botas_elfos",
         "nombre": "Botas de los Elfos",
         "precio": 40000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Otros",
             "Poco Común"
@@ -3731,7 +3731,7 @@
         "id": "amuleto_deteccion_localizacion",
         "nombre": "Amuleto a Prueba de detección y localización",
         "precio": 50000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Otros",
             "Poco Común",
@@ -5325,7 +5325,7 @@
         "id": "kit_sanador_consumible",
         "nombre": "Kit de sanador",
         "precio": 5000,
-        "stock": 10,
+        "stock": 9,
         "categoria": [
             "Herramientas",
             "Consumible",
@@ -5452,10 +5452,23 @@
         "consumible": true
     },
     {
+        "id": "talisman",
+        "nombre": "Talisman",
+        "precio": 50,
+        "stock": null,
+        "categoria": [
+            "Consumible",
+            "Talisman",
+            "Común"
+        ],
+        "descripcion": "Aplica a arma: +1d4 daño veneno (DC 10 Con).",
+        "consumible": true
+    },
+    {
         "id": "pocion_curacion_mayor",
         "nombre": "Poción de curación mayor",
         "precio": 15000,
-        "stock": 1,
+        "stock": 5,
         "categoria": [
             "Pociones",
             "Consumible",
@@ -5507,7 +5520,7 @@
         "id": "pocion_crecimiento",
         "nombre": "Poción de crecimiento",
         "precio": 20000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Pociones",
             "Consumible",
@@ -5637,7 +5650,7 @@
         "id": "pocion_invisibilidad",
         "nombre": "Poción de invisibilidad",
         "precio": 120000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Pociones",
             "Consumible",

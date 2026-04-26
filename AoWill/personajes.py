@@ -297,8 +297,6 @@ def setup(bot: commands.Bot):
         rol = ctx.guild.get_role(ROL_VIAJE_ID)
         if rol: await ctx.author.add_roles(rol)
 
-        await ctx.send(f"**{pj['nombre']}** ha partido hacia {destino}. Llegará el día {d}/{m}/{a}.")
-
         # Rol de Discord
         rol = ctx.guild.get_role(ROL_VIAJE_ID)
         if rol: await ctx.author.add_roles(rol)

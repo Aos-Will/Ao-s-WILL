@@ -6,7 +6,9 @@ from discord.ext import commands
 ARCHIVO_DATOS = "personajes.json"
 ARCHIVO_ITEMS = "tienda_items.json"
 
-
+ADMIN_ID = 995843251200327753
+DRAGON_ROLE_ID = 1410886251556638860
+# ================================================================
 # ===================== CARGAR / GUARDAR =====================
 def cargar_datos():
     if not os.path.exists(ARCHIVO_DATOS):
@@ -228,6 +230,57 @@ def setup(bot: commands.Bot):
         await ctx.send(embed=embed)
 
     # ---------- COMPRAR y Usar ----------
+
+    @bot.command()
+    async def dar_objeto(ctx, alias: str, *, item_id: str):
+        # Usamos las variables definidas al inicio del archivo
+        es_staff = ctx.author.id == ADMIN_ID or any(rol.id == DRAGON_ROLE_ID for rol in ctx.author.roles)
+
+        if not es_staff:
+            await ctx.send("No tienes permiso para usar este comando.")
+            return
+
+        alias = alias.lower()
+        datos = cargar_datos()
+
+        # Intentamos cargar items (asegúrate de tener definida cargar_items() en tu script)
+        try:
+            items_tienda = cargar_items()
+        except:
+            items_tienda = []
+
+        encontrado = False
+
+        # Buscamos en toda la base de datos quién tiene ese alias
+        for uid, info in datos.items():
+            if uid == "_historial":
+                continue
+
+            personajes = info.get("personajes", {})
+            if alias in personajes:
+                pj = personajes[alias]
+                if "inventario" not in pj:
+                    pj["inventario"] = []
+
+                # Si el objeto está en el JSON, usamos su ID. Si no, usamos el texto que escribiste.
+                item_base = next((i for i in items_tienda if i["id"].lower() == item_id.lower()), None)
+
+                if item_base:
+                    pj["inventario"].append(item_base["id"])
+                    nombre_msg = item_base["nombre"]
+                else:
+                    # Es un objeto de Lore/Inventado
+                    pj["inventario"].append(item_id)
+                    nombre_msg = item_id
+
+                guardar_datos(datos)
+                await ctx.send(f"✅ Se ha entregado **{nombre_msg}** a **{pj['nombre']}**.")
+                encontrado = True
+                break
+
+        if not encontrado:
+            await ctx.send(f"❌ No encontré a ningún personaje con el alias `{alias}`.")
+
     @bot.command()
     async def comprar(ctx, alias: str, item_id: str):
         alias = alias.lower()
@@ -248,19 +301,34 @@ def setup(bot: commands.Bot):
             await ctx.send("No tienes ese personaje.")
             return
 
-        cal = obtener_fecha_mundo()
-        cd_compra = pj.get("cooldown_compra")
-        if cd_compra:
-            if (cal["año"], cal["mes"], cal["dia"]) < (cd_compra["año"], cd_compra["mes"], cd_compra["dia"]):
-                fecha_libre = f"{cd_compra['dia']}/{cd_compra['mes']}/{cd_compra['año']}"
-                await ctx.send(f"❌ **{pj['nombre']}** tiene un cooldown activo hasta el {fecha_libre}.")
-                return
-            else:
-                pj["cooldown_compra"] = None
+        # --- LÓGICA DE CATEGORÍAS Y COOLDOWN ---
+        categorias = [c.lower() for c in item.get("categoria", [])]
+        rarezas_esp = ["poco común", "raro", "muy raro", "legendario"]
 
+        # Es especial si tiene una rareza y NO es consumible
+        es_especial = any(r in categorias for r in rarezas_esp)
+        es_consumible = item.get("consumible", False)
+
+        # CORRECCIÓN: Solo verificamos cooldown si el objeto ACTUAL es especial
+        if es_especial and not es_consumible:
+            cal = obtener_fecha_mundo()
+            cd_compra = pj.get("cooldown_compra")
+
+            if cd_compra:
+                # Comparamos con la fecha del mundo de Lichsea
+                if (cal["año"], cal["mes"], cal["dia"]) < (cd_compra["año"], cd_compra["mes"], cd_compra["dia"]):
+                    fecha_libre = f"{cd_compra['dia']}/{cd_compra['mes']}/{cd_compra['año']}"
+                    await ctx.send(
+                        f"❌ **{pj['nombre']}** tiene un cooldown activo hasta el {fecha_libre} para objetos especiales.")
+                    return
+                else:
+                    # El cooldown ya pasó, lo limpiamos
+                    pj["cooldown_compra"] = None
+
+        # --- DINERO Y STOCK ---
         precio_item = item.get("precio", 0)
         if pj.get("oro", 0) < precio_item:
-            await ctx.send(f"No tienes suficiente oro. Necesitas {formatear_monedas(precio_item)}.")
+            await ctx.send(f"No tienes suficiente oro. Necesitas {precio_item} po.")
             return
 
         if item.get("stock") is not None:
@@ -270,26 +338,30 @@ def setup(bot: commands.Bot):
             item["stock"] -= 1
             guardar_items(items_tienda)
 
+        # --- PROCESAMIENTO DE COMPRA ---
         pj["oro"] -= precio_item
         if "inventario" not in pj: pj["inventario"] = []
-        pj["inventario"].append(item_id)
 
-        categorias = [c.lower() for c in item.get("categoria", [])]
-        rarezas_esp = ["poco común", "raro", "muy raro", "legendario"]
-        es_especial = any(r in categorias for r in rarezas_esp)
+        # Si es kit, lo guardamos con sus usos
+        if item_id == "kit_sanador_consumible":
+            pj["inventario"].append(f"{item_id} (10)")
+        else:
+            pj["inventario"].append(item_id)
 
-        if not item.get("consumible", False) and es_especial:
+        # --- ACTIVACIÓN DE COOLDOWN ---
+        msg_extra = ""
+        if not es_consumible and es_especial:
+            cal = obtener_fecha_mundo()
+            # Sumamos 14 días (puedes ajustar este valor)
             d, m, a = cal["dia"] + 14, cal["mes"], cal["año"]
-            while d > 30:
+            while d > 30:  # Meses de 30 días en Lichsea
                 d -= 30
                 m += 1
             while m > 12:
                 m -= 12
                 a += 1
             pj["cooldown_compra"] = {"dia": d, "mes": m, "año": a}
-            msg_extra = f"\n⚠️ **Cooldown activado:** Hasta el {d}/{m}/{a}."
-        else:
-            msg_extra = ""
+            msg_extra = f"\n⚠️ **Cooldown activado:** No puedes comprar más objetos especiales hasta el {d}/{m}/{a}."
 
         guardar_datos(datos)
         await ctx.send(f"✅ **{pj['nombre']}** ha comprado **{item['nombre']}**.{msg_extra}")
@@ -298,7 +370,12 @@ def setup(bot: commands.Bot):
     async def usar(ctx, alias: str, item_id: str):
         alias, item_id = alias.lower(), item_id.lower()
         datos = cargar_datos()
-        items = cargar_items()
+
+        try:
+            items_tienda = cargar_items()
+        except:
+            items_tienda = []
+
         uid = str(ctx.author.id)
         pj = datos.get(uid, {}).get("personajes", {}).get(alias)
 
@@ -307,17 +384,21 @@ def setup(bot: commands.Bot):
             return
 
         inventario = pj.get("inventario", [])
-        item_en_inv = next((x for x in inventario if x == item_id or x.startswith(f"{item_id} (")), None)
+        # Buscamos coincidencias en el inventario
+        item_en_inv = next((x for x in inventario if x.lower().startswith(item_id)), None)
 
         if not item_en_inv:
-            await ctx.send("No tienes ese objeto en tu inventario.")
+            await ctx.send(f"No tienes el objeto `{item_id}` en tu inventario.")
             return
 
-        item_base = next((i for i in items if i["id"] == item_id), None)
+        item_base = next((i for i in items_tienda if i["id"].lower() == item_id), None)
+
+        # Si el objeto NO está en el JSON (es de Lore)
         if not item_base:
-            await ctx.send("Ese objeto no existe en la base de datos.")
+            await ctx.send(f"✨ **{pj['nombre']}** utiliza **{item_en_inv}**.")
             return
 
+        # Si es el Kit Sanador (Lógica de cargas)
         if item_id == "kit_sanador_consumible":
             usos = 10
             if "(" in item_en_inv:
@@ -331,13 +412,16 @@ def setup(bot: commands.Bot):
                 inventario.append(f"{item_id} ({nuevo_uso})")
                 await ctx.send(f"**{pj['nombre']}** usa el kit. Quedan {nuevo_uso} usos.")
             else:
-                await ctx.send(f"**{pj['nombre']}** agotó el kit.")
+                await ctx.send(f"**{pj['nombre']}** ha agotado el kit sanador.")
             guardar_datos(datos)
             return
 
+        # Si es un objeto del JSON normal
         await ctx.send(f"**{pj['nombre']}** usa **{item_base['nombre']}**.")
         if item_base.get("consumible", False):
-            inventario.remove(item_en_inv)
-            await ctx.send("El objeto se ha consumido.")
+            if item_en_inv in inventario:
+                inventario.remove(item_en_inv)
+                await ctx.send(f"El objeto **{item_base['nombre']}** se ha consumido.")
 
         guardar_datos(datos)
+

@@ -3,7 +3,7 @@
         "personajes": {
             "alisa": {
                 "nombre": "Alisa Vermilion",
-                "exp": 4901,
+                "exp": 5428,
                 "nivel": 4,
                 "link": "https://nivel20.com/games/dnd-5/characters/1900002-alice",
                 "oro": 10511,
@@ -13,34 +13,42 @@
                     "año": -17
                 },
                 "viaje": "Viajando a Kaerdan",
-                "ubicacion": "Viajando a Kaerdan",
-                "llegada": {
-                    "dia": 15,
-                    "mes": 1,
-                    "año": 1,
-                    "destino": "Kaerdan"
-                }
+                "ubicacion": "Kaerdan",
+                "llegada": null
             },
             "reika": {
                 "nombre": "Reika Fujiwara",
-                "exp": 23422,
+                "exp": 26322,
                 "nivel": 7,
                 "link": "https://nivel20.com/games/dnd-5/characters/1371240-reika-fujiwara",
-                "oro": 167210,
+                "oro": 140210,
                 "inventario": [
-                    "escoba_volador"
+                    "escoba_volador",
+                    "botas_elfos"
                 ],
-                "cooldown_compra": {
-                    "dia": 26,
+                "cooldown_compra": null,
+                "nacimiento": {
+                    "dia": 7,
                     "mes": 7,
-                    "año": 1
+                    "año": -16
+                },
+                "ubicacion": "Viajando a Tharion",
+                "llegada": {
+                    "dia": 20,
+                    "mes": 9,
+                    "año": 1,
+                    "destino": "Tharion"
                 }
             },
             "victoria": {
                 "nombre": "Victoria Kurta",
                 "exp": 35953,
                 "nivel": 8,
-                "link": "https://nivel20.com/games/dnd-5/characters/1817559-victoria-kurta-acto-2"
+                "link": "https://nivel20.com/games/dnd-5/characters/1817559-victoria-kurta-acto-2",
+                "oro": 0,
+                "inventario": [
+                    "kit_sanador_consumible (7)"
+                ]
             }
         }
     },
@@ -48,559 +56,103 @@
         "personajes": {
             "ivo": {
                 "nombre": "Ivo Robotnick \"eggman\"",
-                "exp": 11851,
-                "nivel": 5,
+                "exp": 15476,
+                "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1896242-ivo-robotnik-eggman",
-                "oro": 40460
+                "oro": 24460,
+                "inventario": [
+                    "herramienta_proposito",
+                    "escudo_plus_1"
+                ],
+                "cooldown_compra": null,
+                "ubicacion": "Tharion",
+                "llegada": null
             },
             "zekray": {
                 "nombre": "Zekray",
-                "exp": 7365,
+                "exp": 7892,
                 "nivel": 5,
                 "link": "https://nivel20.com/games/dnd-5/characters/1927641-zekrai-rodriguez",
-                "oro": 20300,
-                "ubicacion": "Viajando a Tharion",
-                "llegada": {
-                    "dia": 15,
-                    "mes": 1,
-                    "año": 1,
-                    "destino": "Tharion"
-                },
+                "oro": 18800,
+                "ubicacion": "Tharion",
+                "llegada": null,
                 "inventario": [
-                    "red"
-                ]
+                    "red",
+                    "red_plus_1"
+                ],
+                "cooldown_compra": {
+                    "dia": 8,
+                    "mes": 8,
+                    "año": 1
+                }
             },
             "katari": {
                 "nombre": "Katari Kagerou Zenin",
-                "exp": 8367,
+                "exp": 9037,
                 "nivel": 5,
                 "link": "https://nivel20.com/games/dnd-5/characters/1319102-katari-kagerou-zenin",
                 "estado": "Vivo",
-                "oro": 183260,
+                "oro": 225960,
                 "inventario": [
-                    "pocion_fuerza_gigante",
-                    "bolsa_contencion"
+                    "pocion_curacion_mayor",
+                    "Diccionario_Elfo",
+                    "kit_sanador_consumible (9)"
                 ],
-                "cooldown_compra": {
-                    "dia": 29,
-                    "mes": 7,
-                    "año": 1
-                }
+                "cooldown_compra": null
+            },
+            "sans": {
+                "nombre": "Sans OG",
+                "exp": 175,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2019490-sans-og",
+                "estado": "Vivo",
+                "oro": 0
             }
-        }
+        },
+        "max_pj": 4
     },
     "_historial": [
         {
             "uid": "719342976064815194",
-            "alias": "alisa",
-            "exp_anterior": 2900,
-            "timestamp": "2026-02-20T06:05:53.081353"
-        },
-        {
-            "uid": "719342976064815194",
-            "alias": "alisa",
-            "exp_anterior": 3500,
-            "timestamp": "2026-02-20T06:37:06.558560"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "ivo",
-            "exp_anterior": 5976,
-            "timestamp": "2026-02-20T06:37:47.826470"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "ivo",
-            "exp_anterior": 6576,
-            "timestamp": "2026-02-20T23:37:28.651492"
-        },
-        {
-            "uid": "719342976064815194",
-            "alias": "alisa",
-            "exp_anterior": 2900,
-            "timestamp": "2026-02-20T23:37:28.651492"
-        },
-        {
-            "uid": "291675717480218626",
-            "alias": "charlotte",
-            "exp_anterior": 9529,
-            "timestamp": "2026-02-20T23:37:28.651492"
-        },
-        {
-            "uid": "480210163283001347",
-            "alias": "arkatz",
-            "exp_anterior": 435,
-            "timestamp": "2026-02-21T05:30:29.191912"
-        },
-        {
-            "uid": "712063484740894801",
-            "alias": "blade",
-            "exp_anterior": 1,
-            "timestamp": "2026-02-21T05:30:29.191912"
-        },
-        {
-            "uid": "257300777469607946",
-            "alias": "valentina",
-            "exp_anterior": 0,
-            "timestamp": "2026-02-21T05:30:29.191912"
-        },
-        {
-            "uid": "1030309249366110248",
-            "alias": "rudra",
-            "exp_anterior": 0,
-            "timestamp": "2026-02-21T05:30:29.191912"
-        },
-        {
-            "uid": "798669609824813147",
-            "alias": "cleire",
-            "exp_anterior": 1,
-            "timestamp": "2026-02-21T05:33:14.556132"
-        },
-        {
-            "uid": "798669609824813147",
-            "alias": "nazomi",
-            "exp_anterior": 2225,
-            "timestamp": "2026-02-21T15:16:50.109353"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "ivo",
-            "exp_anterior": 6577,
-            "timestamp": "2026-02-21T15:16:50.109353"
-        },
-        {
-            "uid": "1116407238525984798",
-            "alias": "jesús",
-            "exp_anterior": 1265,
-            "timestamp": "2026-02-21T16:29:40.140866"
-        },
-        {
-            "uid": "1050463574969032774",
-            "alias": "zert",
-            "exp_anterior": 13572,
-            "timestamp": "2026-02-22T05:53:14.431202"
-        },
-        {
-            "uid": "1050463574969032774",
-            "alias": "zert",
-            "exp_anterior": 0,
-            "timestamp": "2026-02-22T05:55:59.511821"
-        },
-        {
-            "uid": "933237683701055519",
-            "alias": "hikari",
-            "exp_anterior": 18357,
-            "timestamp": "2026-02-22T23:57:26.772706"
-        },
-        {
-            "uid": "719342976064815194",
             "alias": "reika",
-            "exp_anterior": 18119,
-            "timestamp": "2026-02-22T23:57:26.772706"
-        },
-        {
-            "uid": "625822385526013992",
-            "alias": "aiden",
-            "exp_anterior": 4580,
-            "timestamp": "2026-02-22T23:57:26.772706"
-        },
-        {
-            "uid": "798669609824813147",
-            "alias": "keita",
-            "exp_anterior": 9480,
-            "timestamp": "2026-02-22T23:57:26.772706"
-        },
-        {
-            "uid": "291675717480218626",
-            "alias": "toby",
-            "exp_anterior": 15700,
-            "timestamp": "2026-02-22T23:58:18.414997"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "zekrai",
-            "exp_anterior": 2960,
-            "timestamp": "2026-02-25T02:59:52.294873"
-        },
-        {
-            "uid": "798669609824813147",
-            "alias": "cleire",
-            "exp_anterior": 411,
-            "timestamp": "2026-02-25T02:59:52.295874"
-        },
-        {
-            "uid": "1116407238525984798",
-            "alias": "draco",
-            "exp_anterior": 3715,
-            "timestamp": "2026-02-25T02:59:52.295874"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "zekrai",
-            "exp_anterior": 3195,
-            "timestamp": "2026-02-28T04:44:08.137351"
-        },
-        {
-            "uid": "625822385526013992",
-            "alias": "aiden",
-            "exp_anterior": 9880,
-            "timestamp": "2026-02-28T04:44:08.137351"
-        },
-        {
-            "uid": "1059152164687192165",
-            "alias": "viatrix",
-            "exp_anterior": 3806,
-            "timestamp": "2026-02-28T04:44:08.137351"
-        },
-        {
-            "uid": "1116407238525984798",
-            "alias": "draco",
-            "exp_anterior": 3950,
-            "timestamp": "2026-02-28T04:44:59.227097"
-        },
-        {
-            "uid": "1116407238525984798",
-            "alias": "draco",
-            "exp_anterior": 9250,
-            "timestamp": "2026-02-28T04:46:05.576069"
-        },
-        {
-            "uid": "712063484740894801",
-            "alias": "blade",
-            "exp_anterior": 411,
-            "timestamp": "2026-02-28T05:21:52.750112"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "ivo",
-            "exp_anterior": 7177,
-            "timestamp": "2026-02-28T05:21:52.750112"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "zekray",
-            "exp_anterior": 2960,
-            "timestamp": "2026-03-01T02:33:47.767832"
-        },
-        {
-            "uid": "712063484740894801",
-            "alias": "blade",
-            "exp_anterior": 911,
-            "timestamp": "2026-03-01T02:33:47.767832"
-        },
-        {
-            "uid": "719342976064815194",
-            "alias": "alisa",
-            "exp_anterior": 2901,
-            "timestamp": "2026-03-01T03:21:15.409502"
-        },
-        {
-            "uid": "1116407238525984798",
-            "alias": "draco",
-            "exp_anterior": 4700,
-            "timestamp": "2026-03-01T03:21:15.409502"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "zekray",
-            "exp_anterior": 3960,
-            "timestamp": "2026-03-07T21:08:00.736306"
-        },
-        {
-            "uid": "291675717480218626",
-            "alias": "toby",
-            "exp_anterior": 21000,
-            "timestamp": "2026-03-07T21:08:00.736306"
-        },
-        {
-            "uid": "1059152164687192165",
-            "alias": "viatrix",
-            "exp_anterior": 4556,
-            "timestamp": "2026-03-07T21:08:00.736306"
-        },
-        {
-            "uid": "933237683701055519",
-            "alias": "sung",
-            "exp_anterior": 12044,
-            "timestamp": "2026-03-07T21:08:20.018124"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "zekray",
-            "exp_anterior": 4385,
-            "timestamp": "2026-03-08T00:58:38.706846"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "zekray",
-            "exp_anterior": 4140,
-            "timestamp": "2026-03-08T00:59:11.368002"
-        },
-        {
-            "uid": "291675717480218626",
-            "alias": "toby",
-            "exp_anterior": 21425,
-            "timestamp": "2026-03-08T00:59:34.184292"
-        },
-        {
-            "uid": "1059152164687192165",
-            "alias": "viatrix",
-            "exp_anterior": 4981,
-            "timestamp": "2026-03-08T00:59:42.466943"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "zekray",
-            "exp_anterior": 3940,
-            "timestamp": "2026-03-08T01:00:16.853633"
-        },
-        {
-            "uid": "291675717480218626",
-            "alias": "toby",
-            "exp_anterior": 21000,
-            "timestamp": "2026-03-08T01:00:31.925483"
-        },
-        {
-            "uid": "1059152164687192165",
-            "alias": "viatrix",
-            "exp_anterior": 4556,
-            "timestamp": "2026-03-08T01:00:46.607628"
-        },
-        {
-            "uid": "712063484740894801",
-            "alias": "thomward",
-            "exp_anterior": 1,
-            "timestamp": "2026-03-14T05:25:34.377531"
-        },
-        {
-            "uid": "719342976064815194",
-            "alias": "alisa",
-            "exp_anterior": 3901,
-            "timestamp": "2026-03-17T00:52:29.907916"
-        },
-        {
-            "uid": "719342976064815194",
-            "alias": "alisa",
-            "exp_anterior": 4901,
-            "timestamp": "2026-03-17T00:52:30.225562"
-        },
-        {
-            "uid": "719342976064815194",
-            "alias": "alisa",
-            "exp_anterior": 5901,
-            "timestamp": "2026-03-17T00:52:52.106345"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "katari",
-            "exp_anterior": 6767,
-            "timestamp": "2026-03-22T04:55:44.351113"
-        },
-        {
-            "uid": "1116407238525984798",
-            "alias": "victor",
-            "exp_anterior": 666,
-            "timestamp": "2026-03-22T04:55:44.351113"
-        },
-        {
-            "uid": "625822385526013992",
-            "alias": "haruta",
-            "exp_anterior": 12582,
-            "timestamp": "2026-03-22T04:55:44.351113"
-        },
-        {
-            "uid": "802193437477961778",
-            "alias": "sutaraito",
-            "exp_anterior": 924,
-            "timestamp": "2026-03-22T04:55:44.351113"
-        },
-        {
-            "uid": "460125888940605446",
-            "alias": "yuki",
-            "exp_anterior": 19114,
-            "timestamp": "2026-03-22T04:55:44.351113"
-        },
-        {
-            "uid": "460125888940605446",
-            "alias": "haru",
-            "exp_anterior": 14374,
-            "timestamp": "2026-03-22T04:55:44.351113"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "katari",
-            "exp_anterior": 8367,
-            "timestamp": "2026-03-22T04:55:44.516831"
-        },
-        {
-            "uid": "1116407238525984798",
-            "alias": "victor",
-            "exp_anterior": 2266,
-            "timestamp": "2026-03-22T04:55:44.516831"
-        },
-        {
-            "uid": "625822385526013992",
-            "alias": "haruta",
-            "exp_anterior": 14182,
-            "timestamp": "2026-03-22T04:55:44.516831"
-        },
-        {
-            "uid": "802193437477961778",
-            "alias": "sutaraito",
-            "exp_anterior": 2524,
-            "timestamp": "2026-03-22T04:55:44.516831"
-        },
-        {
-            "uid": "460125888940605446",
-            "alias": "yuki",
-            "exp_anterior": 20714,
-            "timestamp": "2026-03-22T04:55:44.516831"
-        },
-        {
-            "uid": "460125888940605446",
-            "alias": "haru",
-            "exp_anterior": 15974,
-            "timestamp": "2026-03-22T04:55:44.516831"
-        },
-        {
-            "uid": "719342976064815194",
-            "alias": "reika",
-            "exp_anterior": 23419,
-            "timestamp": "2026-03-22T05:04:47.261789"
-        },
-        {
-            "uid": "719342976064815194",
-            "alias": "reika",
-            "exp_anterior": 23420,
-            "timestamp": "2026-03-22T05:04:47.477405"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "katari",
-            "exp_anterior": 9967,
-            "timestamp": "2026-03-22T05:07:12.273059"
-        },
-        {
-            "uid": "1116407238525984798",
-            "alias": "victor",
-            "exp_anterior": 3866,
-            "timestamp": "2026-03-22T05:07:19.192543"
-        },
-        {
-            "uid": "460125888940605446",
-            "alias": "yuki",
-            "exp_anterior": 22314,
-            "timestamp": "2026-03-22T05:07:25.403274"
-        },
-        {
-            "uid": "460125888940605446",
-            "alias": "haru",
-            "exp_anterior": 17574,
-            "timestamp": "2026-03-22T05:07:29.484776"
-        },
-        {
-            "uid": "802193437477961778",
-            "alias": "sutaraito",
-            "exp_anterior": 4124,
-            "timestamp": "2026-03-22T05:08:36.340824"
-        },
-        {
-            "uid": "625822385526013992",
-            "alias": "haruta",
-            "exp_anterior": 15782,
-            "timestamp": "2026-03-22T05:08:51.805347"
-        },
-        {
-            "uid": "719342976064815194",
-            "alias": "reika",
-            "exp_anterior": 23421,
-            "timestamp": "2026-03-22T05:38:03.562291"
-        },
-        {
-            "uid": "933237683701055519",
-            "alias": "hikari",
-            "exp_anterior": 23657,
-            "timestamp": "2026-03-29T03:37:03.136934"
-        },
-        {
-            "uid": "291675717480218626",
-            "alias": "toby",
-            "exp_anterior": 23425,
-            "timestamp": "2026-03-29T03:37:03.136934"
-        },
-        {
-            "uid": "1116407238525984798",
-            "alias": "chrono",
-            "exp_anterior": 12613,
-            "timestamp": "2026-03-29T03:37:03.136934"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "ivo",
-            "exp_anterior": 7677,
-            "timestamp": "2026-03-29T03:37:12.594997"
-        },
-        {
-            "uid": "1059152164687192165",
-            "alias": "rakkī",
-            "exp_anterior": 7560,
-            "timestamp": "2026-03-29T03:39:07.371130"
-        },
-        {
-            "uid": "933237683701055519",
-            "alias": "onibi",
-            "exp_anterior": 9251,
-            "timestamp": "2026-03-29T03:41:11.647609"
-        },
-        {
-            "uid": "798669609824813147",
-            "alias": "keita",
-            "exp_anterior": 14780,
-            "timestamp": "2026-03-29T03:41:11.647609"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "ivo",
-            "exp_anterior": 9943,
-            "timestamp": "2026-03-29T03:41:19.732491"
-        },
-        {
-            "uid": "1059152164687192165",
-            "alias": "rakkī",
-            "exp_anterior": 9826,
-            "timestamp": "2026-03-29T03:42:57.274376"
-        },
-        {
-            "uid": "610337346717614101",
-            "alias": "zekray",
-            "exp_anterior": 6365,
-            "timestamp": "2026-04-02T02:28:48.271712"
+            "exp_anterior": 25022,
+            "timestamp": "2026-04-25T06:28:43.527090"
         }
     ],
     "933237683701055519": {
         "personajes": {
             "hikari": {
                 "nombre": "Hikari",
-                "exp": 25923,
-                "nivel": 7,
+                "exp": 36560,
+                "nivel": 8,
                 "link": "https://nivel20.com/games/dnd-5/characters/1318291-hikari-zenin",
-                "oro": 271900,
+                "oro": 350400,
                 "inventario": [
-                    "arma_alerta"
+                    "arma_alerta",
+                    "varita_deteccion_magica",
+                    "varita_secretos"
                 ],
-                "cooldown_compra": {
-                    "dia": 29,
-                    "mes": 7,
-                    "año": 1
-                }
+                "cooldown_compra": null,
+                "ubicacion": "Kaerdan",
+                "llegada": null
             },
             "sung": {
                 "nombre": "Sung",
-                "exp": 14469,
+                "exp": 17419,
                 "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1714870-the-sung-jin-woo",
                 "estado": "Vivo",
-                "oro": 23711
+                "oro": 11111,
+                "inventario": [
+                    "abanico_viento",
+                    "bolsa_alquimica",
+                    "jabalina_trueno"
+                ],
+                "cooldown_compra": {
+                    "dia": 6,
+                    "mes": 9,
+                    "año": 1
+                }
             },
             "onibi": {
                 "nombre": "onibi",
@@ -608,15 +160,13 @@
                 "nivel": 5,
                 "link": "https://nivel20.com/games/dnd-5/characters/1978026-onibi-nerfeado",
                 "estado": "Vivo",
-                "oro": 122600,
+                "oro": 67600,
                 "inventario": [
-                    "vendajes_potencial_desarmado"
+                    "vendajes_potencial_desarmado",
+                    "anillo_caminar_aguas",
+                    "escudo_centinela"
                 ],
-                "cooldown_compra": {
-                    "dia": 15,
-                    "mes": 1,
-                    "año": 1
-                }
+                "cooldown_compra": null
             }
         }
     },
@@ -624,41 +174,70 @@
         "personajes": {
             "jesús": {
                 "nombre": "Jesús \"Chuy\" Álvaro Núñez",
-                "exp": 1865,
+                "exp": 2495,
                 "nivel": 3,
                 "link": "https://nivel20.com/games/dnd-5/characters/1595770-jesus-chuy-alvaro-nunez",
-                "oro": 5912
+                "oro": 10957,
+                "nacimiento": {
+                    "dia": 21,
+                    "mes": 10,
+                    "año": -26
+                }
             },
             "draco": {
                 "nombre": "Draco Lucifer Erroris \"Mascarin\"",
-                "exp": 5700,
+                "exp": 6125,
                 "nivel": 4,
                 "link": "https://nivel20.com/games/dnd-5/characters/1902349-d-l-e-mascarin",
-                "oro": 281000
+                "oro": 283500,
+                "ubicacion": "Tharion",
+                "llegada": null,
+                "nacimiento": {
+                    "dia": 13,
+                    "mes": 5,
+                    "año": -14
+                }
             },
             "victor": {
                 "nombre": "Victor Reyes",
-                "exp": 2266,
-                "nivel": 3,
+                "exp": 2936,
+                "nivel": 4,
                 "link": "https://nivel20.com/games/dnd-5/characters/1770527-victor-reyes-perdedor-mas-fuerte",
                 "estado": "Vivo",
-                "oro": 10600
+                "oro": 45100,
+                "nacimiento": {
+                    "dia": 28,
+                    "mes": 3,
+                    "año": -31
+                }
             },
             "chrono": {
                 "nombre": "Chrono Gojo",
-                "exp": 14879,
+                "exp": 17291,
                 "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1989932-chrono-gojo",
                 "estado": "Vivo",
-                "oro": 71339
+                "oro": 55839,
+                "nacimiento": {
+                    "dia": 1,
+                    "mes": 1,
+                    "año": -16
+                },
+                "ubicacion": "Kaerdan",
+                "llegada": null,
+                "inventario": [
+                    "vial_pozo_sangriento"
+                ],
+                "cooldown_compra": null
             }
-        }
+        },
+        "max_pj": 4
     },
     "798669609824813147": {
         "personajes": {
             "keita": {
                 "nombre": "Keita",
-                "exp": 16688,
+                "exp": 19100,
                 "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1894310-keita-jutachi",
                 "nacimiento": {
@@ -666,11 +245,11 @@
                     "mes": -7,
                     "año": -50
                 },
-                "oro": 23200
+                "oro": 38200
             },
             "nazomi": {
                 "nombre": "Nazomi",
-                "exp": 2825,
+                "exp": 3352,
                 "nivel": 4,
                 "link": "https://nivel20.com/games/dnd-5/characters/1927652-nazomi",
                 "nacimiento": {
@@ -679,20 +258,15 @@
                     "año": -16
                 },
                 "oro": 15100,
-                "ubicacion": "Viajando a Tharion",
-                "llegada": {
-                    "dia": 15,
-                    "mes": 1,
-                    "año": 1,
-                    "destino": "Tharion"
-                }
+                "ubicacion": "Tharion",
+                "llegada": null
             },
             "cleire": {
                 "nombre": "Cleire",
-                "exp": 646,
-                "nivel": 2,
+                "exp": 1171,
+                "nivel": 3,
                 "link": "https://nivel20.com/games/dnd-5/characters/1932147-cleire",
-                "oro": 27500
+                "oro": 28500
             }
         }
     },
@@ -707,27 +281,63 @@
                 "inventario": [
                     "revolver_maldito"
                 ],
-                "cooldown_compra": {
-                    "dia": 15,
-                    "mes": 1,
-                    "año": 1
+                "cooldown_compra": null,
+                "nacimiento": {
+                    "dia": 13,
+                    "mes": 11,
+                    "año": -16
                 }
             },
             "rakkī": {
                 "nombre": "Rakkī Ulrik",
-                "exp": 11734,
-                "nivel": 5,
+                "exp": 17671,
+                "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1552704-rakki-ulrik",
-                "oro": 380798
+                "oro": 389798,
+                "nacimiento": {
+                    "dia": 7,
+                    "mes": 7,
+                    "año": -15
+                },
+                "ubicacion": "Viajando a Kaerdan",
+                "llegada": {
+                    "dia": 27,
+                    "mes": 8,
+                    "año": 1,
+                    "destino": "Kaerdan"
+                },
+                "inventario": [
+                    "hoz_lunar"
+                ],
+                "cooldown_compra": {
+                    "dia": 27,
+                    "mes": 8,
+                    "año": 1
+                }
+            },
+            "papyrus": {
+                "nombre": "papyrus",
+                "exp": 175,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2019461-papyrus",
+                "estado": "Vivo",
+                "oro": 0
             },
             "layla": {
                 "nombre": "Layla",
                 "exp": 36340,
                 "nivel": 8,
-                "link": "https://nivel20.com/games/dnd-5/characters/1358637-layla",
-                "oro": 100
+                "link": "https://nivel20.com/games/dnd-5/characters/2017172-layla",
+                "estado": "Vivo",
+                "oro": 0,
+                "nacimiento": {
+                    "dia": 18,
+                    "mes": 7,
+                    "año": -16
+                }
             }
-        }
+        },
+        "max_pj": 4
     },
     "1030309249366110248": {
         "personajes": {
@@ -741,10 +351,10 @@
             },
             "rudra": {
                 "nombre": "Rudra Musa",
-                "exp": 410,
-                "nivel": 2,
+                "exp": 1572,
+                "nivel": 3,
                 "link": "https://nivel20.com/games/dnd-5/characters/1935411-rudra-musa",
-                "oro": 20000
+                "oro": 34500
             }
         }
     },
@@ -760,10 +370,26 @@
             },
             "toby": {
                 "nombre": "Toby Enma",
-                "exp": 25691,
+                "exp": 33916,
                 "nivel": 7,
                 "link": "https://nivel20.com/games/dnd-5/characters/1768347-tobi-enma",
-                "oro": 300440
+                "oro": 294040,
+                "inventario": [
+                    "mejora_de_chamuscada_plus_1",
+                    "amuleto_deteccion_localizacion"
+                ],
+                "cooldown_compra": {
+                    "dia": 20,
+                    "mes": 9,
+                    "año": 1
+                },
+                "ubicacion": "Tharion",
+                "llegada": null,
+                "nacimiento": {
+                    "dia": 12,
+                    "mes": 3,
+                    "año": -15
+                }
             },
             "kurohoshi": {
                 "nombre": "Kurohoshi",
@@ -778,14 +404,29 @@
         "personajes": {
             "blade": {
                 "nombre": "Blade",
-                "exp": 1911,
-                "nivel": 3,
+                "exp": 3136,
+                "nivel": 4,
                 "link": "https://nivel20.com/games/dnd-5/characters/1932884-blade",
-                "oro": 36400
+                "oro": 16420,
+                "ubicacion": "Viajando a Tharion",
+                "llegada": {
+                    "dia": 22,
+                    "mes": 8,
+                    "año": 1,
+                    "destino": "Tharion"
+                },
+                "inventario": [
+                    "espada_larga_plus_1"
+                ],
+                "cooldown_compra": {
+                    "dia": 27,
+                    "mes": 8,
+                    "año": 1
+                }
             },
             "thomward": {
                 "nombre": "Thomward",
-                "exp": 1127,
+                "exp": 1654,
                 "nivel": 3,
                 "link": "https://nivel20.com/games/dnd-5/characters/1917954-thomward-luminos",
                 "estado": "Vivo",
@@ -793,11 +434,11 @@
             },
             "mork": {
                 "nombre": "Mork",
-                "exp": 1,
+                "exp": 181,
                 "nivel": 1,
                 "link": "https://nivel20.com/games/dnd-5/characters/1926429-mork-tarka-colmillo-resonante",
                 "estado": "Vivo",
-                "oro": 8300
+                "oro": 10800
             }
         }
     },
@@ -805,24 +446,47 @@
         "personajes": {
             "elvira": {
                 "nombre": "Elvira",
-                "exp": 2895,
+                "exp": 3395,
                 "nivel": 4,
                 "link": "https://nivel20.com/games/dnd-5/characters/1775474-elvira-la-ricachona",
-                "oro": 37000
+                "oro": 47000,
+                "nacimiento": {
+                    "dia": 6,
+                    "mes": 1,
+                    "año": -20
+                }
             },
             "haru": {
                 "nombre": "Haru",
-                "exp": 15974,
+                "exp": 16644,
                 "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1287415-haru-zenin",
-                "oro": 103562
+                "oro": 88062,
+                "nacimiento": {
+                    "dia": 6,
+                    "mes": 12,
+                    "año": -14
+                },
+                "inventario": [
+                    "pocion_curacion_mayor"
+                ]
             },
             "yuki": {
                 "nombre": "Yuki",
-                "exp": 20714,
+                "exp": 21384,
                 "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1287127-yuki-zenin",
-                "oro": 112026
+                "oro": 116226,
+                "nacimiento": {
+                    "dia": 6,
+                    "mes": 12,
+                    "año": -14
+                },
+                "inventario": [
+                    "pocion_curacion_mayor",
+                    "pocion_curacion_mayor",
+                    "Diccionario_Elfo"
+                ]
             },
             "anario": {
                 "nombre": "Anario",
@@ -830,18 +494,37 @@
                 "nivel": 5,
                 "link": "https://nivel20.com/games/dnd-5/characters/1339394-anario",
                 "estado": "Vivo",
-                "oro": 160
+                "oro": 160,
+                "nacimiento": {
+                    "dia": 6,
+                    "mes": 10,
+                    "año": -17
+                }
+            },
+            "jani": {
+                "nombre": "jani",
+                "exp": 22,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/1720334-jani-gojo",
+                "estado": "Muerto",
+                "oro": 0,
+                "nacimiento": {
+                    "dia": 6,
+                    "mes": 9,
+                    "año": -12
+                }
             }
-        }
+        },
+        "max_pj": 5
     },
     "257300777469607946": {
         "personajes": {
             "valentina": {
                 "nombre": "Valentina",
-                "exp": 410,
+                "exp": 567,
                 "nivel": 2,
                 "link": "https://nivel20.com/games/dnd-5/characters/1859971-valentina-oro-falso",
-                "oro": 22000
+                "oro": 26500
             }
         }
     },
@@ -849,57 +532,77 @@
         "personajes": {
             "aiden": {
                 "nombre": "Aiden Auriel",
-                "exp": 10630,
-                "nivel": 5,
+                "exp": 15180,
+                "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1901843-aiden-auriel",
                 "nacimiento": {
                     "dia": 14,
                     "mes": -3,
                     "año": -15
                 },
-                "oro": 38500
+                "oro": 59800,
+                "ubicacion": "Tharion",
+                "llegada": null,
+                "inventario": [
+                    "pocion_curacion",
+                    "escopeta"
+                ]
             },
             "haruta": {
                 "nombre": "Haruta Gojo",
-                "exp": 14182,
+                "exp": 14852,
                 "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1318636-haruta-gojo",
-                "oro": 261451,
-                "ubicacion": "Viajando a Kaerdan",
-                "llegada": {
-                    "dia": 15,
-                    "mes": 1,
-                    "año": 1,
-                    "destino": "Kaerdan"
-                },
+                "oro": 285951,
+                "ubicacion": "Kaerdan",
+                "llegada": null,
                 "nacimiento": {
                     "dia": 10,
-                    "mes": -1,
-                    "año": -16
-                }
+                    "mes": 1,
+                    "año": -17
+                },
+                "inventario": [
+                    "pocion_curacion",
+                    "pocion_curacion",
+                    "kit_sanador_consumible"
+                ]
             },
             "reinhardt": {
                 "nombre": "Reinhardt",
-                "exp": 650,
-                "nivel": 2,
+                "exp": 1667,
+                "nivel": 3,
                 "link": "https://nivel20.com/games/dnd-5/characters/1926384-reinhardt",
                 "nacimiento": {
                     "dia": 20,
                     "mes": -6,
                     "año": -16
                 },
-                "oro": 20000
+                "oro": 29000
+            },
+            "tailor": {
+                "nombre": "Tailor",
+                "exp": 0,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2019988-tailor-goldstein",
+                "estado": "Vivo",
+                "oro": 12500,
+                "nacimiento": {
+                    "dia": 5,
+                    "mes": -6,
+                    "año": -16
+                }
             }
-        }
+        },
+        "max_pj": 4
     },
     "480210163283001347": {
         "personajes": {
             "arkatz": {
                 "nombre": "Arkatz",
-                "exp": 845,
-                "nivel": 2,
+                "exp": 1352,
+                "nivel": 3,
                 "link": "https://nivel20.com/games/dnd-5/characters/1921097-arkatz",
-                "oro": 28900
+                "oro": 29900
             }
         }
     },
@@ -921,7 +624,10 @@
                 "exp": 2524,
                 "nivel": 3,
                 "link": "https://nivel20.com/games/dnd-5/characters/1335176-sutaraito-kamo",
-                "oro": 2610
+                "oro": 37110,
+                "inventario": [
+                    "Libro_de_Medicina"
+                ]
             },
             "el": {
                 "nombre": "El vagabundo",
@@ -969,6 +675,22 @@
                 "nivel": 1,
                 "link": "https://nivel20.com/games/dnd-5/characters/1903298-kariegh-strongblood",
                 "oro": 3800
+            },
+            "kid": {
+                "nombre": "kid",
+                "exp": 270,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2016795-kid-tabaxi-el-extranjero",
+                "estado": "Vivo",
+                "oro": 5000
+            },
+            "yunke": {
+                "nombre": "yunke",
+                "exp": 175,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2025518-yunke",
+                "estado": "Vivo",
+                "oro": 0
             }
         }
     },
@@ -976,11 +698,87 @@
         "personajes": {
             "valentino": {
                 "nombre": "Valentino Zalazar",
-                "exp": 1,
+                "exp": 181,
                 "nivel": 1,
                 "link": "https://nivel20.com/games/dnd-5/characters/1980141-valentino-zalazar",
                 "estado": "Vivo",
-                "oro": 3900
+                "oro": 6400
+            }
+        }
+    },
+    "425358051747299328": {
+        "personajes": {
+            "harit": {
+                "nombre": "Harit",
+                "exp": 1160,
+                "nivel": 3,
+                "link": "https://nivel20.com/games/dnd-5/characters/1986784-harit-stmit",
+                "estado": "Vivo",
+                "oro": 13000
+            },
+            "aurel": {
+                "nombre": "Aurel Drakelion",
+                "exp": 0,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2013931-aurel-drakelion",
+                "estado": "Vivo",
+                "oro": 0
+            }
+        }
+    },
+    "774537223453540373": {
+        "personajes": {
+            "tavlof": {
+                "nombre": "TavLof",
+                "exp": 75,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/1963741-tav-lof",
+                "estado": "Vivo",
+                "oro": 14000,
+                "ubicacion": "Viajando a Tharion",
+                "llegada": {
+                    "dia": 22,
+                    "mes": 8,
+                    "año": 1,
+                    "destino": "Tharion"
+                }
+            }
+        }
+    },
+    "1175984753904713748": {
+        "personajes": {
+            "nuria": {
+                "nombre": "nuria",
+                "exp": 270,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2029741-nuria",
+                "estado": "Vivo",
+                "oro": 7000,
+                "inventario": [
+                    "mochila",
+                    "cota_de_escamas",
+                    "hacha_de_mano",
+                    "hacha_de_mano",
+                    "cantimplora_odre",
+                    "kit_falsificacion"
+                ],
+                "cooldown_compra": {
+                    "dia": 22,
+                    "mes": 8,
+                    "año": 1
+                }
+            }
+        }
+    },
+    "613764686789214229": {
+        "personajes": {
+            "anton": {
+                "nombre": "anton",
+                "exp": 350,
+                "nivel": 2,
+                "link": "https://nivel20.com/games/dnd-5/characters/1927465-anton-yermolov",
+                "estado": "Vivo",
+                "oro": 31400
             }
         }
     }
