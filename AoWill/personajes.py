@@ -392,7 +392,7 @@ def setup(bot: commands.Bot):
 
     @bot.command(name="AyudaBot", aliases=["info", "comandos", "ayudame"])
     async def ayudabot(ctx):
-        # Verificamos si es Staff una sola vez para usarlo después
+        # Verificamos si es Staff
         es_staff = ctx.author.id == ADMIN_ID or any(rol.id == DRAGON_ROLE_ID for rol in ctx.author.roles)
 
         embed = discord.Embed(

@@ -95,7 +95,7 @@ class TiendaView(discord.ui.View):
                     rareza_detectada = cat
                     break
 
-            # 2. Formatear Stock
+
             stock_val = item.get("stock")
             stock_txt = f"**{stock_val}**" if stock_val is not None else "♾️"
 
@@ -233,7 +233,6 @@ def setup(bot: commands.Bot):
 
     @bot.command()
     async def dar_objeto(ctx, alias: str, *, item_id: str):
-        # Usamos las variables definidas al inicio del archivo
         es_staff = ctx.author.id == ADMIN_ID or any(rol.id == DRAGON_ROLE_ID for rol in ctx.author.roles)
 
         if not es_staff:
@@ -243,7 +242,7 @@ def setup(bot: commands.Bot):
         alias = alias.lower()
         datos = cargar_datos()
 
-        # Intentamos cargar items (asegúrate de tener definida cargar_items() en tu script)
+
         try:
             items_tienda = cargar_items()
         except:
@@ -251,7 +250,6 @@ def setup(bot: commands.Bot):
 
         encontrado = False
 
-        # Buscamos en toda la base de datos quién tiene ese alias
         for uid, info in datos.items():
             if uid == "_historial":
                 continue
@@ -262,14 +260,14 @@ def setup(bot: commands.Bot):
                 if "inventario" not in pj:
                     pj["inventario"] = []
 
-                # Si el objeto está en el JSON, usamos su ID. Si no, usamos el texto que escribiste.
+
                 item_base = next((i for i in items_tienda if i["id"].lower() == item_id.lower()), None)
 
                 if item_base:
                     pj["inventario"].append(item_base["id"])
                     nombre_msg = item_base["nombre"]
                 else:
-                    # Es un objeto de Lore/Inventado
+
                     pj["inventario"].append(item_id)
                     nombre_msg = item_id
 
@@ -305,11 +303,11 @@ def setup(bot: commands.Bot):
         categorias = [c.lower() for c in item.get("categoria", [])]
         rarezas_esp = ["poco común", "raro", "muy raro", "legendario"]
 
-        # Es especial si tiene una rareza y NO es consumible
+
         es_especial = any(r in categorias for r in rarezas_esp)
         es_consumible = item.get("consumible", False)
 
-        # CORRECCIÓN: Solo verificamos cooldown si el objeto ACTUAL es especial
+
         if es_especial and not es_consumible:
             cal = obtener_fecha_mundo()
             cd_compra = pj.get("cooldown_compra")
@@ -393,7 +391,7 @@ def setup(bot: commands.Bot):
 
         item_base = next((i for i in items_tienda if i["id"].lower() == item_id), None)
 
-        # Si el objeto NO está en el JSON (es de Lore)
+        # Si el objeto NO está en el JSON
         if not item_base:
             await ctx.send(f"✨ **{pj['nombre']}** utiliza **{item_en_inv}**.")
             return
