@@ -1,0 +1,116 @@
+# MAIN
+
+El MAIN se encarga de llevar los módulos, el token del bot y la ID del canal para actualizar la fecha. Maneja los
+comandos, carga los datos de fecha y gestiona el tiempo. Mantiene en memoria datos_mundo y gestiona la
+persistencia mediante cargar_datos() y guardar_datos() en archivos .json. El archivo datos_lichsea.json
+contiene únicamente la información del tiempo. El main maneja el command_error para evitar fallos en el log;
+el bot solo responde cuando hay un error.
+
+El bot utiliza un sistema de tasks.loop (cada 12 horas) y una validación al inicio para asegurar que el tiempo
+avance incluso si el bot se apaga.
+
+sumar_un_dia(): Lógica pura de calendario (30 días por mes, 12 meses por año).
+
+calcular_tiempo_transcurrido(): Función crítica. Al iniciar, compara datetime.now() con ultima_actualizacion.
+Si el bot estuvo offline, calcula cuántos periodos de 12 horas pasaron y pone el mundo al día automáticamente.
+
+verificar_cumpleaños(): Se ejecuta en cada avance de día para notificar eventos especiales en el canal de juego.
+
+
+# Personajes.
+
+ARCHIVO_DATOS: Archivo .json que funciona como base de datos central. Aquí se almacena toda la información de los
+personajes, inventarios, niveles y estados.
+
+MAX_EXP: Límite de 355,000 puntos de experiencia, requerido para alcanzar el nivel 20.
+
+Validación de enlaces (Seguridad):
+El bloque de LINK_REGEX y los otros REGEX definidos actúan como una capa de seguridad. Al registrar un personaje
+mediante un enlace de Nivel20, el código valida el formato de la URL para prevenir la ejecución de links maliciosos o
+mal formateados.
+
+Motor de niveles:
+La TABLA_NIVELES define la curva de progresión de 1 a 20. La función calcular_nivel(exp) recorre esta tabla comparando
+la experiencia actual del personaje para asignar su nivel correspondiente de forma automática.
+
+
+cargar_datos() y guardar_datos(): Funciones obligatorias para leer y escribir en el JSON. Toda modificación en el
+juego debe finalizar con guardar_datos() para asegurar la persistencia.
+
+obtener_fecha_mundo(): Lee el estado actual del calendario desde datos_lichsea.json.
+
+calcular_edad(): Lógica que calcula la edad del personaje
+comparando su fecha de nacimiento con la fecha actual del mundo.
+
+registrar_cambio(): Guarda en un historial dentro del JSON cualquier modificación de experiencia,
+permitiendo auditorías de los personajes.
+
+Estructura de Personajes.json
+
+    "ID DEL USUARIO": {
+        "personajes": {
+            "alias del personaje": {
+                "nombre": "Nombre completo del personaje",
+                "exp": Cantidad en int,
+                "nivel": calculado con funcion 1-20,
+                "link": "LInk de nivel 20 del personaje",
+                "oro": Cobre total del personaje,
+                "inventario": [
+                    "Objeto1",
+                    "Objeto2"
+                ],
+                "cooldown_compra": null,  ### Null puede comprar,
+                "ubicacion": "Desconocido", ### Empieza como desconocido la hacer call, pasa a "Viajando a" o donde esta.
+                "llegada": {
+                    "dia": x,
+                    "mes": x,
+                    "año": x,
+                    "destino": "region a la que va"
+                }, ### Informacion del tiempo de viaje.
+                "nacimiento": {
+                    "dia": 23,
+                    "mes": 6,
+                    "año": -36
+                }, ### se trata con negativos por empezar en año 0.
+                "estado": "El estado del personaje (vivo,muerto,retirado)"
+            },
+
+
+## Tienda items
+
+Tienda e Inventario.
+
+ARCHIVO_ITEMS: Archivo .json que funciona como catálogo. Almacena todos los objetos disponibles, sus IDs, precios,
+stock y categorías.
+
+TRADES_PENDIENTES: Diccionario temporal en memoria que gestiona las propuestas de intercambio entre jugadores.
+Se elimina automáticamente tras 120 segundos para evitar datos residuales.
+
+La clase TiendaView implementa una interfaz paginada mediante botones, permitiendo visualizar los objetos de 5 en 5.
+El comando !tienda filtra automáticamente los objetos con stock cero y permite búsquedas por categoría.
+
+
+La función formatear_monedas() calcula y convierte el valor total en cobre (PC) a su formato visual en PO
+(Piezas de Oro), PP (Piezas de Plata) y PC (Piezas de Cobre).
+
+El comando !trade verifica que el vendedor posea el objeto y tenga el oro necesario para cubrir el impuesto de aduana
+del 20%. El comprador debe confirmar mediante !trade_accept en el tiempo límite para finalizar la transacción, tras lo
+cual se realiza el intercambio de objetos y el pago de oro.
+
+La compra de objetos especiales no consumibles activa un cooldown de 14 días en el personaje, calculado mediante la
+comparación con el calendario del mundo. Los consumibles, como el kit de sanación, soportan un sistema de cargas
+restando usos directamente en el string almacenado en el inventario.
+
+Estructura de tienda_items.json
+
+[
+    {
+        "id": "kit_sanador_consumible",
+        "nombre": "Kit de Sanación",
+        "precio": 500,
+        "stock": 10,
+        "consumible": true,
+        "categoria": ["Consumible", "Común"],
+        "descripcion": "Restaura puntos de vida fuera de combate."
+    }
+]

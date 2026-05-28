@@ -1,4 +1,3 @@
-
 import discord
 import os
 import json
@@ -8,8 +7,9 @@ from datetime import datetime, timedelta
 import voz
 import tienda #módulo de tienda
 import personajes  # módulo de personajes
+import lootboxes
 
-TOKEN = "CENSORED"
+TOKEN =""
 ID_CANAL_VOZ = 1469531271037194374
 ARCHIVO_DATOS = 'datos_lichsea.json'
 
@@ -22,10 +22,12 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 voz.setup(bot)
 personajes.setup(bot)
 tienda.setup(bot)
+lootboxes.setup(bot)
 
 
 # --------------------------------------------------
 
+### Cargas_datos es el encargado de cargar los dias.
 def cargar_datos():
     if os.path.exists(ARCHIVO_DATOS):
         with open(ARCHIVO_DATOS, 'r', encoding="utf-8") as f:
@@ -38,7 +40,7 @@ def cargar_datos():
             "ultima_actualizacion": datetime.now().isoformat()
         }
 
-
+### Guardar datos se encarga de guardar los dias.
 def guardar_datos(datos):
     with open(ARCHIVO_DATOS, 'w', encoding="utf-8") as f:
         json.dump(datos, f, ensure_ascii=False)
@@ -103,13 +105,13 @@ def sumar_un_dia():
     global datos_mundo
     datos_mundo["dia"] += 1
     if datos_mundo["dia"] >= 30:
-        datos_mundo["dia"] = 0
+        datos_mundo["dia"] = 1
         datos_mundo["mes"] += 1
-    if datos_mundo["mes"] >= 12:
-        datos_mundo["mes"] = 0
+    if datos_mundo["mes"] > 12:
+        datos_mundo["mes"] = 1
         datos_mundo["año"] += 1
 
-
+### Maneja el canal para que diga el nombre del dia, mes y año actual.
 async def actualizar_nombre_canal():
     nuevo_nombre = f"📅 Lichsea: D{datos_mundo['dia']} M{datos_mundo['mes']} A{datos_mundo['año']}"
     channel = bot.get_channel(ID_CANAL_VOZ)
@@ -127,6 +129,30 @@ async def actualizar_reloj_lichsea():
     guardar_datos(datos_mundo)
     await actualizar_nombre_canal()
     await verificar_cumpleaños()
+
+### Catch de errores.
+@bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.MissingRequiredArgument):
+        return await ctx.send(
+            f"⚠️ **Faltan datos:** El parámetro `{error.param.name}` es obligatorio.\n"
+            f"Revisa el orden del comando."
+        )
+
+
+    elif isinstance(error, commands.BadArgument):
+        return await ctx.send(
+            "❌ **Error de formato:** Parece que cambiaste el orden de los datos o pusiste texto donde iba un número.\n"
+            "Ejemplo correcto: `!darbox Reika común 3`"
+        )
+
+    # Si el comando directamente no existe
+    elif isinstance(error, commands.CommandNotFound):
+        return #
+
+    # Para cualquier otro error raro
+    else:
+        print(f"Error no controlado: {error}")
 
 
 bot.run(TOKEN)

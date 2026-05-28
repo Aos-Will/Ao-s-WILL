@@ -2,8 +2,8 @@
     {
         "id": "armadura_cota_mallas_media_armor",
         "nombre": "Armadura Camisote de Mallas de Adamantita",
-        "precio": 15000,
-        "stock": 0,
+        "precio": 45000,
+        "stock": 3,
         "categoria": [
             "Armadura",
             "Armadura Media",
@@ -15,8 +15,8 @@
     {
         "id": "armadura_coraza_armor",
         "nombre": "Armadura Coraza de Adamantita",
-        "precio": 15000,
-        "stock": 0,
+        "precio": 35000,
+        "stock": 3,
         "categoria": [
             "Armadura",
             "Armadura Media",
@@ -28,8 +28,8 @@
     {
         "id": "armadura_semiplacas_armor",
         "nombre": "Armadura Semiplacas de Adamantita",
-        "precio": 23500,
-        "stock": 0,
+        "precio": 63500,
+        "stock": 3,
         "categoria": [
             "Armadura",
             "Armadura Media",
@@ -41,8 +41,8 @@
     {
         "id": "armadura_cota_mallas_armor",
         "nombre": "Armadura Cota de Mallas de Adamantita",
-        "precio": 27500,
-        "stock": 0,
+        "precio": 87500,
+        "stock": 3,
         "categoria": [
             "Armadura",
             "Armadura Pesada",
@@ -54,8 +54,8 @@
     {
         "id": "armadura_placas_armor",
         "nombre": "Armadura Placas (Completa) de Adamantita",
-        "precio": 50000,
-        "stock": 0,
+        "precio": 100000,
+        "stock": 3,
         "categoria": [
             "Armadura",
             "Armadura Pesada",
@@ -68,7 +68,7 @@
         "id": "flechas_ammunition_1",
         "nombre": "Flechas (x20) +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Munición",
             "Poco común"
@@ -80,7 +80,7 @@
         "id": "virotes_ammunition_1",
         "nombre": "Virotes de Ballesta (x20) +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Munición",
             "Poco común"
@@ -92,7 +92,7 @@
         "id": "balas_honda_ammunition_1",
         "nombre": "Balas de Honda (x20) +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Munición",
             "Poco común"
@@ -189,7 +189,7 @@
         "id": "amulet_of_proof_against_detection_and_location",
         "nombre": "Amuleto de Prueba contra Detección y Localización",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -925,7 +925,7 @@
         "id": "bag_of_holding",
         "nombre": "Bolsa de tenencia",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -937,7 +937,7 @@
         "id": "bag_of_tricks",
         "nombre": "Bolsa de trucos",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1000,7 +1000,7 @@
         "id": "boots_of_elvenkind",
         "nombre": "Botas de los élficos",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1038,7 +1038,7 @@
         "id": "boots_of_striding_and_springing",
         "nombre": "Botas de zancadas y saltos",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -1051,7 +1051,7 @@
         "id": "boots_of_the_winterlands",
         "nombre": "Botas de las Tierras Invernales",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -1076,7 +1076,7 @@
         "id": "bracers_of_archery",
         "nombre": "Brazales de tiro con arco",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -1114,7 +1114,7 @@
         "id": "brooch_of_shielding",
         "nombre": "Broche de blindaje",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -1127,7 +1127,7 @@
         "id": "broom_of_flying",
         "nombre": "Escoba de vuelo",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1212,7 +1212,7 @@
         "id": "circlet_of_blasting",
         "nombre": "Aro de explosión",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1250,7 +1250,7 @@
         "id": "cloak_of_elvenkind",
         "nombre": "Capa de los élficos",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -1263,7 +1263,7 @@
         "id": "cloak_of_protection",
         "nombre": "Capa de protección",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -1302,7 +1302,7 @@
         "id": "cloak_of_the_manta_ray",
         "nombre": "Capa de la mantarraya",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1377,7 +1377,7 @@
         "id": "decanter_of_endless_water",
         "nombre": "Decantador de agua infinita",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1389,7 +1389,7 @@
         "id": "deck_of_illusions",
         "nombre": "Baraja de ilusiones",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1464,7 +1464,7 @@
         "id": "dust_of_disappearance",
         "nombre": "Polvo de desaparición",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1476,7 +1476,7 @@
         "id": "dust_of_dryness",
         "nombre": "Polvo de sequedad",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1488,7 +1488,7 @@
         "id": "dust_of_sneezing_and_choking",
         "nombre": "Polvo de estornudos y asfixia",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1525,7 +1525,7 @@
         "id": "efficient_quiver",
         "nombre": "Carcaj eficiente",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1549,7 +1549,7 @@
         "id": "elemental_gem",
         "nombre": "Gema elemental",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1573,7 +1573,7 @@
         "id": "eversmoking_bottle",
         "nombre": "Botella para siempre fumar",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1585,7 +1585,7 @@
         "id": "eyes_of_charming",
         "nombre": "Ojos de encanto",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -1598,7 +1598,7 @@
         "id": "eyes_of_minute_seeing",
         "nombre": "Ojos que ven minuciosamente",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1610,7 +1610,7 @@
         "id": "eyes_of_the_eagle",
         "nombre": "Ojos del águila",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -1685,7 +1685,7 @@
         "id": "gauntlets_of_ogre_power",
         "nombre": "Guanteletes de poder ogro",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -1698,7 +1698,7 @@
         "id": "gem_of_brightness",
         "nombre": "Gema de brillo",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1747,7 +1747,7 @@
         "id": "gloves_of_missile_snaring",
         "nombre": "Guantes de trampa de misiles",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -1760,7 +1760,7 @@
         "id": "gloves_of_swimming_and_climbing",
         "nombre": "Guantes de Natación y Escalada",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -1773,7 +1773,7 @@
         "id": "goggles_of_night",
         "nombre": "Gafas de noche",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1810,7 +1810,7 @@
         "id": "hat_of_disguise",
         "nombre": "Sombrero de disfraz",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -1823,7 +1823,7 @@
         "id": "headband_of_intellect",
         "nombre": "Diadema de intelecto",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -1849,7 +1849,7 @@
         "id": "helm_of_comprehending_languages",
         "nombre": "Yelmo de comprensión de idiomas",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -1861,7 +1861,7 @@
         "id": "helm_of_telepathy",
         "nombre": "Yelmo de telepatía",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -1948,7 +1948,7 @@
         "id": "immovable_rod",
         "nombre": "Varilla inamovible",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Vara",
             "Poco común"
@@ -2009,7 +2009,7 @@
         "id": "javelin_of_lightning",
         "nombre": "jabalina de relámpago",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Arma",
             "Poco común"
@@ -2021,7 +2021,7 @@
         "id": "javelin_of_lightning_plus_1",
         "nombre": "jabalina de relámpago +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Arma",
             "Poco común"
@@ -2045,7 +2045,7 @@
         "id": "lantern_of_revealing",
         "nombre": "Linterna de la revelación",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -2181,7 +2181,7 @@
         "id": "medallion_of_thoughts",
         "nombre": "Medallón de pensamientos",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -2206,7 +2206,7 @@
         "id": "armadura_cuero_armor",
         "nombre": "Armadura Cuero de Mithril",
         "precio": 11000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Armadura",
             "Armadura Ligera",
@@ -2219,7 +2219,7 @@
         "id": "armadura_cuero_tachonado_armor",
         "nombre": "Armadura Cuero Tachonado de Mithril",
         "precio": 14500,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Armadura",
             "Armadura Ligera",
@@ -2232,7 +2232,7 @@
         "id": "armadura_pellejos_armor",
         "nombre": "Armadura Pellejos de Mithril",
         "precio": 11000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Armadura",
             "Armadura Media",
@@ -2245,7 +2245,7 @@
         "id": "armadura_cota_mallas_media_armor",
         "nombre": "Armadura Camisote de Mallas de Mithril",
         "precio": 15000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Armadura",
             "Armadura Media",
@@ -2258,7 +2258,7 @@
         "id": "armadura_coraza_armor",
         "nombre": "Armadura Coraza de Mithril",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Armadura",
             "Armadura Media",
@@ -2271,7 +2271,7 @@
         "id": "armadura_semiplacas_armor",
         "nombre": "Armadura Semiplacas de Mithril",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Armadura",
             "Armadura Media",
@@ -2284,7 +2284,7 @@
         "id": "armadura_cota_mallas_armor",
         "nombre": "Armadura Cota de Mallas de Mithril",
         "precio": 17500,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Armadura",
             "Armadura Pesada",
@@ -2297,7 +2297,7 @@
         "id": "armadura_placas_armor",
         "nombre": "Armadura Placas (Completa) de Mithril",
         "precio": 16000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Armadura",
             "Armadura Pesada",
@@ -2310,7 +2310,7 @@
         "id": "necklace_of_adaptation",
         "nombre": "Collar de Adaptación",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -2373,8 +2373,8 @@
     {
         "id": "oil_of_etherealness",
         "nombre": "Aceite de lo etéreo",
-        "precio": 200000,
-        "stock": 5,
+        "precio": 62500,
+        "stock": 0,
         "categoria": [
             "Poción",
             "Raro"
@@ -2385,8 +2385,8 @@
     {
         "id": "oil_of_sharpness",
         "nombre": "Aceite de nitidez",
-        "precio": 2000000,
-        "stock": 5,
+        "precio": 250000,
+        "stock": 0,
         "categoria": [
             "Poción",
             "muy raro"
@@ -2397,8 +2397,8 @@
     {
         "id": "oil_of_slipperiness",
         "nombre": "Aceite de resbaladiza",
-        "precio": 20000,
-        "stock": 5,
+        "precio": 50000,
+        "stock": 3,
         "categoria": [
             "Poción",
             "Poco común"
@@ -2423,7 +2423,7 @@
         "id": "pearl_of_power",
         "nombre": "Perla de poder",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -2436,7 +2436,7 @@
         "id": "periapt_of_health",
         "nombre": "Periapto de Salud",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -2448,7 +2448,7 @@
         "id": "periapt_of_wound_closure",
         "nombre": "Periapto de cierre de heridas",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -2460,8 +2460,8 @@
     {
         "id": "philter_of_love",
         "nombre": "Filtro de amor",
-        "precio": 20000,
-        "stock": 5,
+        "precio": 50000,
+        "stock": 3,
         "categoria": [
             "Poción",
             "Poco común"
@@ -2473,7 +2473,7 @@
         "id": "pipes_of_haunting",
         "nombre": "Tubos de inquietante",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -2485,7 +2485,7 @@
         "id": "pipes_of_the_sewers",
         "nombre": "Tuberías de las alcantarillas",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -2522,7 +2522,7 @@
     {
         "id": "potion_of_animal_friendship",
         "nombre": "Poción de amistad animal",
-        "precio": 20000,
+        "precio": 50000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2534,7 +2534,7 @@
     {
         "id": "potion_of_clairvoyance",
         "nombre": "Poción de clarividencia",
-        "precio": 200000,
+        "precio": 62500,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2546,7 +2546,7 @@
     {
         "id": "potion_of_climbing",
         "nombre": "Poción de escalada",
-        "precio": 5000,
+        "precio": 12,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2558,7 +2558,7 @@
     {
         "id": "potion_of_diminution",
         "nombre": "Poción de disminución",
-        "precio": 200000,
+        "precio": 62500,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2570,7 +2570,7 @@
     {
         "id": "potion_of_flying",
         "nombre": "Poción de vuelo",
-        "precio": 2000000,
+        "precio": 250000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2582,7 +2582,7 @@
     {
         "id": "potion_of_gaseous_form",
         "nombre": "Poción de forma gaseosa",
-        "precio": 200000,
+        "precio": 62500,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2594,7 +2594,7 @@
     {
         "id": "potion_of_growth",
         "nombre": "Poción de crecimiento",
-        "precio": 20000,
+        "precio": 50000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2606,7 +2606,7 @@
     {
         "id": "potion_of_healing",
         "nombre": "Poción de curación",
-        "precio": 2000000,
+        "precio": 125,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2616,45 +2616,9 @@
         "consumible": true
     },
     {
-        "id": "potion_of_healing_greater",
-        "nombre": "Poción de curación mayor",
-        "precio": 20000,
-        "stock": 5,
-        "categoria": [
-            "Poción",
-            "Poco común"
-        ],
-        "descripcion": "Poción, poco común\nRecuperas 4d4 + 4 puntos de vida cuando bebes esta poción. El líquido rojo de la poción brilla cuando se agita.",
-        "consumible": true
-    },
-    {
-        "id": "potion_of_healing_superior",
-        "nombre": "Poción de curación superior",
-        "precio": 200000,
-        "stock": 5,
-        "categoria": [
-            "Poción",
-            "Extraño"
-        ],
-        "descripcion": "Poción, rara\nRecuperas 8d4 + 8 puntos de vida cuando bebes esta poción. El líquido rojo de la poción brilla cuando se agita.",
-        "consumible": true
-    },
-    {
-        "id": "potion_of_healing_supreme",
-        "nombre": "Poción de curación suprema",
-        "precio": 2000000,
-        "stock": 5,
-        "categoria": [
-            "Poción",
-            "muy raro"
-        ],
-        "descripcion": "Poción, muy rara.\nRecuperas 10d4 + 20 puntos de vida cuando bebes esta poción. El líquido rojo de la poción brilla cuando se agita.",
-        "consumible": true
-    },
-    {
         "id": "potion_of_heroism",
         "nombre": "Poción de heroísmo",
-        "precio": 200000,
+        "precio": 62500,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2666,7 +2630,7 @@
     {
         "id": "potion_of_invisibility",
         "nombre": "Poción de invisibilidad",
-        "precio": 2000000,
+        "precio": 250000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2678,7 +2642,7 @@
     {
         "id": "potion_of_mind_reading",
         "nombre": "Poción de lectura mental",
-        "precio": 200000,
+        "precio": 62500,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2690,7 +2654,7 @@
     {
         "id": "potion_of_poison",
         "nombre": "Poción de veneno",
-        "precio": 20000,
+        "precio": 50000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2702,7 +2666,7 @@
     {
         "id": "potion_of_resistance",
         "nombre": "Poción de resistencia",
-        "precio": 20000,
+        "precio": 50000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2714,7 +2678,7 @@
     {
         "id": "potion_of_speed",
         "nombre": "Poción de velocidad",
-        "precio": 2000000,
+        "precio": 250000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2726,7 +2690,7 @@
     {
         "id": "potion_of_water_breathing",
         "nombre": "Poción de respiración de agua",
-        "precio": 20000,
+        "precio": 50000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2739,7 +2703,7 @@
         "id": "restorative_ointment",
         "nombre": "Ungüento Restaurador",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -2786,6 +2750,19 @@
         "consumible": false
     },
     {
+        "id": "ring_of_evasion",
+        "nombre": "Anillo de evasión",
+        "precio": 50000,
+        "stock": 0,
+        "categoria": [
+            "Anillo",
+            "Raro",
+            "Sintonizado"
+        ],
+        "descripcion": "Anillo, poco común (requiere sintonía)\nEste anillo tiene 3 cargas y recupera 1d3 cargas gastadas diariamente al amanecer. Cuando fallas una tirada de salvación de Destreza mientras lo llevas puesto, puedes usar tu reacción para gastar 1 de sus cargas para tener éxito en esa tirada de salvación.",
+        "consumible": false
+    },
+    {
         "id": "ring_of_feather_falling",
         "nombre": "Anillo de plumas cayendo",
         "precio": 50000,
@@ -2828,7 +2805,7 @@
         "id": "ring_of_jumping",
         "nombre": "Anillo de salto",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Anillo",
             "Poco común",
@@ -2841,7 +2818,7 @@
         "id": "ring_of_mind_shielding",
         "nombre": "Anillo de protección mental",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Anillo",
             "Poco común",
@@ -2919,7 +2896,7 @@
         "id": "ring_of_swimming",
         "nombre": "Anillo de natación",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Anillo",
             "Poco común"
@@ -2969,7 +2946,7 @@
         "id": "ring_of_warmth",
         "nombre": "Anillo de calidez",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Anillo",
             "Poco común",
@@ -2982,7 +2959,7 @@
         "id": "ring_of_water_walking",
         "nombre": "Anillo de agua caminando",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Anillo",
             "Poco común"
@@ -3059,7 +3036,7 @@
         "id": "robe_of_useful_items",
         "nombre": "Túnica de artículos útiles",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -3135,7 +3112,7 @@
         "id": "rope_of_climbing",
         "nombre": "Cuerda de Escalada",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -3198,7 +3175,7 @@
         "id": "slippers_of_spider_climbing",
         "nombre": "Zapatillas de escalada de arañas",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -3222,7 +3199,7 @@
     {
         "id": "spell_scroll",
         "nombre": "Pergamino de hechizo",
-        "precio": 12500,
+        "precio": 125,
         "stock": 0,
         "categoria": [
             "Voluta",
@@ -3234,7 +3211,7 @@
     {
         "id": "spell_scroll_1st",
         "nombre": "Pergamino de hechizos (primero)",
-        "precio": 1200,
+        "precio": 12,
         "stock": null,
         "categoria": [
             "Voluta",
@@ -3428,7 +3405,7 @@
         "id": "stone_of_good_luck_luckstone",
         "nombre": "Piedra de la buena suerte (Luckstone)",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -3568,7 +3545,7 @@
         "id": "trident_of_fish_command",
         "nombre": "Comando Tridente de Pez",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Arma",
             "Poco común",
@@ -3581,7 +3558,7 @@
         "id": "trident_of_fish_command_plus_1",
         "nombre": "Comando Tridente de Pez +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Arma",
             "Poco común",
@@ -3696,7 +3673,7 @@
         "id": "wand_of_magic_missiles",
         "nombre": "Varita de misiles mágicos",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Varita mágica",
             "Poco común"
@@ -3734,7 +3711,7 @@
         "id": "wand_of_secrets",
         "nombre": "Varita de secretos",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Varita mágica",
             "Poco común"
@@ -3759,7 +3736,7 @@
         "id": "wand_of_the_war_mage_1",
         "nombre": "Varita del mago de guerra, +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Varita mágica",
             "Poco común",
@@ -3798,7 +3775,7 @@
         "id": "wand_of_web",
         "nombre": "Varita de telaraña",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Varita mágica",
             "Poco común",
@@ -3824,7 +3801,7 @@
         "id": "weapon_1",
         "nombre": "Arma, +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Arma",
             "Poco común"
@@ -3872,7 +3849,7 @@
         "id": "wind_fan",
         "nombre": "ventilador de viento",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común"
@@ -3884,7 +3861,7 @@
         "id": "winged_boots",
         "nombre": "Botas aladas",
         "precio": 50000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Objetos maravillosos",
             "Poco común",
@@ -3923,7 +3900,7 @@
         "id": "capa_desplazamiento",
         "nombre": "Capa de desplazamiento",
         "precio": 240000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Capa",
             "Raro",
@@ -3959,9 +3936,35 @@
         "consumible": false
     },
     {
+        "id": "armadura_humeante_plus_1",
+        "nombre": "Armadura Humeante +1",
+        "precio": 50000,
+        "stock": 1,
+        "categoria": [
+            "Armaduras",
+            "Baratijas",
+            "Poco Común"
+        ],
+        "descripcion": "Elige una armadura no magica que tengas, Tienes un bonificador de +1 a la CA con esta versión mejorada de: Armadura Humeante.",
+        "consumible": false
+    },
+    {
+        "id": "armadura_humeante_plus_2",
+        "nombre": "Armadura Humeante +2",
+        "precio": 300250,
+        "stock": 0,
+        "categoria": [
+            "Armaduras",
+            "Baratijas",
+            "Raro"
+        ],
+        "descripcion": "Elige una armadura no magica que tengas, Tienes un bonificador de +2 CA con esta legendaria versión de: Armadura Humeante.",
+        "consumible": false
+    },
+    {
         "id": "baston_adorno",
         "nombre": "Bastón de Adorno",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Armas",
@@ -3974,7 +3977,7 @@
     {
         "id": "baston_flores",
         "nombre": "Bastón de Flores",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Armas",
@@ -3987,7 +3990,7 @@
     {
         "id": "baston_llama_aves",
         "nombre": "Bastón Llama Aves",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Armas",
@@ -4000,7 +4003,7 @@
     {
         "id": "bota_pisadas_falsas",
         "nombre": "Botas de Pisadas Falsas",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Equipo",
@@ -4012,7 +4015,7 @@
     {
         "id": "candado_antiganzua",
         "nombre": "Candado del Tramposo",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Equipo",
@@ -4024,7 +4027,7 @@
     {
         "id": "casco_expresivo",
         "nombre": "Yelmo Expresivo",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Armaduras",
@@ -4037,33 +4040,33 @@
     {
         "id": "casco_expresivo_plus_1",
         "nombre": "Yelmo Expresivo +1",
-        "precio": 40000,
+        "precio": 50000,
         "stock": 1,
         "categoria": [
             "Armaduras",
-            "Equipo",
+            "Baratijas",
             "Poco Común"
         ],
-        "descripcion": "El visor de este yelmo tiene la forma de un rostro que cambia de expresión según el estado de ánimo del portador.",
+        "descripcion": "Tienes un bonificador de +1 a las tiradas de ataque y daño hechas con esta versión mejorada de: Yelmo Expresivo.",
         "consumible": false
     },
     {
         "id": "casco_expresivo_plus_2",
         "nombre": "Yelmo Expresivo +2",
-        "precio": 50000,
+        "precio": 300250,
         "stock": 0,
         "categoria": [
             "Armaduras",
-            "Equipo",
+            "Baratijas",
             "Raro"
         ],
-        "descripcion": "El visor de este yelmo tiene la forma de un rostro que cambia de expresión según el estado de ánimo del portador.",
+        "descripcion": "Tienes un bonificador de +2 a las tiradas de ataque y daño hechas con esta legendaria versión de: Yelmo Expresivo.",
         "consumible": false
     },
     {
         "id": "escudo_expresivo",
         "nombre": "Escudo Expresivo",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Armaduras",
@@ -4076,33 +4079,33 @@
     {
         "id": "escudo_expresivo_plus_1",
         "nombre": "Escudo Expresivo +1",
-        "precio": 15000,
-        "stock": 0,
+        "precio": 50000,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Baratijas",
             "Poco Común"
         ],
-        "descripcion": "Este escudo otorga un bonificador de +1 a la CA adicional.",
+        "descripcion": "Tienes un bonificador de +1 a las tiradas de ataque y daño hechas con esta versión mejorada de: Escudo Expresivo.",
         "consumible": false
     },
     {
         "id": "escudo_expresivo_plus_2",
         "nombre": "Escudo Expresivo +2",
-        "precio": 30000,
+        "precio": 300250,
         "stock": 0,
         "categoria": [
             "Armaduras",
-            "Equipo",
+            "Baratijas",
             "Raro"
         ],
-        "descripcion": "Este escudo otorga un bonificador de +2 a la CA adicional.",
+        "descripcion": "Tienes un bonificador de +2 a las tiradas de ataque y daño hechas con esta legendaria versión de: Escudo Expresivo.",
         "consumible": false
     },
     {
         "id": "espada_tocada_luna",
         "nombre": "Espada Tocada de la Luna",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Armas",
@@ -4115,7 +4118,7 @@
     {
         "id": "instrumento_ilusiones",
         "nombre": "Instrumento de Ilusiones",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Herramientas",
@@ -4128,7 +4131,7 @@
     {
         "id": "llave_misteriosa",
         "nombre": "Llave Misteriosa",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Otros",
@@ -4154,8 +4157,8 @@
     {
         "id": "ojos_encantadores",
         "nombre": "Ojos del Encaño",
-        "precio": 15000,
-        "stock": 2,
+        "precio": 50000,
+        "stock": 1,
         "categoria": [
             "Otros",
             "Baratijas",
@@ -4167,7 +4170,7 @@
     {
         "id": "perfume_embriagador",
         "nombre": "Perfume de Galantería",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Otros",
@@ -4180,7 +4183,7 @@
     {
         "id": "prenda_removible",
         "nombre": "Prenda de Vestir Removible",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Otros",
@@ -4193,7 +4196,7 @@
     {
         "id": "pote_sobriedad",
         "nombre": "Pote de la Sobriedad",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Equipo",
@@ -4203,22 +4206,9 @@
         "consumible": false
     },
     {
-        "id": "anillo_evasion",
-        "nombre": "Anillo de evasión",
-        "precio": 200000,
-        "stock": 3,
-        "categoria": [
-            "Otros",
-            "Raro",
-            "Sintonizado"
-        ],
-        "descripcion": "Este anillo posee 3 cargas, y recupera 1d3 cargas empleadas cada día, al amanecer. Cuando fallas una tirada de salvación de destreza mientras lo lleves puesto, puedes usar una reacción para gastar una de las cargas y tener éxito en esa tirada.",
-        "consumible": false
-    },
-    {
         "id": "ropa_remendada",
         "nombre": "Ropa de Remiendo Automático",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Otros",
@@ -4231,7 +4221,7 @@
     {
         "id": "sombrero_magico",
         "nombre": "Sombrero de Trucos",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Otros",
@@ -4244,7 +4234,7 @@
     {
         "id": "taza_limpieza",
         "nombre": "Taza de la Purificación",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Equipo",
@@ -4256,7 +4246,7 @@
     {
         "id": "tinta_misteriosa",
         "nombre": "Tinta Desvanecedora",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Otros",
@@ -4269,7 +4259,7 @@
     {
         "id": "varita_ceno",
         "nombre": "Varita de Ceño Fruncido",
-        "precio": 2500,
+        "precio": 250,
         "stock": null,
         "categoria": [
             "Otros",
@@ -4333,7 +4323,7 @@
     {
         "id": "yelmo_ojos_temibles",
         "nombre": "Yelmo de Ojos Temibles",
-        "precio": 20000,
+        "precio": 50000,
         "stock": 1,
         "categoria": [
             "Armaduras",
@@ -4346,63 +4336,11 @@
     {
         "id": "yelmo_ojos_temibles_plus_1",
         "nombre": "Yelmo de Ojos Temibles +1",
-        "precio": 25000,
-        "stock": 0,
-        "categoria": [
-            "Armaduras",
-            "Baratijas",
-            "Poco Común"
-        ],
-        "descripcion": "Mientras lleves puesto este yelmo, tus ojos brillan en color azul, objeto puede iluminar de tonos azules.",
-        "consumible": false
-    },
-    {
-        "id": "yelmo_ojos_temibles_plus_2",
-        "nombre": "Yelmo de Ojos Temibles +2",
-        "precio": 30000,
+        "precio": 50000,
         "stock": 1,
         "categoria": [
             "Armaduras",
-            "Equipo",
-            "Raro"
-        ],
-        "descripcion": "Mientras lleves puesto este yelmo, tus ojos brillan con un fulgor rojo intimidante en la oscuridad, el objeto puede iluminar de tonos azules.",
-        "consumible": false
-    },
-    {
-        "id": "casco_expresivo_plus_1",
-        "nombre": "Yelmo Expresivo +1",
-        "precio": 30000,
-        "stock": 0,
-        "categoria": [
-            "Armaduras",
-            "Equipo",
-            "Poco Común"
-        ],
-        "descripcion": "Tienes un bonificador de +1 a las tiradas de ataque y daño hechas con esta versión mejorada de: Yelmo Expresivo.",
-        "consumible": false
-    },
-    {
-        "id": "casco_expresivo_plus_2",
-        "nombre": "Yelmo Expresivo +2",
-        "precio": 30000,
-        "stock": 0,
-        "categoria": [
-            "Armaduras",
-            "Equipo",
-            "Raro"
-        ],
-        "descripcion": "Tienes un bonificador de +2 a las tiradas de ataque y daño hechas con esta legendaria versión de: Yelmo Expresivo.",
-        "consumible": false
-    },
-    {
-        "id": "yelmo_ojos_temibles_plus_1",
-        "nombre": "Yelmo de Ojos Temibles +1",
-        "precio": 50000,
-        "stock": 0,
-        "categoria": [
-            "Armaduras",
-            "Equipo",
+            "Baratijas",
             "Poco Común"
         ],
         "descripcion": "Tienes un bonificador de +1 a las tiradas de ataque y daño hechas con esta versión mejorada de: Yelmo de Ojos Temibles.",
@@ -4415,7 +4353,59 @@
         "stock": 0,
         "categoria": [
             "Armaduras",
-            "Equipo",
+            "Baratijas",
+            "Raro"
+        ],
+        "descripcion": "Tienes un bonificador de +2 a las tiradas de ataque y daño hechas con esta legendaria versión de: Yelmo de Ojos Temibles.",
+        "consumible": false
+    },
+    {
+        "id": "casco_expresivo_plus_1",
+        "nombre": "Yelmo Expresivo +1",
+        "precio": 50000,
+        "stock": 1,
+        "categoria": [
+            "Armaduras",
+            "Baratijas",
+            "Poco Común"
+        ],
+        "descripcion": "Tienes un bonificador de +1 a las tiradas de ataque y daño hechas con esta versión mejorada de: Yelmo Expresivo.",
+        "consumible": false
+    },
+    {
+        "id": "casco_expresivo_plus_2",
+        "nombre": "Yelmo Expresivo +2",
+        "precio": 300250,
+        "stock": 0,
+        "categoria": [
+            "Armaduras",
+            "Baratijas",
+            "Raro"
+        ],
+        "descripcion": "Tienes un bonificador de +2 a las tiradas de ataque y daño hechas con esta legendaria versión de: Yelmo Expresivo.",
+        "consumible": false
+    },
+    {
+        "id": "yelmo_ojos_temibles_plus_1",
+        "nombre": "Yelmo de Ojos Temibles +1",
+        "precio": 50000,
+        "stock": 1,
+        "categoria": [
+            "Armaduras",
+            "Baratijas",
+            "Poco Común"
+        ],
+        "descripcion": "Tienes un bonificador de +1 a las tiradas de ataque y daño hechas con esta versión mejorada de: Yelmo de Ojos Temibles.",
+        "consumible": false
+    },
+    {
+        "id": "yelmo_ojos_temibles_plus_2",
+        "nombre": "Yelmo de Ojos Temibles +2",
+        "precio": 300600,
+        "stock": 0,
+        "categoria": [
+            "Armaduras",
+            "Baratijas",
             "Raro"
         ],
         "descripcion": "Tienes un bonificador de +2 a las tiradas de ataque y daño hechas con esta legendaria versión de: Yelmo de Ojos Temibles.",
@@ -4425,7 +4415,7 @@
         "id": "baston_plus_1",
         "nombre": "Bastón +1",
         "precio": 30000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -4464,7 +4454,7 @@
         "id": "dardo_plus_1",
         "nombre": "Dardo +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Distancia",
@@ -4503,7 +4493,7 @@
         "id": "gran_garrote_plus_1",
         "nombre": "Gran garrote +1",
         "precio": 30000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -4542,7 +4532,7 @@
         "id": "honda_plus_1",
         "nombre": "Honda +1",
         "precio": 30000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Distancia",
@@ -4620,7 +4610,7 @@
         "id": "hoz_plus_1",
         "nombre": "Hoz +1",
         "precio": 15000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -4659,7 +4649,7 @@
         "id": "lanza_plus_1",
         "nombre": "Lanza +1",
         "precio": 15000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -4737,7 +4727,7 @@
         "id": "daga_plus_1",
         "nombre": "Daga +1",
         "precio": 30000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -4776,7 +4766,7 @@
         "id": "martillo_ligero_plus_1",
         "nombre": "Martillo ligero +1",
         "precio": 30000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -4867,7 +4857,7 @@
         "id": "hacha_de_mano_plus_1",
         "nombre": "Hacha de mano +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -4906,7 +4896,7 @@
         "id": "maza_plus_1",
         "nombre": "Maza +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -4945,7 +4935,7 @@
         "id": "pico_de_guerra_plus_1",
         "nombre": "Pico de guerra +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -4984,7 +4974,7 @@
         "id": "tridente_plus_1",
         "nombre": "Tridente +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -5023,7 +5013,7 @@
         "id": "acolchada_plus_1",
         "nombre": "Armaduras +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Ligera",
@@ -5088,7 +5078,7 @@
         "id": "espada_corta_plus_1",
         "nombre": "Espada corta +1",
         "precio": 15000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -5127,7 +5117,7 @@
         "id": "hacha_de_batalla_plus_1",
         "nombre": "Hacha de batalla +1",
         "precio": 15000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -5166,7 +5156,7 @@
         "id": "lanza_caballeria_plus_1",
         "nombre": "Lanza de caballería +1",
         "precio": 15000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -5205,7 +5195,7 @@
         "id": "cuero_plus_1",
         "nombre": "Armadura de cuero +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Ligera",
@@ -5244,7 +5234,7 @@
         "id": "pieles_plus_1",
         "nombre": "Pieles +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Media",
@@ -5296,7 +5286,7 @@
         "id": "brazalete_punal_plus_1",
         "nombre": "Brazalete con puñal +1",
         "precio": 15000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -5503,7 +5493,7 @@
         "id": "lucero_del_alba_plus_1",
         "nombre": "Lucero del alba +1",
         "precio": 22500,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -5542,7 +5532,7 @@
         "id": "martillo_de_guerra_plus_1",
         "nombre": "Martillo de guerra +1",
         "precio": 22500,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -5581,7 +5571,7 @@
         "id": "kusarigama_plus_1",
         "nombre": "Kusarigama +1",
         "precio": 22500,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -5646,7 +5636,7 @@
         "id": "alabarda_plus_1",
         "nombre": "Alabarda +1",
         "precio": 30000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -5685,7 +5675,7 @@
         "id": "glaive_plus_1",
         "nombre": "Glaive +1",
         "precio": 30000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -5761,7 +5751,7 @@
         "id": "ballesta_ligera_plus_1",
         "nombre": "Ballesta ligera +1",
         "precio": 37500,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Distancia",
@@ -5800,7 +5790,7 @@
         "id": "arco_corto_plus_1",
         "nombre": "Arco corto +1",
         "precio": 37500,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Distancia",
@@ -5839,7 +5829,7 @@
         "id": "cimitarra_plus_1",
         "nombre": "Cimitarra +1",
         "precio": 37500,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -5878,7 +5868,7 @@
         "id": "estoque_plus_1",
         "nombre": "Estoque +1",
         "precio": 37500,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -5904,7 +5894,7 @@
         "id": "espada_rompeespadas",
         "nombre": "Espada Rompeespadas",
         "precio": 2500,
-        "stock": 2,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -5917,7 +5907,7 @@
         "id": "espada_rompeespadas_plus_1",
         "nombre": "Espada Rompeespadas +1",
         "precio": 37500,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -5956,7 +5946,7 @@
         "id": "katana_jjk_plus_1",
         "nombre": "Katana (Jjk) +1",
         "precio": 37500,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -6008,7 +5998,7 @@
         "id": "hacha_grande_plus_1",
         "nombre": "Hacha grande +1",
         "precio": 45000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -6047,7 +6037,7 @@
         "id": "guadaña_adaptada_plus_1",
         "nombre": "Guadaña Adaptada +1",
         "precio": 45000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -6086,7 +6076,7 @@
         "id": "baston_bambu_plus_1",
         "nombre": "Baston de bambu +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -6125,7 +6115,7 @@
         "id": "naginata_plus_1",
         "nombre": "Naginata +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -6190,7 +6180,7 @@
         "id": "cuero_tachonado_plus_1",
         "nombre": "Cuero tachonado +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Ligera",
@@ -6268,7 +6258,7 @@
         "id": "espadon_plus_1",
         "nombre": "Espadón +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -6307,7 +6297,7 @@
         "id": "ballesta_pesada_plus_1",
         "nombre": "Ballesta pesada +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Distancia",
@@ -6346,7 +6336,7 @@
         "id": "arco_largo_plus_1",
         "nombre": "Arco largo +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Distancia",
@@ -6385,7 +6375,7 @@
         "id": "cota_de_escamas_plus_1",
         "nombre": "Cota de escamas +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Media",
@@ -6424,7 +6414,7 @@
         "id": "escopeta_plus_1",
         "nombre": "Escopeta +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Fuego",
@@ -6463,7 +6453,7 @@
         "id": "metralleta_plus_1",
         "nombre": "Metralleta +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Fuego",
@@ -6489,7 +6479,7 @@
         "id": "baston_flores_plus_1",
         "nombre": "Bastón de Flores +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -6540,7 +6530,7 @@
         "id": "baston_adorno_plus_1",
         "nombre": "Bastón de Adorno +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -6579,7 +6569,7 @@
         "id": "traje_blindado_plus_1",
         "nombre": "Traje blindado +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Ligera",
@@ -6618,7 +6608,7 @@
         "id": "baston_llama_aves_plus_1",
         "nombre": "Bastón Llama Aves +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -6657,7 +6647,7 @@
         "id": "ballesta_de_mano_plus_1",
         "nombre": "Ballesta de mano +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Distancia",
@@ -6696,7 +6686,7 @@
         "id": "cota_mallas_plus_1",
         "nombre": "Cota de mallas +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Pesada",
@@ -6722,7 +6712,7 @@
         "id": "espada_curva_elfa",
         "nombre": "Espada curva elfa",
         "precio": 7500,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -6735,7 +6725,7 @@
         "id": "espada_curva_elfa_plus_1",
         "nombre": "Espada curva elfa +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -6774,7 +6764,7 @@
         "id": "deerhorn_knives_plus_1",
         "nombre": "Deerhorn knives +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -6839,7 +6829,7 @@
         "id": "filo_resonante_plus_1",
         "nombre": "Filo Resonante de los Elementos +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -6865,13 +6855,13 @@
         "id": "escudo_expresivo_plus_1",
         "nombre": "Escudo Expresivo +1",
         "precio": 15500,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Baratijas",
             "Poco Común"
         ],
-        "descripcion": "Tienes una un bonificador de +1 a la CA.",
+        "descripcion": "Tienes un bonificador de +1 a las tiradas de ataque y daño hechas con esta versión mejorada de: Escudo Expresivo.",
         "consumible": false
     },
     {
@@ -6881,17 +6871,17 @@
         "stock": 0,
         "categoria": [
             "Armaduras",
-            "Escudo",
+            "Baratijas",
             "Raro"
         ],
-        "descripcion": "Tienes una un bonificador de +2 a la CA.",
+        "descripcion": "Tienes un bonificador de +2 a las tiradas de ataque y daño hechas con esta legendaria versión de: Escudo Expresivo.",
         "consumible": false
     },
     {
         "id": "espada_tocada_luna_plus_1",
         "nombre": "Espada Tocada de la Luna +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -6917,7 +6907,7 @@
         "id": "armadura_humeante_plus_1",
         "nombre": "Armadura Humeante +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Baratijas",
@@ -6943,7 +6933,7 @@
         "id": "armadura_removible",
         "nombre": "Armadura Removible",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Ligera",
@@ -6956,7 +6946,7 @@
         "id": "armadura_removible_plus_1",
         "nombre": "Armadura Removible +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Ligera",
@@ -6982,7 +6972,7 @@
         "id": "brazaletepuñal",
         "nombre": "Brazalete con puñal",
         "precio": 10000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -6995,7 +6985,7 @@
         "id": "brazaletepuñal_plus_1",
         "nombre": "Brazalete con puñal +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -7021,7 +7011,7 @@
         "id": "armadura_brillo_plus_1",
         "nombre": "Armadura de Brillo +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Ligera",
@@ -7072,7 +7062,7 @@
         "id": "cara_e3com",
         "nombre": "Cara Cibernética Modelo E3-COM",
         "precio": 1000000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Prostéticos",
             "Comunicación",
@@ -7098,7 +7088,7 @@
         "id": "lanza_impulsora_plus_1",
         "nombre": "Lanza impulsora +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -7137,7 +7127,7 @@
         "id": "herramientas_cartografo",
         "nombre": "Herramientas de cartógrafo",
         "precio": 12000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Herramientas",
             "Especial",
@@ -7150,7 +7140,7 @@
         "id": "francotirador",
         "nombre": "Francotirador",
         "precio": 15000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Fuego",
@@ -7163,7 +7153,7 @@
         "id": "francotirador_plus_1",
         "nombre": "Francotirador +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Fuego",
@@ -7189,7 +7179,7 @@
         "id": "espada_venganza",
         "nombre": "Espada de la Venganza +1",
         "precio": 15000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -7230,7 +7220,7 @@
         "id": "instrumento_musical_laud",
         "nombre": "Laúd",
         "precio": 1500,
-        "stock": 2,
+        "stock": 0,
         "categoria": [
             "Herramientas",
             "Música",
@@ -7244,7 +7234,7 @@
         "id": "armadura_bandas",
         "nombre": "Armadura de bandas",
         "precio": 20000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Pesada",
@@ -7257,7 +7247,7 @@
         "id": "armadura_bandas_plus_1",
         "nombre": "Armadura de bandas +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Pesada",
@@ -7283,7 +7273,7 @@
         "id": "escudo_tortuga",
         "nombre": "Escudo de la Tortuga",
         "precio": 20000,
-        "stock": 2,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Escudo",
@@ -7296,7 +7286,7 @@
         "id": "escudo_tortuga_plus_1",
         "nombre": "Escudo de la Tortuga +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Escudo",
@@ -7334,7 +7324,7 @@
         "id": "gorra_respiracion_acuatica",
         "nombre": "Gorra de Respiración Acuática",
         "precio": 20000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Otros",
             "Poco Común"
@@ -7360,7 +7350,7 @@
         "id": "kit_disfraz",
         "nombre": "Kit de disfraz",
         "precio": 20000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Herramientas",
             "Especial",
@@ -7373,7 +7363,7 @@
         "id": "cuerpo_t5bio",
         "nombre": "Cuerpo Cibernético Modelo T5-BIO",
         "precio": 2200000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Prostéticos",
             "Implante",
@@ -7386,7 +7376,7 @@
         "id": "ojo_val3ni9",
         "nombre": "Ojo de Precognición - VAL-3NI9",
         "precio": 500000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Prostéticos",
             "Ocular",
@@ -7412,7 +7402,7 @@
         "id": "jabalina_trueno_plus_1",
         "nombre": "Jabalina de Trueno +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -7438,7 +7428,7 @@
         "id": "tridente_comanda_peces",
         "nombre": "Tridente Comanda Peces",
         "precio": 25000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -7451,7 +7441,7 @@
         "id": "tridente_comanda_peces_plus_1",
         "nombre": "Tridente Comanda Peces +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -7724,7 +7714,7 @@
         "id": "varita_enredadera",
         "nombre": "Varita de Enredadera",
         "precio": 25000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Otros",
             "Varita",
@@ -7737,7 +7727,7 @@
         "id": "armadura_marinero",
         "nombre": "Armadura de Marinero",
         "precio": 25000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Ligera",
@@ -7750,7 +7740,7 @@
         "id": "armadura_marinero_plus_1",
         "nombre": "Armadura de Marinero +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Ligera",
@@ -7776,7 +7766,7 @@
         "id": "escudo_plus_1",
         "nombre": "Escudo +1",
         "precio": 25000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Armaduras",
             "Escudo",
@@ -7844,7 +7834,7 @@
         "id": "honda_derriba_gigantes",
         "nombre": "Honda Derriba Gigantes",
         "precio": 28000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Distancia",
@@ -7857,7 +7847,7 @@
         "id": "honda_derriba_gigantes_plus_1",
         "nombre": "Honda Derriba Gigantes +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Distancia",
@@ -7883,7 +7873,7 @@
         "id": "baston_vibora",
         "nombre": "Bastón de la Víbora",
         "precio": 28000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -7896,7 +7886,7 @@
         "id": "baston_vibora_plus_1",
         "nombre": "Bastón de la Víbora +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -7948,7 +7938,7 @@
         "id": "boomerang_tormenta_plus_1",
         "nombre": "Boomerang de Tormenta +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Distancia",
@@ -7974,7 +7964,7 @@
         "id": "varita_mago_guerra",
         "nombre": "Varita del Mago de Guerra +1",
         "precio": 30000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Otros",
             "Varita",
@@ -7987,7 +7977,7 @@
         "id": "vara_guarda_pactos",
         "nombre": "Vara del Guarda Pactos +1",
         "precio": 30000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Otros",
             "Especial",
@@ -8000,7 +7990,7 @@
         "id": "armadura_sin_peso",
         "nombre": "Armadura de Sin Peso",
         "precio": 30000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Ligera",
@@ -8013,7 +8003,7 @@
         "id": "armadura_sin_peso_plus_1",
         "nombre": "Armadura de Sin Peso +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Ligera",
@@ -8039,7 +8029,7 @@
         "id": "herramienta_proposito",
         "nombre": "Herramienta Todo Propósito +1",
         "precio": 30000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Otros",
             "Especial",
@@ -8052,7 +8042,7 @@
         "id": "grimorio_arcano",
         "nombre": "Grimorio Arcano +1",
         "precio": 30000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Otros",
             "Especial",
@@ -8077,12 +8067,12 @@
     {
         "id": "bolsa_alquimica",
         "nombre": "Bolsa alquímica",
-        "precio": 10000,
+        "precio": 3000,
         "stock": 0,
         "categoria": [
             "Otros",
             "Poco Común",
-            "Equipo"
+            "Común"
         ],
         "descripcion": "Esta jarra de cerámica de 12 libras parece capaz de contener un galón de líquido. Se escuchan sonidos de chapoteo desde dentro incluso si la jarra está vacía.",
         "consumible": false
@@ -8091,7 +8081,7 @@
         "id": "instrumento_viola",
         "nombre": "Viola / Violín",
         "precio": 3000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Herramientas",
             "Música",
@@ -8118,7 +8108,7 @@
         "id": "instrumento_gaita",
         "nombre": "Gaita",
         "precio": 3000,
-        "stock": 2,
+        "stock": 1,
         "categoria": [
             "Herramientas",
             "Música",
@@ -8132,7 +8122,7 @@
         "id": "instrumento_lira",
         "nombre": "Lira",
         "precio": 3000,
-        "stock": 2,
+        "stock": 1,
         "categoria": [
             "Herramientas",
             "Música",
@@ -8146,7 +8136,7 @@
         "id": "baston_piton",
         "nombre": "Bastón de la Pitón",
         "precio": 32000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -8159,7 +8149,7 @@
         "id": "baston_piton_plus_1",
         "nombre": "Bastón de la Pitón +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -8185,7 +8175,7 @@
         "id": "arma_furia_dragon",
         "nombre": "Arma de Furia de Dragón (Dormida)",
         "precio": 35000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -8198,7 +8188,7 @@
         "id": "arma_furia_dragon_plus_1",
         "nombre": "Arma de Furia de Dragón (Dormida) +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -8224,7 +8214,7 @@
         "id": "rompepicas",
         "nombre": "Rompepicas +1",
         "precio": 35000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -8237,7 +8227,7 @@
         "id": "vara_retribucion",
         "nombre": "Vara de Retribución",
         "precio": 35000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Otros",
             "Especial",
@@ -8250,7 +8240,7 @@
         "id": "armadura_esporas",
         "nombre": "Armadura de Esporas Fúngicas",
         "precio": 35000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Media",
@@ -8263,7 +8253,7 @@
         "id": "armadura_esporas_plus_1",
         "nombre": "Armadura de Esporas Fúngicas +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Media",
@@ -8289,7 +8279,7 @@
         "id": "escudoomerang",
         "nombre": "Escudoomerang",
         "precio": 35000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Escudo",
@@ -8302,7 +8292,7 @@
         "id": "escudoomerang_plus_1",
         "nombre": "Escudoomerang +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Escudo",
@@ -8341,7 +8331,7 @@
         "id": "escudo_centinela_plus_1",
         "nombre": "Escudo de Centinela +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Escudo",
@@ -8381,7 +8371,7 @@
         "id": "instrumento_trompeta",
         "nombre": "Trompeta de latón",
         "precio": 3500,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Herramientas",
             "Música",
@@ -8395,7 +8385,7 @@
         "id": "kit_venenos",
         "nombre": "Kit de envenenador",
         "precio": 5000,
-        "stock": 2,
+        "stock": 1,
         "categoria": [
             "Herramientas",
             "Especial",
@@ -8408,7 +8398,7 @@
         "id": "baston_ciegacielos",
         "nombre": "Bastón Ciegacielos",
         "precio": 38000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -8421,7 +8411,7 @@
         "id": "baston_ciegacielos_plus_1",
         "nombre": "Bastón Ciegacielos +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -8447,7 +8437,7 @@
         "id": "vital_omega",
         "nombre": "Modelo VITAL-Ω",
         "precio": 3900000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Prostéticos",
             "Implante",
@@ -8460,7 +8450,7 @@
         "id": "coraza",
         "nombre": "Coraza",
         "precio": 40000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Media",
@@ -8473,7 +8463,7 @@
         "id": "coraza_plus_1",
         "nombre": "Coraza +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Media",
@@ -8499,7 +8489,7 @@
         "id": "demonio_matanza",
         "nombre": "Demonio de la matanza",
         "precio": 40000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -8512,7 +8502,7 @@
         "id": "demonio_matanza_plus_1",
         "nombre": "Demonio de la matanza +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -8551,7 +8541,7 @@
         "id": "arma_alerta_plus_1",
         "nombre": "Arma de Alerta +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -8590,7 +8580,7 @@
         "id": "armadura_cuero_mithril",
         "nombre": "Armadura Cuero de Mithril",
         "precio": 40010,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armadura",
             "Armadura Ligera",
@@ -8605,7 +8595,7 @@
         "id": "armadura_cuero_tachonado_mithril",
         "nombre": "Armadura Cuero Tachonado de Mithril",
         "precio": 40045,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armadura",
             "Armadura Ligera",
@@ -8620,7 +8610,7 @@
         "id": "armadura_pellejos_mithril",
         "nombre": "Armadura Pellejos de Mithril",
         "precio": 40010,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armadura",
             "Armadura Media",
@@ -8635,7 +8625,7 @@
         "id": "armadura_cota_mallas_media_mithril",
         "nombre": "Armadura Camisote de Mallas de Mithril",
         "precio": 40050,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armadura",
             "Armadura Media",
@@ -8650,7 +8640,7 @@
         "id": "armadura_coraza_mithril",
         "nombre": "Armadura Coraza de Mithril",
         "precio": 40400,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armadura",
             "Armadura Media",
@@ -8665,7 +8655,7 @@
         "id": "armadura_semiplacas_mithril",
         "nombre": "Armadura Semiplacas de Mithril",
         "precio": 40750,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armadura",
             "Armadura Media",
@@ -8680,7 +8670,7 @@
         "id": "armadura_cota_mallas_mithril",
         "nombre": "Armadura Cota de Mallas de Mithril",
         "precio": 40075,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armadura",
             "Armadura Pesada",
@@ -8695,7 +8685,7 @@
         "id": "armadura_placas_mithril",
         "nombre": "Armadura Placas (Completa) de Mithril",
         "precio": 41500,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armadura",
             "Armadura Pesada",
@@ -8722,7 +8712,7 @@
         "id": "nex_b0nex",
         "nombre": "Modelo NEX-B0NEX",
         "precio": 4000000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Prostéticos",
             "Cibernética",
@@ -8735,7 +8725,7 @@
         "id": "armadura_caido",
         "nombre": "Armadura del Caído",
         "precio": 42000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Media",
@@ -8748,7 +8738,7 @@
         "id": "armadura_caido_plus_1",
         "nombre": "Armadura del Caído +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Media",
@@ -8774,7 +8764,7 @@
         "id": "gran_hacha_furia_sangrienta",
         "nombre": "Gran Hacha de Furia Sangrienta",
         "precio": 45000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -8787,7 +8777,7 @@
         "id": "gran_hacha_furia_sangrienta_plus_1",
         "nombre": "Gran Hacha de Furia Sangrienta +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -8813,7 +8803,7 @@
         "id": "armadura_caparazon_mental",
         "nombre": "Armadura Caparazón Mental",
         "precio": 45000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Pesada",
@@ -8826,7 +8816,7 @@
         "id": "armadura_caparazon_mental_plus_1",
         "nombre": "Armadura Caparazón Mental +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Pesada",
@@ -8852,7 +8842,7 @@
         "id": "armadura_escama_serpiente",
         "nombre": "Armadura Escama de Serpiente",
         "precio": 45000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Media",
@@ -8865,7 +8855,7 @@
         "id": "armadura_escama_serpiente_plus_1",
         "nombre": "Armadura Escama de Serpiente +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Media",
@@ -8943,7 +8933,7 @@
         "id": "armadura_cota_mallas_media_adamantita",
         "nombre": "Armadura Camisote de Mallas de Adamantita",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armadura",
             "Armadura Media",
@@ -8958,7 +8948,7 @@
         "id": "armadura_coraza_adamantita",
         "nombre": "Armadura Coraza de Adamantita",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armadura",
             "Armadura Media",
@@ -8973,7 +8963,7 @@
         "id": "armadura_semiplacas_adamantita",
         "nombre": "Armadura Semiplacas de Adamantita",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armadura",
             "Armadura Media",
@@ -8988,7 +8978,7 @@
         "id": "armadura_cota_mallas_adamantita",
         "nombre": "Armadura Cota de Mallas de Adamantita",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armadura",
             "Armadura Pesada",
@@ -9003,7 +8993,7 @@
         "id": "armadura_placas_adamantita",
         "nombre": "Armadura Placas (Completa) de Adamantita",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armadura",
             "Armadura Pesada",
@@ -9018,7 +9008,7 @@
         "id": "placa_beca_caballeros",
         "nombre": "Placa de Beca de Caballeros",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Pesada",
@@ -9031,7 +9021,7 @@
         "id": "placa_beca_caballeros_plus_1",
         "nombre": "Placa de Beca de Caballeros +1",
         "precio": 50000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armaduras",
             "Pesada",
@@ -9510,7 +9500,7 @@
         "id": "hoja_cristal",
         "nombre": "Hoja de Cristal",
         "precio": 175000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -9873,7 +9863,7 @@
         "id": "mimico_at",
         "nombre": "Membrana Subdérmica Quimérica Modelo A.T. Mímico",
         "precio": 1800000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Prostéticos",
             "Implante",
@@ -9886,7 +9876,7 @@
         "id": "ans_9",
         "nombre": "Sistema Nervioso Sintético - Modelo A.N.S-9",
         "precio": 1900000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Prostéticos",
             "Implante",
@@ -9899,7 +9889,7 @@
         "id": "celeritas_seraphis",
         "nombre": "Celeritas Seraphis",
         "precio": 2200000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Prostéticos",
             "Armaduras",
@@ -9951,7 +9941,7 @@
         "id": "vitalis_manager",
         "nombre": "Neurochip Vitalis Manager-X",
         "precio": 2400000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Prostéticos",
             "Neurochips",
@@ -10003,7 +9993,7 @@
         "id": "scybercalion",
         "nombre": "Neurochip Scybercalion-901",
         "precio": 2700000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Prostéticos",
             "Neurochips",
@@ -10081,7 +10071,7 @@
         "id": "limit_breaker",
         "nombre": "Neurochip Limit Breaker - ULTRAX",
         "precio": 3200000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Neurochips",
             "Implante",
@@ -10133,7 +10123,7 @@
         "id": "chrono_mind",
         "nombre": "Neurochip ChronoMind - V2",
         "precio": 3600000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Prostéticos",
             "Neurochips",
@@ -10146,7 +10136,7 @@
         "id": "cel_lucis",
         "nombre": "Celeritas Lucis",
         "precio": 4200000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Prostéticos",
             "Celeritas",
@@ -10172,7 +10162,7 @@
         "id": "cel_instabilis",
         "nombre": "Celeritas-Instabilis",
         "precio": 5200000,
-        "stock": 0,
+        "stock": 3,
         "categoria": [
             "Prostéticos",
             "Celeritas",
@@ -10415,7 +10405,7 @@
         "id": "antitoxina",
         "nombre": "Antitoxina (vial)",
         "precio": 5000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Consumible",
             "Alquimia",
@@ -10454,7 +10444,7 @@
     {
         "id": "pocion_vision_oscuridad",
         "nombre": "Poción de visión en la oscuridad",
-        "precio": 5000,
+        "precio": 6000,
         "stock": null,
         "categoria": [
             "Pociones",
@@ -10481,7 +10471,7 @@
         "id": "acido_vial",
         "nombre": "Ácido (vial)",
         "precio": 8000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Consumible",
             "Alquimia",
@@ -10494,7 +10484,7 @@
         "id": "misil",
         "nombre": "Misil",
         "precio": 9000,
-        "stock": 6,
+        "stock": 5,
         "categoria": [
             "Explosivos",
             "Consumible",
@@ -10507,7 +10497,7 @@
         "id": "veneno_basico",
         "nombre": "Veneno básico (vial)",
         "precio": 10000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Consumible",
             "Alquimia",
@@ -10545,8 +10535,8 @@
     {
         "id": "pocion_salto",
         "nombre": "Poción de salto",
-        "precio": 20000,
-        "stock": 0,
+        "precio": 15000,
+        "stock": 1,
         "categoria": [
             "Pociones",
             "Consumible",
@@ -10572,7 +10562,7 @@
         "id": "pocion_reduccion",
         "nombre": "Poción de reducción",
         "precio": 20000,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Pociones",
             "Consumible",
@@ -10584,8 +10574,8 @@
     {
         "id": "pocion_aliento_fuego",
         "nombre": "Poción de aliento de fuego",
-        "precio": 20000,
-        "stock": 0,
+        "precio": 35000,
+        "stock": 1,
         "categoria": [
             "Pociones",
             "Consumible",
@@ -10597,8 +10587,8 @@
     {
         "id": "pocion_piel_piedra",
         "nombre": "Poción de piel de piedra líquida",
-        "precio": 20000,
-        "stock": 0,
+        "precio": 45000,
+        "stock": 1,
         "categoria": [
             "Pociones",
             "Consumible",
@@ -10831,7 +10821,7 @@
         "id": "chaleco_antibalas",
         "nombre": "Chaleco Anti-balas",
         "precio": 1500,
-        "stock": 0,
+        "stock": 1,
         "categoria": [
             "Otros",
             "Utilidad",

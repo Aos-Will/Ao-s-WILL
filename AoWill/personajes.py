@@ -9,7 +9,7 @@ from datetime import datetime
 ARCHIVO_DATOS = "personajes.json"
 MAX_EXP = 355000
 
-# ====== PERMISOS ======
+# ====== PERMISOS & Regiones ======
 ADMIN_ID = 995843251200327753
 DRAGON_ROLE_ID = 1410886251556638860
 COSTO_VIAJE_COBRE = 500
@@ -88,15 +88,32 @@ def calcular_edad(nacimiento, actual, estado):
 
     return max(0, edad)
 
-def registrar_cambio(datos, uid, alias, exp_anterior):
-    datos.setdefault("_historial", [])
-    datos["_historial"].append({
+### Historial de movimientos sobre el pj.
+def registrar_cambio(uid, alias, exp_anterior):
+    archivo_historial = "historial.json"
+    registro = {
         "uid": uid,
         "alias": alias,
         "exp_anterior": exp_anterior,
         "timestamp": datetime.utcnow().isoformat()
-    })
+    }
 
+    historial = []
+    # Cargar historial existente si el archivo ya existe
+    if os.path.exists(archivo_historial):
+        try:
+            with open(archivo_historial, "r", encoding="utf-8") as f:
+                historial = json.load(f)
+        except:
+            historial = []
+
+    # Agregar el nuevo registro
+    historial.append(registro)
+
+    with open(archivo_historial, "w", encoding="utf-8") as f:
+        json.dump(historial, f, indent=4, ensure_ascii=False)
+
+### Permisos para ID dragon y ID amin.
 def tiene_permiso_exp(ctx):
     if ctx.author.id == ADMIN_ID:
         return True
@@ -106,7 +123,7 @@ def tiene_permiso_exp(ctx):
 
 def setup(bot: commands.Bot):
 
-    # ---------- Espacio de personaje ----------#
+    # ---------- Dar espacio de personaje ----------#
     @bot.command()
     async def dar_espacio(ctx, usuario: discord.User, nueva_cantidad: int):
         # Solo el Admin o el Rol Dragón pueden usarlo
@@ -126,7 +143,7 @@ def setup(bot: commands.Bot):
         await ctx.send(f"✅ Ahora {usuario.name} puede tener hasta **{nueva_cantidad}** personajes vivos.")
 
 
-    # ---------- ADD PJ ----------
+    # ---------- Añadir personajes ----------
     @bot.command()
     async def addpj(ctx, exp: int, link: str, *, nombre: str):
         nombre = nombre.strip()
@@ -170,7 +187,7 @@ def setup(bot: commands.Bot):
         if alias in personajes:
             await ctx.send("Ese personaje ya existe.")
             return
-
+        ### Base de datos base sin añadidos.
         personajes[alias] = {
             "nombre": nombre,
             "exp": exp,
@@ -188,6 +205,7 @@ def setup(bot: commands.Bot):
             f"Nivel {personajes[alias]['nivel']} | EXP {exp}"
         )
 
+   ## Sistema para calcular el cobre, oro y plata.
     def formatear_monedas(cobre: int) -> str:
         po = cobre // 100
         cobre %= 100
@@ -204,6 +222,7 @@ def setup(bot: commands.Bot):
 
         return " ".join(partes) if partes else "0 PC"
 
+    ### Comando para dar oro.
     @bot.command()
     async def daroro(ctx, alias: str, cantidad: int):
 
@@ -236,6 +255,7 @@ def setup(bot: commands.Bot):
 
         await ctx.send("Personaje no encontrado.")
 
+    ### Comando para poner fecha de nacimiento
     @bot.command()
     async def setnacimiento(ctx, alias: str, dia: int, mes: int, año: int):
         datos = cargar_datos()
@@ -249,6 +269,7 @@ def setup(bot: commands.Bot):
         else:
             await ctx.send("No se encontro el personaje.")
 
+    ### Comando para viajar entre regiones.
     @bot.command()
     async def viajar(ctx, alias: str, *, destino: str):
         destino = destino.title()
@@ -265,20 +286,32 @@ def setup(bot: commands.Bot):
             await ctx.send("No tienes ese personaje.")
             return
 
-        # No se puede viajar si está muerto charlotte
         if pj.get("estado") == "Muerto":
             await ctx.send(f"**{pj['nombre']}** está muerto. Los muertos no viajan.")
             return
 
-        # Revisar cooldown
+        # Verificar si ya está viajando
         if pj.get("llegada") is not None:
             await ctx.send(f"**{pj['nombre']}** ya está en medio de un viaje (Cooldown activo).")
             return
 
+        # Si es la primera vez que se crea el personaje seria instantaneo y no consume oro.
+        ubicacion_actual = pj.get("ubicacion", "Desconocida")
+
+        if ubicacion_actual == "Desconocida":
+            pj["ubicacion"] = destino
+            pj["llegada"] = None  # No hay cooldown
+            guardar_datos(datos)
+            await ctx.send(
+                f"✨ **{pj['nombre']}** ha llegado por primera vez a {destino} de forma instantánea y gratuita.")
+            return
+
+        # Lógica de viaje normal
         if pj.get("oro", 0) < COSTO_VIAJE_COBRE:
             await ctx.send(f"No tienes oro suficiente (5 PO).")
             return
 
+        # Calcula fecha de llegada (14 días después), aplica costo, asigna rol de viaje y actualiza estado.
         cal = obtener_fecha_mundo()
         d, m, a = cal["dia"] + 14, cal["mes"], cal["año"]
 
@@ -294,15 +327,14 @@ def setup(bot: commands.Bot):
         pj["llegada"] = {"dia": d, "mes": m, "año": a, "destino": destino}
         guardar_datos(datos)
 
+        # Gestión de roles
         rol = ctx.guild.get_role(ROL_VIAJE_ID)
         if rol: await ctx.author.add_roles(rol)
 
-        # Rol de Discord
-        rol = ctx.guild.get_role(ROL_VIAJE_ID)
-        if rol: await ctx.author.add_roles(rol)
+        await ctx.send(f"**{pj['nombre']}** ha partido hacia {destino}. Llegará el día {d}/{m}/{a}.")
 
-        await ctx.send(f"**{pj['nombre']}** ha partido hacia {destino}. Llegará (fin de cooldown) el día {d}/{m}/{a}.")
 
+    # Quitar oro
     @bot.command()
     async def quitaroro(ctx, alias: str, cantidad: int):
 
@@ -336,6 +368,7 @@ def setup(bot: commands.Bot):
 
         await ctx.send("Personaje no encontrado.")
 
+    # Modifica el estado del personaje, vivo, muerto, retirado.
     @bot.command()
     async def setestado(ctx, alias: str, estado: str):
         if not any(rol.id == ADMIN_ID for rol in ctx.author.roles):
@@ -367,6 +400,8 @@ def setup(bot: commands.Bot):
 
         await ctx.send("Personaje no encontrado.")
 
+
+    # Comando para borrar personajes SOLO para Admin y Dragon.
     @bot.command()
     async def forcedelpj(ctx, alias: str):
 
@@ -390,6 +425,7 @@ def setup(bot: commands.Bot):
 
         await ctx.send("Personaje no encontrado.")
 
+    # LIsta de comandos.
     @bot.command(name="AyudaBot", aliases=["info", "comandos", "ayudame"])
     async def ayudabot(ctx):
         # Verificamos si es Staff
@@ -405,7 +441,7 @@ def setup(bot: commands.Bot):
             name="Personajes",
             value=(
                 "**addpj [exp] [link] [nombre]**: Registra un nuevo personaje.\n"
-                "**call [alias]**: Muestra la ficha completa, edad y ubicacion.\n"
+                "**call [alias]**: Muestra la ficha completa, edad, ubicacion y cajas.\n"
                 "**setnacimiento [alias] [dia] [mes] [año]**: Define el cumple de tu PJ.\n"
                 "**viajar [alias] [destino]**: Inicia un viaje (14 dias de cooldown)."
             ),
@@ -420,21 +456,45 @@ def setup(bot: commands.Bot):
                 "**tienda [categoria]**: Abre el catalogo de objetos.\n"
                 "**ver [item_id]**: Muestra la descripcion detallada de un objeto.\n"
                 "**comprar [alias] [item_id]**: Adquiere un objeto de la tienda.\n"
+                "**vender [alias] [item_id]**: Vende un objeto a la tienda por 1/5 de su valor.\n"
                 "**usar [alias] [item_id]**: Usa un objeto (consume cargas si aplica)."
+            ),
+            inline=False
+        )
+
+        embed.add_field(
+            name="Intercambios y Desarrollo",
+            value=(
+                "**trade [item_id] [mi_pj] [target_pj] [precio_po]**: Propone un intercambio a otro jugador.\n"
+                "**trade_accept [vendedor_alias] [mi_pj_alias]**: Acepta un intercambio activo.\n"
+                "**entrenar [alias] [opcion]**: Elige un beneficio diario (alimentacion, concentrado, especializado, los 3 grandes)."
+            ),
+            inline=False
+        )
+
+        embed.add_field(
+            name="Cajas de Botin",
+            value=(
+                "**tiendalootbox**: Muestra las cajas, precios, drops y el banner activo.\n"
+                "**comprarbox [alias] [rareza]**: Compra una caja usando el oro del PJ (Limite: 2 diarias).\n"
+                "**abrirbox [alias] [rareza]**: Abre una caja de tu inventario para obtener tu recompensa."
             ),
             inline=False
         )
 
         if es_staff:
             embed.add_field(
-                name="🛡️ Administracion (Staff)",
+                name="Administracion (Staff)",
                 value=(
                     "**addexp / removeexp [alias] [cantidad]**: Gestiona la experiencia.\n"
                     "**daroro / quitaroro [alias] [cantidad]**: Gestiona el dinero (en PC).\n"
-                    "**dar_espacio [usuario] [cantidad]**: Cambia el límite de PJs vivos.\n"
+                    "**dar_espacio [usuario] [cantidad]**: Cambia el limite de PJs vivos.\n"
                     "**setestado [alias] [Estado]**: Cambia a Vivo, Muerto o Retirado.\n"
                     "**reportexp**: (En threads) Procesa recompensas grupales.\n"
-                    "**forcedelpj [alias]**: Elimina un personaje del sistema."
+                    "**forcedelpj [alias]**: Elimina un personaje del sistema.\n"
+                    "**dar_objeto [alias] [item_id]**: Entrega un objeto o dote directa al inventario.\n"
+                    "**darbox [alias/all_characters] [rareza] [cantidad]**: Regala cajas a un PJ o a todos los vivos.\n"
+                    "**revisardrops [pool]**: Audita los objetos cargados en cada rareza."
                 ),
                 inline=False
             )
@@ -450,7 +510,8 @@ def setup(bot: commands.Bot):
         except:
             pass
 
-    # ---------- ADD EXP ----------
+
+    # ---------- Añadir exp ----------
     @bot.command()
     async def addexp(ctx, alias: str, cantidad: int):
         if not tiene_permiso_exp(ctx):
@@ -488,6 +549,7 @@ def setup(bot: commands.Bot):
 
         await ctx.send("Ese personaje no existe.")
 
+    # Permite el leer el mensaje para añadir lo llamado (exp,po) a los personajes en [] si el alias es correcto.
     @bot.command()
     async def reportexp(ctx):
         if not isinstance(ctx.channel, discord.Thread):
@@ -569,7 +631,7 @@ def setup(bot: commands.Bot):
         )
 
 
-    # ---------- REMOVE EXP ----------
+    # ---------- Quitar exp ----------
     @bot.command()
     async def removeexp(ctx, alias: str, cantidad: int):
         if not tiene_permiso_exp(ctx):
@@ -607,7 +669,7 @@ def setup(bot: commands.Bot):
 
         await ctx.send("Ese personaje no existe.")
 
-    # ---------- CALL ----------
+    # ---------- Comando para llamar a los personajes ----------
 
     @bot.event
     async def on_message(message):
@@ -695,6 +757,19 @@ def setup(bot: commands.Bot):
             ubicacion_actual = pj.get("ubicacion", "Desconocida")
             oro_txt = formatear_monedas(pj.get("oro", 0))
 
+            inv_cajas = pj.get("lootboxes", {}).get("inventario_cajas", {})
+
+            cajas_guardadas = [
+                f"{rareza.title()}: {cantidad}"
+                for rareza, cantidad in inv_cajas.items()
+                if cantidad > 0
+            ]
+
+            if cajas_guardadas:
+                txt_cajas = " | ".join(f"📦 {item}" for item in cajas_guardadas)
+            else:
+                txt_cajas = "Ninguna caja guardada."
+
             await message.channel.send(
                 f"**{pj['nombre']}**\n"
                 f"Edad: {txt_edad}\n"
@@ -703,6 +778,7 @@ def setup(bot: commands.Bot):
                 f"Estado de salud: {estado_salud}\n"
                 f"Nivel: {pj['nivel']} | EXP: {pj['exp']}\n"
                 f"Oro: {oro_txt}\n"
+                f"Cajas de Botín: {txt_cajas}\n"
                 f"Cooldown Compra: {txt_compra}\n"
                 f"Link: {pj['link']}"
             )

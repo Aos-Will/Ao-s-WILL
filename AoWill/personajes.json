@@ -3,10 +3,10 @@
         "personajes": {
             "alisa": {
                 "nombre": "Alisa Vermilion",
-                "exp": 5428,
-                "nivel": 4,
+                "exp": 6668,
+                "nivel": 5,
                 "link": "https://nivel20.com/games/dnd-5/characters/1900002-alice",
-                "oro": 10511,
+                "oro": 7157,
                 "nacimiento": {
                     "dia": 7,
                     "mes": -9,
@@ -14,17 +14,48 @@
                 },
                 "viaje": "Viajando a Kaerdan",
                 "ubicacion": "Kaerdan",
-                "llegada": null
+                "llegada": null,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "legendario": 1,
+                        "raro": 0,
+                        "común": 3,
+                        "poco común": 3
+                    }
+                },
+                "inventario": [],
+                "cooldown_entrenamiento": {
+                    "dia": 11,
+                    "mes": 11,
+                    "año": 1,
+                    "tipo": "Entrenamiento concentrado"
+                }
             },
             "reika": {
                 "nombre": "Reika Fujiwara",
-                "exp": 26322,
+                "exp": 30638,
                 "nivel": 7,
                 "link": "https://nivel20.com/games/dnd-5/characters/1371240-reika-fujiwara",
-                "oro": 140210,
+                "oro": 135360,
                 "inventario": [
                     "escoba_volador",
-                    "botas_elfos"
+                    "kit_sanador_consumible (10)",
+                    "alabarda",
+                    "baston_adorno",
+                    "varita_ceno",
+                    "varita_sonrisas",
+                    "bota_pisadas_falsas",
+                    "utiles_navegacion",
+                    "vara_retribucion",
+                    "bota_pisadas_falsas",
+                    "herramientas_joyero",
+                    "ojos_encantadores",
+                    "espada_tocada_luna",
+                    "boots_of_elvenkind",
+                    "bolsa_alquimica",
+                    "candado_antiganzua"
                 ],
                 "cooldown_compra": null,
                 "nacimiento": {
@@ -32,58 +63,101 @@
                     "mes": 7,
                     "año": -16
                 },
-                "ubicacion": "Viajando a Tharion",
+                "ubicacion": "Viajando a Kaerdan",
                 "llegada": {
-                    "dia": 20,
-                    "mes": 9,
+                    "dia": 1,
+                    "mes": 12,
                     "año": 1,
-                    "destino": "Tharion"
+                    "destino": "Kaerdan"
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "13-11-1",
+                        "común": 2,
+                        "poco común": 0
+                    }
                 }
             },
             "victoria": {
                 "nombre": "Victoria Kurta",
-                "exp": 35953,
+                "exp": 36186,
                 "nivel": 8,
                 "link": "https://nivel20.com/games/dnd-5/characters/1817559-victoria-kurta-acto-2",
-                "oro": 0,
+                "oro": 5000,
                 "inventario": [
                     "kit_sanador_consumible (7)"
-                ]
+                ],
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             }
-        }
+        },
+        "max_pj": 4
     },
     "610337346717614101": {
         "personajes": {
             "ivo": {
                 "nombre": "Ivo Robotnick \"eggman\"",
-                "exp": 15476,
+                "exp": 17316,
                 "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1896242-ivo-robotnik-eggman",
-                "oro": 24460,
+                "oro": 46960,
                 "inventario": [
                     "herramienta_proposito",
                     "escudo_plus_1"
                 ],
                 "cooldown_compra": null,
-                "ubicacion": "Tharion",
-                "llegada": null
+                "ubicacion": "Viajando a Kaerdan",
+                "llegada": {
+                    "dia": 5,
+                    "mes": 10,
+                    "año": 1,
+                    "destino": "Kaerdan"
+                },
+                "nacimiento": {
+                    "dia": 23,
+                    "mes": 6,
+                    "año": -36
+                },
+                "estado": "Retirado"
             },
             "zekray": {
                 "nombre": "Zekray",
-                "exp": 7892,
+                "exp": 9132,
                 "nivel": 5,
                 "link": "https://nivel20.com/games/dnd-5/characters/1927641-zekrai-rodriguez",
-                "oro": 18800,
+                "oro": 8443,
                 "ubicacion": "Tharion",
                 "llegada": null,
                 "inventario": [
                     "red",
-                    "red_plus_1"
+                    "red_plus_1",
+                    "paquete_ladron"
                 ],
-                "cooldown_compra": {
-                    "dia": 8,
-                    "mes": 8,
-                    "año": 1
+                "cooldown_compra": null,
+                "nacimiento": {
+                    "dia": 7,
+                    "mes": 7,
+                    "año": -17
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
                 }
             },
             "katari": {
@@ -92,66 +166,145 @@
                 "nivel": 5,
                 "link": "https://nivel20.com/games/dnd-5/characters/1319102-katari-kagerou-zenin",
                 "estado": "Vivo",
-                "oro": 225960,
+                "oro": 210960,
                 "inventario": [
                     "pocion_curacion_mayor",
                     "Diccionario_Elfo",
                     "kit_sanador_consumible (9)"
                 ],
-                "cooldown_compra": null
+                "cooldown_compra": null,
+                "nacimiento": {
+                    "dia": 30,
+                    "mes": 1,
+                    "año": -15
+                },
+                "ubicacion": "Kaerdan",
+                "llegada": null,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             },
             "sans": {
-                "nombre": "Sans OG",
-                "exp": 175,
-                "nivel": 1,
-                "link": "https://nivel20.com/games/dnd-5/characters/2019490-sans-og",
+                "nombre": "Sans OG.",
+                "exp": 475,
+                "nivel": 2,
+                "link": "https://nivel20.com/games/dnd-5/characters/2037558-sans-og",
                 "estado": "Vivo",
-                "oro": 0
+                "oro": 0,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    }
+                },
+                "inventario": [
+                    "escudo_expresivo",
+                    "pote_sobriedad",
+                    "espada_tocada_luna",
+                    "ballesta_ligera",
+                    "tiza_marca",
+                    "baston"
+                ]
             }
         },
         "max_pj": 4
     },
-    "_historial": [
-        {
-            "uid": "719342976064815194",
-            "alias": "reika",
-            "exp_anterior": 25022,
-            "timestamp": "2026-04-25T06:28:43.527090"
-        }
-    ],
     "933237683701055519": {
         "personajes": {
             "hikari": {
                 "nombre": "Hikari",
-                "exp": 36560,
+                "exp": 39693,
                 "nivel": 8,
                 "link": "https://nivel20.com/games/dnd-5/characters/1318291-hikari-zenin",
-                "oro": 350400,
+                "oro": 287050,
                 "inventario": [
                     "arma_alerta",
                     "varita_deteccion_magica",
-                    "varita_secretos"
+                    "varita_secretos",
+                    "vara_inamovible",
+                    "bota_pisadas_falsas",
+                    "bolsa_alquimica",
+                    "brazalete_punal_plus_1",
+                    "deck_of_illusions",
+                    "vela_profunda",
+                    "ropa_remendada",
+                    "potion_of_healing_greater",
+                    "candado_antiganzua",
+                    "baston_flores",
+                    "ropa_remendada",
+                    "cota_de_escamas",
+                    "escudo_expresivo_plus_1",
+                    "martillo_afilado_plus_1",
+                    "candado_antiganzua",
+                    "candado_antiganzua",
+                    "kit_venenos",
+                    "bota_pisadas_falsas"
                 ],
                 "cooldown_compra": null,
                 "ubicacion": "Kaerdan",
-                "llegada": null
+                "llegada": null,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "17-11-1",
+                        "común": 2,
+                        "poco común": 0
+                    }
+                }
             },
             "sung": {
                 "nombre": "Sung",
-                "exp": 17419,
+                "exp": 20442,
                 "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1714870-the-sung-jin-woo",
                 "estado": "Vivo",
-                "oro": 11111,
+                "oro": 111,
                 "inventario": [
                     "abanico_viento",
                     "bolsa_alquimica",
-                    "jabalina_trueno"
+                    "jabalina_trueno",
+                    "boomerang_tormenta",
+                    "llave_misteriosa",
+                    "utensilios_de_cocinero",
+                    "javelin_of_lightning_plus_1",
+                    "paquete_explorador",
+                    "escudo_expresivo_plus_1",
+                    "casco_expresivo",
+                    "moneda_falsa"
                 ],
-                "cooldown_compra": {
-                    "dia": 6,
-                    "mes": 9,
-                    "año": 1
+                "cooldown_compra": null,
+                "ubicacion": "Kaerdan",
+                "llegada": null,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "16-11-1",
+                        "común": 1,
+                        "poco común": 0
+                    }
+                },
+                "cooldown_entrenamiento": {
+                    "dia": 19,
+                    "mes": 11,
+                    "año": 1,
+                    "tipo": "Buena alimentación y entrenamiento"
                 }
             },
             "onibi": {
@@ -160,55 +313,174 @@
                 "nivel": 5,
                 "link": "https://nivel20.com/games/dnd-5/characters/1978026-onibi-nerfeado",
                 "estado": "Vivo",
-                "oro": 67600,
+                "oro": 37650,
                 "inventario": [
                     "vendajes_potencial_desarmado",
                     "anillo_caminar_aguas",
-                    "escudo_centinela"
+                    "escudo_centinela",
+                    "ropa_remendada",
+                    "escudo_expresivo_plus_1",
+                    "varita_ceno",
+                    "varita_pirotecnia",
+                    "bota_pisadas_falsas",
+                    "llave_misteriosa",
+                    "moneda_falsa",
+                    "antitoxina",
+                    "herramientas_peletero",
+                    "pote_sobriedad",
+                    "escudo_expresivo_plus_1",
+                    "instrumento_cuerno_guerra",
+                    "bota_pisadas_falsas",
+                    "granada_humo",
+                    "pote_sobriedad"
                 ],
-                "cooldown_compra": null
+                "cooldown_compra": null,
+                "ubicacion": "Kaerdan",
+                "llegada": null,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "17-11-1",
+                        "común": 2,
+                        "poco común": 0
+                    }
+                }
+            },
+            "theron": {
+                "nombre": "Theron",
+                "exp": 0,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2089123-theron-paleblood",
+                "estado": "Vivo",
+                "oro": 6000,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "17-11-1",
+                        "común": 2,
+                        "poco común": 0
+                    }
+                },
+                "inventario": [
+                    "ropa_remendada",
+                    "granada_criogenica",
+                    "chaleco_antibalas"
+                ]
             }
-        }
+        },
+        "max_pj": 4
     },
     "1116407238525984798": {
         "personajes": {
             "jesús": {
                 "nombre": "Jesús \"Chuy\" Álvaro Núñez",
-                "exp": 2495,
-                "nivel": 3,
+                "exp": 2825,
+                "nivel": 4,
                 "link": "https://nivel20.com/games/dnd-5/characters/1595770-jesus-chuy-alvaro-nunez",
-                "oro": 10957,
+                "oro": 6457,
                 "nacimiento": {
                     "dia": 21,
                     "mes": 10,
                     "año": -26
-                }
+                },
+                "inventario": [
+                    "armadura_brillo"
+                ],
+                "cooldown_compra": {
+                    "dia": 7,
+                    "mes": 10,
+                    "año": 1
+                },
+                "ubicacion": "Viajando a Kaerdan",
+                "llegada": {
+                    "dia": 7,
+                    "mes": 10,
+                    "año": 1,
+                    "destino": "Kaerdan"
+                },
+                "estado": "Retirado"
             },
             "draco": {
                 "nombre": "Draco Lucifer Erroris \"Mascarin\"",
-                "exp": 6125,
+                "exp": 6425,
                 "nivel": 4,
                 "link": "https://nivel20.com/games/dnd-5/characters/1902349-d-l-e-mascarin",
-                "oro": 283500,
-                "ubicacion": "Tharion",
-                "llegada": null,
+                "oro": 166500,
+                "ubicacion": "Viajando a Arkanvale",
+                "llegada": {
+                    "dia": 24,
+                    "mes": 11,
+                    "año": 1,
+                    "destino": "Arkanvale"
+                },
                 "nacimiento": {
                     "dia": 13,
                     "mes": 5,
                     "año": -14
+                },
+                "inventario": [
+                    "baston_bambu_plus_1",
+                    "ropa_remendada",
+                    "bota_pisadas_falsas",
+                    "herramientas_cartografo",
+                    "bolsa_alquimica",
+                    "bomba_temporal",
+                    "baston_bambu_plus_1",
+                    "utiles_navegacion",
+                    "moneda_falsa",
+                    "ring_of_mind_shielding",
+                    "arma_furia_dragon",
+                    "casco_expresivo",
+                    "capa_ondeante",
+                    "misil"
+                ],
+                "cooldown_compra": {
+                    "dia": 25,
+                    "mes": 11,
+                    "año": 1
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "11-11-1",
+                        "común": 2,
+                        "poco común": 0
+                    }
                 }
             },
             "victor": {
                 "nombre": "Victor Reyes",
-                "exp": 2936,
+                "exp": 3041,
                 "nivel": 4,
                 "link": "https://nivel20.com/games/dnd-5/characters/1770527-victor-reyes-perdedor-mas-fuerte",
                 "estado": "Vivo",
-                "oro": 45100,
+                "oro": 45300,
                 "nacimiento": {
                     "dia": 28,
                     "mes": 3,
                     "año": -31
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
                 }
             },
             "chrono": {
@@ -217,7 +489,7 @@
                 "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1989932-chrono-gojo",
                 "estado": "Vivo",
-                "oro": 55839,
+                "oro": 53839,
                 "nacimiento": {
                     "dia": 1,
                     "mes": 1,
@@ -226,18 +498,69 @@
                 "ubicacion": "Kaerdan",
                 "llegada": null,
                 "inventario": [
-                    "vial_pozo_sangriento"
+                    "vial_pozo_sangriento",
+                    "flecha_irrompible",
+                    "espada_tocada_luna",
+                    "kit_alquimista",
+                    "instrumento_musical_tambor",
+                    "martillo_ligero",
+                    "pico_de_guerra"
                 ],
-                "cooldown_compra": null
+                "cooldown_compra": null,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    }
+                },
+                "cooldown_entrenamiento": {
+                    "dia": 18,
+                    "mes": 11,
+                    "año": 1,
+                    "tipo": "Buena alimentación y entrenamiento"
+                }
+            },
+            "seraphine": {
+                "nombre": "Seraphine Vellkor",
+                "exp": 270,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2072829-seraphine-vellkor",
+                "estado": "Vivo",
+                "oro": 17000,
+                "nacimiento": {
+                    "dia": 1,
+                    "mes": 8,
+                    "año": -24
+                },
+                "ubicacion": "Kaerdan",
+                "llegada": null,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    }
+                },
+                "inventario": [
+                    "espada_tocada_luna",
+                    "taza_limpieza",
+                    "perfume_embriagador",
+                    "capa_ondeante",
+                    "red_plus_1",
+                    "armadura_sin_peso"
+                ]
             }
         },
-        "max_pj": 4
+        "max_pj": 5
     },
     "798669609824813147": {
         "personajes": {
             "keita": {
                 "nombre": "Keita",
-                "exp": 19100,
+                "exp": 22240,
                 "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1894310-keita-jutachi",
                 "nacimiento": {
@@ -245,11 +568,42 @@
                     "mes": -7,
                     "año": -50
                 },
-                "oro": 38200
+                "oro": 55700,
+                "ubicacion": "Kaerdan",
+                "llegada": null,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "17-11-1",
+                        "común": 2,
+                        "poco común": 0
+                    }
+                },
+                "inventario": [
+                    "armadura_humeante_plus_1",
+                    "escudo_expresivo_plus_1",
+                    "kit_venenos",
+                    "kit_alquimista",
+                    "demonio_matanza_plus_1",
+                    "paquete_artista",
+                    "ropa_remendada",
+                    "ojos_encantadores",
+                    "perfume_embriagador",
+                    "armadura_humeante_plus_1",
+                    "vela_profunda",
+                    "espada_tocada_luna",
+                    "vela_profunda",
+                    "escudo_tortuga"
+                ]
             },
             "nazomi": {
                 "nombre": "Nazomi",
-                "exp": 3352,
+                "exp": 4592,
                 "nivel": 4,
                 "link": "https://nivel20.com/games/dnd-5/characters/1927652-nazomi",
                 "nacimiento": {
@@ -257,16 +611,57 @@
                     "mes": -7,
                     "año": -16
                 },
-                "oro": 15100,
+                "oro": 9530,
                 "ubicacion": "Tharion",
-                "llegada": null
+                "llegada": null,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             },
             "cleire": {
                 "nombre": "Cleire",
-                "exp": 1171,
+                "exp": 1486,
                 "nivel": 3,
                 "link": "https://nivel20.com/games/dnd-5/characters/1932147-cleire",
-                "oro": 28500
+                "oro": 19000,
+                "nacimiento": {
+                    "dia": 6,
+                    "mes": 12,
+                    "año": -20
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "17-11-1",
+                        "común": 2,
+                        "poco común": 0
+                    }
+                },
+                "inventario": [
+                    "varita_pirotecnia",
+                    "casco_expresivo",
+                    "paquete_ladron",
+                    "herramientas_joyero",
+                    "varita_ceno",
+                    "kit_sanador_consumible (10)",
+                    "misil",
+                    "escudo_expresivo_plus_1",
+                    "armadura_humeante",
+                    "escudo_expresivo",
+                    "candado_antiganzua",
+                    "bota_pisadas_falsas",
+                    "taza_limpieza"
+                ]
             }
         }
     },
@@ -274,18 +669,32 @@
         "personajes": {
             "viatrix": {
                 "nombre": "Viatrix",
-                "exp": 6981,
+                "exp": 8281,
                 "nivel": 5,
                 "link": "https://nivel20.com/games/dnd-5/characters/1911225-viatrix",
-                "oro": 32500,
+                "oro": 47500,
                 "inventario": [
-                    "revolver_maldito"
+                    "revolver_maldito",
+                    "maza_plus_1",
+                    "sombrero_magico",
+                    "casco_expresivo",
+                    "moneda_falsa",
+                    "armadura_coraza_adamantita",
+                    "escudo_expresivo_plus_2"
                 ],
                 "cooldown_compra": null,
                 "nacimiento": {
                     "dia": 13,
                     "mes": 11,
                     "año": -16
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    }
                 }
             },
             "rakkī": {
@@ -299,29 +708,26 @@
                     "mes": 7,
                     "año": -15
                 },
-                "ubicacion": "Viajando a Kaerdan",
-                "llegada": {
-                    "dia": 27,
-                    "mes": 8,
-                    "año": 1,
-                    "destino": "Kaerdan"
-                },
+                "ubicacion": "Kaerdan",
+                "llegada": null,
                 "inventario": [
-                    "hoz_lunar"
+                    "hoz_lunar",
+                    "instrumento_shawm",
+                    "chaleco_antibalas",
+                    "instrumento_musical_laud",
+                    "bota_pisadas_falsas",
+                    "escudo_expresivo_plus_1",
+                    "casco_expresivo_plus_1"
                 ],
-                "cooldown_compra": {
-                    "dia": 27,
-                    "mes": 8,
-                    "año": 1
+                "cooldown_compra": null,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    }
                 }
-            },
-            "papyrus": {
-                "nombre": "papyrus",
-                "exp": 175,
-                "nivel": 1,
-                "link": "https://nivel20.com/games/dnd-5/characters/2019461-papyrus",
-                "estado": "Vivo",
-                "oro": 0
             },
             "layla": {
                 "nombre": "Layla",
@@ -334,6 +740,55 @@
                     "dia": 18,
                     "mes": 7,
                     "año": -16
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    }
+                },
+                "inventario": [
+                    "instrumento_cuerno_guerra",
+                    "paquete_sacerdote",
+                    "espada_rompeespadas",
+                    "tinta_misteriosa",
+                    "armadura_humeante_plus_1",
+                    "varita_pirotecnia"
+                ]
+            },
+            "papyrus": {
+                "nombre": "Papyrus",
+                "exp": 865,
+                "nivel": 2,
+                "link": "https://nivel20.com/games/dnd-5/characters/2032060-papyrus",
+                "estado": "Vivo",
+                "oro": 9000,
+                "inventario": [
+                    "lanza_impulsora",
+                    "herramientas_joyero",
+                    "instrumento_organillo",
+                    "martillo_afilado",
+                    "instrumento_shawm",
+                    "instrumento_dulcimer",
+                    "baston_flores"
+                ],
+                "cooldown_compra": null,
+                "ubicacion": "Viajando a Arkanvale",
+                "llegada": {
+                    "dia": 27,
+                    "mes": 10,
+                    "año": 1,
+                    "destino": "Arkanvale"
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    }
                 }
             }
         },
@@ -354,7 +809,15 @@
                 "exp": 1572,
                 "nivel": 3,
                 "link": "https://nivel20.com/games/dnd-5/characters/1935411-rudra-musa",
-                "oro": 34500
+                "oro": 34500,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             }
         }
     },
@@ -370,25 +833,54 @@
             },
             "toby": {
                 "nombre": "Toby Enma",
-                "exp": 33916,
-                "nivel": 7,
+                "exp": 38232,
+                "nivel": 8,
                 "link": "https://nivel20.com/games/dnd-5/characters/1768347-tobi-enma",
-                "oro": 294040,
+                "oro": 204840,
                 "inventario": [
                     "mejora_de_chamuscada_plus_1",
-                    "amuleto_deteccion_localizacion"
+                    "amuleto_deteccion_localizacion",
+                    "llave_misteriosa",
+                    "pote_sobriedad",
+                    "bota_pisadas_falsas",
+                    "herramientas_herrero",
+                    "vara_retribucion",
+                    "tiza_marca",
+                    "baston_flores",
+                    "ballesta_pesada",
+                    "armadura_sin_peso",
+                    "capa_ondeante",
+                    "ballesta_ligera_arma_plus_1",
+                    "perfume_embriagador",
+                    "baston_llama_aves",
+                    "boots_of_elvenkind",
+                    "capa_ondeante",
+                    "tinta_misteriosa",
+                    "prenda_removible",
+                    "escudo_expresivo",
+                    "vela_profunda",
+                    "traje_blindado"
                 ],
-                "cooldown_compra": {
-                    "dia": 20,
-                    "mes": 9,
-                    "año": 1
-                },
+                "cooldown_compra": null,
                 "ubicacion": "Tharion",
                 "llegada": null,
                 "nacimiento": {
                     "dia": 12,
                     "mes": 3,
                     "año": -15
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "17-11-1",
+                        "común": 2,
+                        "poco común": 0
+                    }
                 }
             },
             "kurohoshi": {
@@ -396,72 +888,225 @@
                 "exp": 28120,
                 "nivel": 7,
                 "link": "https://nivel20.com/games/dnd-5/characters/1262929-kurohoshi",
-                "oro": 511000
+                "oro": 305500,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "17-11-1",
+                        "común": 2,
+                        "poco común": 2
+                    }
+                },
+                "inventario": [
+                    "candado_antiganzua",
+                    "vela_profunda",
+                    "ropa_remendada",
+                    "kusarigama",
+                    "escopeta",
+                    "instrumento_musical_flauta",
+                    "gran_garrote_plus_1",
+                    "bolsa_alquimica",
+                    "baston_adorno",
+                    "ropa_remendada",
+                    "spell_scroll_1st",
+                    "varita_pirotecnia",
+                    "armadura_humeante_plus_2",
+                    "granada_humo",
+                    "instrumento_musical_laud",
+                    "escudo_expresivo",
+                    "bota_pisadas_falsas",
+                    "varita_sonrisas",
+                    "chaleco_antibalas",
+                    "sombrero_magico",
+                    "talisman",
+                    "herramientas_joyero",
+                    "traje_blindado_plus_1",
+                    "pote_sobriedad",
+                    "candado_antiganzua",
+                    "instrumento_shawm",
+                    "granada_fragmentacion"
+                ],
+                "ubicacion": "Viajando a Kaerdan",
+                "llegada": {
+                    "dia": 30,
+                    "mes": 11,
+                    "año": 1,
+                    "destino": "Kaerdan"
+                },
+                "cooldown_entrenamiento": {
+                    "dia": 18,
+                    "mes": 11,
+                    "año": 1,
+                    "tipo": "Buena alimentación y entrenamiento"
+                }
             }
-        }
+        },
+        "max_pj": 4
     },
     "712063484740894801": {
         "personajes": {
             "blade": {
                 "nombre": "Blade",
-                "exp": 3136,
+                "exp": 5306,
                 "nivel": 4,
                 "link": "https://nivel20.com/games/dnd-5/characters/1932884-blade",
-                "oro": 16420,
-                "ubicacion": "Viajando a Tharion",
+                "oro": 44920,
+                "ubicacion": "Viajando a Kaerdan",
                 "llegada": {
-                    "dia": 22,
-                    "mes": 8,
+                    "dia": 7,
+                    "mes": 10,
                     "año": 1,
-                    "destino": "Tharion"
+                    "destino": "Kaerdan"
                 },
                 "inventario": [
                     "espada_larga_plus_1"
                 ],
-                "cooldown_compra": {
-                    "dia": 27,
-                    "mes": 8,
-                    "año": 1
+                "cooldown_compra": null,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
                 }
             },
             "thomward": {
                 "nombre": "Thomward",
-                "exp": 1654,
-                "nivel": 3,
+                "exp": 2894,
+                "nivel": 4,
                 "link": "https://nivel20.com/games/dnd-5/characters/1917954-thomward-luminos",
                 "estado": "Vivo",
-                "oro": 26600
+                "oro": 16604,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             },
             "mork": {
                 "nombre": "Mork",
                 "exp": 181,
                 "nivel": 1,
                 "link": "https://nivel20.com/games/dnd-5/characters/1926429-mork-tarka-colmillo-resonante",
+                "estado": "Retirado",
+                "oro": 10300,
+                "ubicacion": "Viajando a Kaerdan",
+                "llegada": {
+                    "dia": 18,
+                    "mes": 10,
+                    "año": 1,
+                    "destino": "Kaerdan"
+                }
+            },
+            "dimitrius": {
+                "nombre": "Dimitrius",
+                "exp": 0,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2062459-dimitrius-luminos",
                 "estado": "Vivo",
-                "oro": 10800
+                "oro": 2500,
+                "inventario": [
+                    "espada_larga",
+                    "cuero_tachonado",
+                    "instrumento_musical_laud",
+                    "estoque"
+                ],
+                "cooldown_compra": {
+                    "dia": 20,
+                    "mes": 10,
+                    "año": 1
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
+            },
+            "daisuke": {
+                "nombre": "Daisuke",
+                "exp": 170,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2075040-daisuke-tadakastu",
+                "estado": "Vivo",
+                "oro": 12000,
+                "inventario": [
+                    "katana_jjk"
+                ],
+                "ubicacion": "Viajando a Kaerdan",
+                "llegada": {
+                    "dia": 29,
+                    "mes": 11,
+                    "año": 1,
+                    "destino": "Kaerdan"
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             }
-        }
+        },
+        "max_pj": 4
     },
     "460125888940605446": {
         "personajes": {
             "elvira": {
                 "nombre": "Elvira",
-                "exp": 3395,
+                "exp": 3935,
                 "nivel": 4,
                 "link": "https://nivel20.com/games/dnd-5/characters/1775474-elvira-la-ricachona",
-                "oro": 47000,
+                "oro": 40400,
                 "nacimiento": {
                     "dia": 6,
                     "mes": 1,
                     "año": -20
+                },
+                "inventario": [
+                    "linterna_sorda",
+                    "aceite_frasco",
+                    "candado_antiganzua",
+                    "red_plus_1",
+                    "baston_llama_aves",
+                    "varita_conduccion",
+                    "varita_ceno",
+                    "armadura_humeante"
+                ],
+                "cooldown_compra": null,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "13-11-1",
+                        "común": 2,
+                        "poco común": 0
+                    }
                 }
             },
             "haru": {
                 "nombre": "Haru",
-                "exp": 16644,
+                "exp": 16749,
                 "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1287415-haru-zenin",
-                "oro": 88062,
+                "oro": 77062,
                 "nacimiento": {
                     "dia": 6,
                     "mes": 12,
@@ -469,14 +1114,22 @@
                 },
                 "inventario": [
                     "pocion_curacion_mayor"
-                ]
+                ],
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             },
             "yuki": {
                 "nombre": "Yuki",
-                "exp": 21384,
+                "exp": 21489,
                 "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1287127-yuki-zenin",
-                "oro": 116226,
+                "oro": 63426,
                 "nacimiento": {
                     "dia": 6,
                     "mes": 12,
@@ -486,7 +1139,15 @@
                     "pocion_curacion_mayor",
                     "pocion_curacion_mayor",
                     "Diccionario_Elfo"
-                ]
+                ],
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             },
             "anario": {
                 "nombre": "Anario",
@@ -494,25 +1155,73 @@
                 "nivel": 5,
                 "link": "https://nivel20.com/games/dnd-5/characters/1339394-anario",
                 "estado": "Vivo",
-                "oro": 160,
+                "oro": 11160,
                 "nacimiento": {
                     "dia": 6,
                     "mes": 10,
                     "año": -17
-                }
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    }
+                },
+                "inventario": [
+                    "bolsa_alquimica",
+                    "prenda_removible",
+                    "bota_pisadas_falsas"
+                ]
             },
             "jani": {
                 "nombre": "jani",
-                "exp": 22,
-                "nivel": 1,
+                "exp": 507,
+                "nivel": 2,
                 "link": "https://nivel20.com/games/dnd-5/characters/1720334-jani-gojo",
-                "estado": "Muerto",
-                "oro": 0,
+                "estado": "Vivo",
+                "oro": 1135,
                 "nacimiento": {
                     "dia": 6,
                     "mes": 9,
                     "año": -12
+                },
+                "inventario": [
+                    "ojos_encantadores",
+                    "varita_conduccion",
+                    "instrumento_gaita",
+                    "sombrero_magico",
+                    "traje_blindado"
+                ],
+                "ubicacion": "Viajando a Kaerdan",
+                "llegada": {
+                    "dia": 29,
+                    "mes": 11,
+                    "año": 1,
+                    "destino": "Kaerdan"
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "9-0-2",
+                        "común": 1,
+                        "poco común": 0
+                    }
                 }
+            },
+            "aurora": {
+                "nombre": "aurora",
+                "exp": 900,
+                "nivel": 3,
+                "link": "https://nivel20.com/games/dnd-5/characters/1340539-aurora",
+                "estado": "Retirado",
+                "oro": 0
             }
         },
         "max_pj": 5
@@ -524,7 +1233,15 @@
                 "exp": 567,
                 "nivel": 2,
                 "link": "https://nivel20.com/games/dnd-5/characters/1859971-valentina-oro-falso",
-                "oro": 26500
+                "oro": 26500,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             }
         }
     },
@@ -532,7 +1249,7 @@
         "personajes": {
             "aiden": {
                 "nombre": "Aiden Auriel",
-                "exp": 15180,
+                "exp": 16480,
                 "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1901843-aiden-auriel",
                 "nacimiento": {
@@ -540,20 +1257,47 @@
                     "mes": -3,
                     "año": -15
                 },
-                "oro": 59800,
-                "ubicacion": "Tharion",
-                "llegada": null,
+                "oro": 72050,
+                "ubicacion": "Viajando a Kaerdan",
+                "llegada": {
+                    "dia": 30,
+                    "mes": 11,
+                    "año": 1,
+                    "destino": "Kaerdan"
+                },
                 "inventario": [
                     "pocion_curacion",
-                    "escopeta"
-                ]
+                    "escopeta",
+                    "filo_resonante",
+                    "candado_antiganzua",
+                    "bota_pisadas_falsas"
+                ],
+                "lootboxes": {
+                    "común": 1,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "16-11-1",
+                        "común": 2,
+                        "poco común": 0
+                    }
+                },
+                "cooldown_entrenamiento": {
+                    "dia": 18,
+                    "mes": 11,
+                    "año": 1,
+                    "tipo": "Buena alimentación y entrenamiento"
+                }
             },
             "haruta": {
                 "nombre": "Haruta Gojo",
-                "exp": 14852,
+                "exp": 14957,
                 "nivel": 6,
                 "link": "https://nivel20.com/games/dnd-5/characters/1318636-haruta-gojo",
-                "oro": 285951,
+                "oro": 234651,
                 "ubicacion": "Kaerdan",
                 "llegada": null,
                 "nacimiento": {
@@ -565,7 +1309,15 @@
                     "pocion_curacion",
                     "pocion_curacion",
                     "kit_sanador_consumible"
-                ]
+                ],
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             },
             "reinhardt": {
                 "nombre": "Reinhardt",
@@ -577,19 +1329,59 @@
                     "mes": -6,
                     "año": -16
                 },
-                "oro": 29000
+                "oro": 27500,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "13-11-1",
+                        "común": 2,
+                        "poco común": 0
+                    }
+                },
+                "inventario": [
+                    "metralleta_plus_1",
+                    "mochila",
+                    "instrumento_ilusiones"
+                ]
             },
             "tailor": {
                 "nombre": "Tailor",
-                "exp": 0,
-                "nivel": 1,
+                "exp": 320,
+                "nivel": 2,
                 "link": "https://nivel20.com/games/dnd-5/characters/2019988-tailor-goldstein",
                 "estado": "Vivo",
-                "oro": 12500,
+                "oro": 4700,
                 "nacimiento": {
                     "dia": 5,
                     "mes": -6,
                     "año": -16
+                },
+                "inventario": [
+                    "revolver",
+                    "hojabrazo_plus_1",
+                    "sanguijuela_seca",
+                    "armadura_brillo",
+                    "traje_blindado"
+                ],
+                "ubicacion": "Viajando a Kaerdan",
+                "llegada": {
+                    "dia": 29,
+                    "mes": 11,
+                    "año": 1,
+                    "destino": "Kaerdan"
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    }
                 }
             }
         },
@@ -602,7 +1394,15 @@
                 "exp": 1352,
                 "nivel": 3,
                 "link": "https://nivel20.com/games/dnd-5/characters/1921097-arkatz",
-                "oro": 29900
+                "oro": 29900,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             }
         }
     },
@@ -613,7 +1413,15 @@
                 "exp": 935,
                 "nivel": 3,
                 "link": "https://nivel20.com/games/dnd-5/characters/1540507-shun-gojo",
-                "oro": 12500
+                "oro": 12500,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             }
         }
     },
@@ -621,27 +1429,51 @@
         "personajes": {
             "sutaraito": {
                 "nombre": "Sutaraito Kamo",
-                "exp": 2524,
+                "exp": 2629,
                 "nivel": 3,
                 "link": "https://nivel20.com/games/dnd-5/characters/1335176-sutaraito-kamo",
-                "oro": 37110,
+                "oro": 33610,
                 "inventario": [
                     "Libro_de_Medicina"
-                ]
+                ],
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             },
             "el": {
                 "nombre": "El vagabundo",
                 "exp": 0,
                 "nivel": 1,
                 "link": "https://nivel20.com/games/dnd-5/characters/1916695-el-vagabundo",
-                "oro": 10100
+                "oro": 10100,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             },
             "nezha": {
                 "nombre": "Nezha Gojo",
                 "exp": 0,
                 "nivel": 1,
                 "link": "https://nivel20.com/games/dnd-5/characters/1911157-nezha-gojo",
-                "oro": 12500
+                "oro": 12500,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             }
         }
     },
@@ -652,7 +1484,15 @@
                 "exp": 1325,
                 "nivel": 3,
                 "link": "https://nivel20.com/games/dnd-5/characters/1894247-zert-seichiro-soulneverfall",
-                "oro": 22700
+                "oro": 22700,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             }
         }
     },
@@ -663,34 +1503,91 @@
                 "exp": 0,
                 "nivel": 1,
                 "link": "https://nivel20.com/games/dnd-5/characters/1959369-rokmo",
-                "oro": 5000
+                "oro": 5000,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             }
         }
     },
     "873006564192165899": {
         "personajes": {
-            "kariegh": {
-                "nombre": "Kariegh",
-                "exp": 0,
-                "nivel": 1,
-                "link": "https://nivel20.com/games/dnd-5/characters/1903298-kariegh-strongblood",
-                "oro": 3800
-            },
             "kid": {
                 "nombre": "kid",
                 "exp": 270,
                 "nivel": 1,
                 "link": "https://nivel20.com/games/dnd-5/characters/2016795-kid-tabaxi-el-extranjero",
                 "estado": "Vivo",
-                "oro": 5000
+                "oro": 2000,
+                "inventario": [
+                    "latigo_plus_1"
+                ],
+                "cooldown_compra": {
+                    "dia": 4,
+                    "mes": 10,
+                    "año": 1
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             },
             "yunke": {
                 "nombre": "yunke",
-                "exp": 175,
-                "nivel": 1,
+                "exp": 325,
+                "nivel": 2,
                 "link": "https://nivel20.com/games/dnd-5/characters/2025518-yunke",
                 "estado": "Vivo",
-                "oro": 0
+                "oro": 2800,
+                "inventario": [
+                    "kit_alquimista",
+                    "martillo_de_guerra",
+                    "mapa_region"
+                ],
+                "cooldown_compra": {
+                    "dia": 4,
+                    "mes": 10,
+                    "año": 1
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
+            },
+            "frezzer": {
+                "nombre": "frezzer",
+                "exp": 0,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2052748-frezzer",
+                "estado": "Vivo",
+                "oro": 4000,
+                "inventario": [
+                    "espadon",
+                    "cuero",
+                    "chamuscada",
+                    "mapa_region"
+                ],
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             }
         }
     },
@@ -702,7 +1599,15 @@
                 "nivel": 1,
                 "link": "https://nivel20.com/games/dnd-5/characters/1980141-valentino-zalazar",
                 "estado": "Vivo",
-                "oro": 6400
+                "oro": 6400,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
             }
         }
     },
@@ -710,19 +1615,55 @@
         "personajes": {
             "harit": {
                 "nombre": "Harit",
-                "exp": 1160,
+                "exp": 1705,
                 "nivel": 3,
                 "link": "https://nivel20.com/games/dnd-5/characters/1986784-harit-stmit",
                 "estado": "Vivo",
-                "oro": 13000
+                "oro": 19000,
+                "ubicacion": "Kaerdan",
+                "llegada": null,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 1,
+                        "poco común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "17-11-1",
+                        "común": 1,
+                        "poco común": 0
+                    }
+                },
+                "inventario": [
+                    "vela_profunda",
+                    "candado_antiganzua",
+                    "pote_sobriedad",
+                    "sombrero_magico",
+                    "varita_pirotecnia",
+                    "baston_ciegacielos_plus_1"
+                ]
             },
             "aurel": {
                 "nombre": "Aurel Drakelion",
-                "exp": 0,
+                "exp": 150,
                 "nivel": 1,
                 "link": "https://nivel20.com/games/dnd-5/characters/2013931-aurel-drakelion",
                 "estado": "Vivo",
-                "oro": 0
+                "oro": 0,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 0
+                    }
+                },
+                "inventario": [
+                    "herramientas_carpintero",
+                    "armadura_sin_peso",
+                    "acolchada"
+                ]
             }
         }
     },
@@ -741,6 +1682,14 @@
                     "mes": 8,
                     "año": 1,
                     "destino": "Tharion"
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
                 }
             }
         }
@@ -766,6 +1715,14 @@
                     "dia": 22,
                     "mes": 8,
                     "año": 1
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
                 }
             }
         }
@@ -774,11 +1731,286 @@
         "personajes": {
             "anton": {
                 "nombre": "anton",
-                "exp": 350,
+                "exp": 500,
                 "nivel": 2,
                 "link": "https://nivel20.com/games/dnd-5/characters/1927465-anton-yermolov",
                 "estado": "Vivo",
-                "oro": 31400
+                "oro": 31400,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
+            }
+        }
+    },
+    "1051215604868206713": {
+        "personajes": {
+            "qiang": {
+                "nombre": "Qiang",
+                "exp": 0,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2051494-qiang-ning",
+                "estado": "Vivo",
+                "oro": 6898,
+                "inventario": [
+                    "baston",
+                    "herramientas_sastre",
+                    "mochila",
+                    "raciones_pack",
+                    "raciones_pack",
+                    "antorcha",
+                    "pedernal_acero"
+                ],
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
+            }
+        }
+    },
+    "822627744021086220": {
+        "personajes": {
+            "zane": {
+                "nombre": "Zane",
+                "exp": 0,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2052624-zane",
+                "estado": "Vivo",
+                "oro": 3500,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
+            }
+        }
+    },
+    "718146850586361968": {
+        "personajes": {
+            "sebastian": {
+                "nombre": "Sebastian",
+                "exp": 390,
+                "nivel": 2,
+                "link": "https://nivel20.com/games/dnd-5/characters/2053130-sebastian-morbyn",
+                "estado": "Vivo",
+                "oro": 11300,
+                "ubicacion": "Viajando a Arkanvale",
+                "llegada": {
+                    "dia": 27,
+                    "mes": 10,
+                    "año": 1,
+                    "destino": "Arkanvale"
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    },
+                    "registro_compras": {
+                        "ultima_fecha": "17-11-1",
+                        "común": 1,
+                        "poco común": 0
+                    }
+                },
+                "inventario": [
+                    "pote_sobriedad",
+                    "candado_antiganzua",
+                    "herramientas_peletero",
+                    "bomba_temporal",
+                    "paquete_diplomatico",
+                    "cuero",
+                    "armadura_bandas"
+                ]
+            }
+        }
+    },
+    "656654492078702602": {
+        "personajes": {
+            "glomi": {
+                "nombre": "Glomi la Glomi",
+                "exp": 0,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2054261-glomi-la-glomi",
+                "estado": "Vivo",
+                "oro": 12500,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
+            },
+            "licht": {
+                "nombre": "Licht",
+                "exp": 0,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2054333-licht-grauen",
+                "estado": "Vivo",
+                "oro": 12500,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
+            }
+        }
+    },
+    "721266916421009440": {
+        "personajes": {
+            "sanda": {
+                "nombre": "Sanda",
+                "exp": 0,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2059862-sanda",
+                "estado": "Vivo",
+                "oro": 11500,
+                "nacimiento": {
+                    "dia": 26,
+                    "mes": 5,
+                    "año": -15
+                },
+                "inventario": [
+                    "brazalete_punal"
+                ],
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 3,
+                        "poco común": 3
+                    }
+                }
+            }
+        }
+    },
+    "835354538185457706": {
+        "personajes": {
+            "severian": {
+                "nombre": "severian",
+                "exp": 755,
+                "nivel": 2,
+                "link": "https://nivel20.com/games/dnd-5/characters/2071027-severin-vale",
+                "estado": "Vivo",
+                "oro": 4500,
+                "inventario": [
+                    "cuero",
+                    "arco_corto",
+                    "estoque",
+                    "flechas_20",
+                    "flechas_20",
+                    "antorcha",
+                    "raciones_pack",
+                    "raciones_pack",
+                    "cuero_tachonado",
+                    "ballesta_ligera",
+                    "virotes_20",
+                    "virotes_20",
+                    "instrumento_panflauta",
+                    "baston",
+                    "baston",
+                    "taza_limpieza",
+                    "taza_limpieza",
+                    "pote_sobriedad"
+                ],
+                "ubicacion": "Viajando a Arkanvale",
+                "llegada": {
+                    "dia": 23,
+                    "mes": 11,
+                    "año": 1,
+                    "destino": "Arkanvale"
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    }
+                }
+            },
+            "sariel": {
+                "nombre": "Sariel",
+                "exp": 170,
+                "nivel": 1,
+                "link": "https://nivel20.com/games/dnd-5/characters/2084329-sariel",
+                "estado": "Vivo",
+                "oro": 6700,
+                "inventario": [
+                    "cota_mallas",
+                    "jabalina",
+                    "jabalina",
+                    "jabalina",
+                    "jabalina",
+                    "jabalina",
+                    "jabalina",
+                    "pote_sobriedad",
+                    "martillo_afilado",
+                    "vela_profunda",
+                    "prenda_removible",
+                    "moneda_falsa",
+                    "anillo_evasion"
+                ],
+                "ubicacion": "Viajando a Kaerdan",
+                "llegada": {
+                    "dia": 29,
+                    "mes": 11,
+                    "año": 1,
+                    "destino": "Kaerdan"
+                },
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    }
+                }
+            }
+        }
+    },
+    "1476369080012374056": {
+        "personajes": {
+            "leo": {
+                "nombre": "leo",
+                "exp": 5034,
+                "nivel": 4,
+                "link": "https://nivel20.com/games/dnd-5/characters/1894317-leo-san-juan",
+                "estado": "Vivo",
+                "oro": 0,
+                "lootboxes": {
+                    "común": 0,
+                    "poco común": 0,
+                    "inventario_cajas": {
+                        "común": 0,
+                        "poco común": 0
+                    }
+                },
+                "inventario": [
+                    "casco_expresivo_plus_1",
+                    "escudo_expresivo_plus_1",
+                    "casco_expresivo_plus_1",
+                    "potion_of_poison",
+                    "deerhorn_knives",
+                    "moneda_falsa"
+                ]
             }
         }
     }

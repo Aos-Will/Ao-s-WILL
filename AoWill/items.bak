@@ -2373,7 +2373,7 @@
     {
         "id": "oil_of_etherealness",
         "nombre": "Aceite de lo etéreo",
-        "precio": 200000,
+        "precio": 62500,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2385,7 +2385,7 @@
     {
         "id": "oil_of_sharpness",
         "nombre": "Aceite de nitidez",
-        "precio": 2000000,
+        "precio": 250000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2397,7 +2397,7 @@
     {
         "id": "oil_of_slipperiness",
         "nombre": "Aceite de resbaladiza",
-        "precio": 20000,
+        "precio": 50000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2460,7 +2460,7 @@
     {
         "id": "philter_of_love",
         "nombre": "Filtro de amor",
-        "precio": 20000,
+        "precio": 50000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2522,7 +2522,7 @@
     {
         "id": "potion_of_animal_friendship",
         "nombre": "Poción de amistad animal",
-        "precio": 20000,
+        "precio": 50000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2534,7 +2534,7 @@
     {
         "id": "potion_of_clairvoyance",
         "nombre": "Poción de clarividencia",
-        "precio": 200000,
+        "precio": 62500,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2546,7 +2546,7 @@
     {
         "id": "potion_of_climbing",
         "nombre": "Poción de escalada",
-        "precio": 5000,
+        "precio": 12,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2558,7 +2558,7 @@
     {
         "id": "potion_of_diminution",
         "nombre": "Poción de disminución",
-        "precio": 200000,
+        "precio": 62500,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2570,7 +2570,7 @@
     {
         "id": "potion_of_flying",
         "nombre": "Poción de vuelo",
-        "precio": 2000000,
+        "precio": 250000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2582,7 +2582,7 @@
     {
         "id": "potion_of_gaseous_form",
         "nombre": "Poción de forma gaseosa",
-        "precio": 200000,
+        "precio": 62500,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2594,7 +2594,7 @@
     {
         "id": "potion_of_growth",
         "nombre": "Poción de crecimiento",
-        "precio": 20000,
+        "precio": 50000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2606,7 +2606,7 @@
     {
         "id": "potion_of_healing",
         "nombre": "Poción de curación",
-        "precio": 2000000,
+        "precio": 5000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2618,7 +2618,7 @@
     {
         "id": "potion_of_healing_greater",
         "nombre": "Poción de curación mayor",
-        "precio": 20000,
+        "precio": 62000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2642,7 +2642,7 @@
     {
         "id": "potion_of_healing_supreme",
         "nombre": "Poción de curación suprema",
-        "precio": 2000000,
+        "precio": 500000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2654,7 +2654,7 @@
     {
         "id": "potion_of_heroism",
         "nombre": "Poción de heroísmo",
-        "precio": 200000,
+        "precio": 62500,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2666,7 +2666,7 @@
     {
         "id": "potion_of_invisibility",
         "nombre": "Poción de invisibilidad",
-        "precio": 2000000,
+        "precio": 250000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2678,7 +2678,7 @@
     {
         "id": "potion_of_mind_reading",
         "nombre": "Poción de lectura mental",
-        "precio": 200000,
+        "precio": 62500,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2690,7 +2690,7 @@
     {
         "id": "potion_of_poison",
         "nombre": "Poción de veneno",
-        "precio": 20000,
+        "precio": 50000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2702,7 +2702,7 @@
     {
         "id": "potion_of_resistance",
         "nombre": "Poción de resistencia",
-        "precio": 20000,
+        "precio": 50000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2714,7 +2714,7 @@
     {
         "id": "potion_of_speed",
         "nombre": "Poción de velocidad",
-        "precio": 2000000,
+        "precio": 250000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -2726,7 +2726,7 @@
     {
         "id": "potion_of_water_breathing",
         "nombre": "Poción de respiración de agua",
-        "precio": 20000,
+        "precio": 50000,
         "stock": 5,
         "categoria": [
             "Poción",
@@ -3959,6 +3959,32 @@
         "consumible": false
     },
     {
+        "id": "armadura_humeante_plus_1",
+        "nombre": "Armadura Humeante +1",
+        "precio": 50000,
+        "stock": 1,
+        "categoria": [
+            "Armaduras",
+            "Baratijas",
+            "Poco Común"
+        ],
+        "descripcion": "Elige una armadura no magica que tengas, Tienes un bonificador de +1 a la CA con esta versión mejorada de: Armadura Humeante.",
+        "consumible": false
+    },
+    {
+        "id": "armadura_humeante_plus_2",
+        "nombre": "Armadura Humeante +2",
+        "precio": 300250,
+        "stock": 0,
+        "categoria": [
+            "Armaduras",
+            "Equipo",
+            "Raro"
+        ],
+        "descripcion": "Elige una armadura no magica que tengas, Tienes un bonificador de +2 CA con esta legendaria versión de: Armadura Humeante.",
+        "consumible": false
+    },
+    {
         "id": "baston_adorno",
         "nombre": "Bastón de Adorno",
         "precio": 2500,
@@ -4083,7 +4109,7 @@
             "Baratijas",
             "Poco Común"
         ],
-        "descripcion": "Este escudo otorga un bonificador de +1 a la CA adicional.",
+        "descripcion": "Tienes un bonificador de +1 a las tiradas de ataque y daño hechas con esta versión mejorada de: Escudo Expresivo.",
         "consumible": false
     },
     {
@@ -4096,7 +4122,7 @@
             "Equipo",
             "Raro"
         ],
-        "descripcion": "Este escudo otorga un bonificador de +2 a la CA adicional.",
+        "descripcion": "Tienes un bonificador de +2 a las tiradas de ataque y daño hechas con esta legendaria versión de: Escudo Expresivo.",
         "consumible": false
     },
     {
@@ -4581,7 +4607,7 @@
         "id": "jabalina_plus_1",
         "nombre": "Jabalina +1",
         "precio": 50000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Armas",
             "Cuerpo a Cuerpo",
@@ -7346,7 +7372,7 @@
         "id": "herramientas_joyero",
         "nombre": "Herramientas de joyero",
         "precio": 2000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Herramientas",
             "Artesanía",
@@ -7776,7 +7802,7 @@
         "id": "escudo_plus_1",
         "nombre": "Escudo +1",
         "precio": 25000,
-        "stock": 1,
+        "stock": 0,
         "categoria": [
             "Armaduras",
             "Escudo",
@@ -10454,7 +10480,7 @@
     {
         "id": "pocion_vision_oscuridad",
         "nombre": "Poción de visión en la oscuridad",
-        "precio": 5000,
+        "precio": 6000,
         "stock": null,
         "categoria": [
             "Pociones",
@@ -10545,7 +10571,7 @@
     {
         "id": "pocion_salto",
         "nombre": "Poción de salto",
-        "precio": 20000,
+        "precio": 15000,
         "stock": 0,
         "categoria": [
             "Pociones",
@@ -10584,7 +10610,7 @@
     {
         "id": "pocion_aliento_fuego",
         "nombre": "Poción de aliento de fuego",
-        "precio": 20000,
+        "precio": 35000,
         "stock": 0,
         "categoria": [
             "Pociones",
@@ -10597,7 +10623,7 @@
     {
         "id": "pocion_piel_piedra",
         "nombre": "Poción de piel de piedra líquida",
-        "precio": 20000,
+        "precio": 45000,
         "stock": 0,
         "categoria": [
             "Pociones",
